@@ -1,0 +1,153 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(tidyverse)
+library(recommenderlab)
+library(ggplot2)
+```
+
+
+```{r}
+data("MovieLense")
+```
+
+
+```{r}
+MovieLenseMatrix <- as(MovieLense, "matrix")
+```
+
+
+1. Welches sind die am häufigsten geschauten Filme? 
+```{r}
+head(sort(colCounts(MovieLense), decreasing = TRUE), 10) ## top 10 Filme mit den meisten Ratings
+```
+
+Welches sind die meist geschauten Genres?
+```{r}
+watched_movies <- colCounts(MovieLense) ## Vektor mit views pro Film 
+
+MovieLense_movies <- MovieLenseMeta %>% ## Kopie von MovieLenseMeta nur mit Genres und Title
+  select(title, Action:Western)
+```
+
+
+```{r}
+## Mit zwei for loops durch das Dataframe MovieLense_movies loopen um die Anzahl views pro Film einzutragen
+n <- 0
+for (x in watched_movies) {
+  n <- n + 1
+  for (i in 2:19) {
+    if (MovieLense_movies[n,i] == 1) {
+      MovieLense_movies[n,i] <- x
+    }
+  }
+}
+```
+
+```{r}
+head(sort(colSums(MovieLense_movies[,2:19]), decreasing = TRUE),10) ## Anzahl views pro Genre
+```
+
+
+3. Wie verteilen sich die mittleren Kundenratings pro Film?
+```{r}
+mean_ratings <- colSums(MovieLense)/colCounts(MovieLense)
+hist(mean_ratings, probability = TRUE)
+```
+
+4. Wie stark streuen die Ratings von individuellen Kunden?
+```{r}
+
+```
+
+5. Welchen Einfluss hat die Normierung der Ratings pro Kunde auf
+deren Verteilung?
+```{r}
+MovieLense_norm <- normalize(MovieLense, method="center", row=TRUE)
+
+hist(getRatings(MovieLense_norm))
+hist(getRatings(MovieLense))
+```
+
+6. Welche strukturellen Charakteristika (z.B. Sparsity) und Auffälligkeiten zeigt die User-Item Matrix?
+```{r}
+# sparsity
+sum(is.na(MovieLenseMatrix) == TRUE)/(dim(MovieLenseMatrix)[1]*dim(MovieLenseMatrix)[2])
+
+# Dimensions
+dim(MovieLense)
+
+# Filme
+dim(MovieLense)[1]
+
+# User
+dim(MovieLense)[2]
+
+# 
+```
+
+Datenreduktion
+
+Wie viele Ratings haben Kunden im Durchschnitt abgegeben?
+```{r}
+boxplot(rowCounts(MovieLense))
+print(quantile(rowCounts(MovieLense)))
+
+```
+
+
+```{r}
+boxplot(colCounts(MovieLense))
+print(quantile(colCounts(MovieLense)))
+```
+
+
+```{r}
+set.seed(1)
+split1<- sample(c(rep(0, 0.65 * nrow(MovieLense_norm)), rep(1, 0.35 * nrow(MovieLense_norm))))
+train_1 <- MovieLense[split1 == 0,]
+test_1 <- MovieLense[split1 == 1,]
+
+
+set.seed(2)
+split2<- sample(c(rep(0, 0.65 * nrow(MovieLense_norm)), rep(1, 0.35 * nrow(MovieLense_norm))))
+train_2 <- MovieLense[split2 == 0,]
+test_2 <- MovieLense[split2 == 1,]
+
+set.seed(3)
+split3<- sample(c(rep(0, 0.65 * nrow(MovieLense_norm)), rep(1, 0.35 * nrow(MovieLense_norm))))
+train_3 <- MovieLense[split3 == 0,]
+test_3 <- MovieLense[split3 == 1,]
+```
+
+
+```{r}
+
+```
+
+## Sparsity vor und nach der Datenreduktion
+```{r}
+# sparsity vor der Datenreduktion
+sum(is.na(MovieLenseMatrix) == TRUE)/(dim(MovieLenseMatrix)[1]*dim(MovieLenseMatrix)[2])
+
+# sparsity nach der Datenreduktion
+sum(is.na(MovieLenseMatrix) == TRUE)/(dim(MovieLenseMatrix)[1]*dim(MovieLenseMatrix)[2])
+```
+
+
+```{r}
+# Mittlere Kundenratings pro Film vor der Datenreduktion
+head(colMeans(MovieLense), 10)
+
+# Mittlere Kundenratings pro Film nach der Datenreduktion
+head(colMeans())
+```
+
+
