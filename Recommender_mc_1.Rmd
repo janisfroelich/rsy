@@ -122,13 +122,79 @@ train_2 <- MovieLense[split2 == 0,]
 test_2 <- MovieLense[split2 == 1,]
 
 set.seed(3)
-split3<- sample(c(rep(0, 0.65 * nrow(MovieLense_norm)), rep(1, 0.35 * nrow(MovieLense_norm))))
+split3<- sample(c(rep(0, 0.45 * nrow(MovieLense_norm)), rep(1, 0.55 * nrow(MovieLense_norm))))
 train_3 <- MovieLense[split3 == 0,]
 test_3 <- MovieLense[split3 == 1,]
 ```
 
+3 mal test train split, da wir drei Personen in der Gruppe sind
+```{r}
+print(sum(is.na(as(train_1, "matrix")) == TRUE)/(dim(as(train_1, "matrix"))[1]*dim(as(train_1, "matrix"))[2]))
+
+print(sum(is.na(as(train_2, "matrix")) == TRUE)/(dim(as(train_2, "matrix"))[1]*dim(as(train_2, "matrix"))[2]))
+
+print(sum(is.na(as(train_3, "matrix")) == TRUE)/(dim(as(train_3, "matrix"))[1]*dim(as(train_3, "matrix"))[2]))
+
+```
+Grösse des train_1 split verkleinern auf 400 Kunden und 700 Filme, dabei sollte die sparsity beim train_1 erhöht werden durch löschen von Kunden die viele Bewertungen abgegeben haben und Filmen die viel Bewertungen haben
+```{r}
+percentile_train_1_Kunden = (dim(train_1)[1]-400)/(dim(train_1)[1]/100)/100 ## bis zu welchem percentil müssen Benutzer mit weniger Bewertungen gelöscht werden
+print(quantile(rowCounts(train_1), percentile_train_1_Kunden)) # Wert in Bewertungen
+
+train_1 <- train_1[rowCounts(train_1) > 40] # Reduzieren der Kunden auf 400
+
+percentile_train_1_Filme = (dim(train_1)[2]-700)/(dim(train_1)[2]/100)/100 ## bis zu welchem percentil müssen Filme mit weniger Bewertungen gelöscht werden
+
+print(quantile(colCounts(train_1), percentile_train_1_Filme)) # Wert in Bewertungen
+
+train_1 <- train_1[colCounts(train_1) > 22] # Reduzieren der Kunden auf 700
+```
+
 
 ```{r}
+train_1_m <- as(train_1, "matrix")
+
+
+```
+
+
+```{r}
+train_1_m <- train_1_m[(dim(train_1_m)[1] - colSums(is.na(train_1_m))) > 21]
+```
+
+
+```{r}
+length(colnames(train_1_m))
+```
+```{r}
+length(((dim(train_1_m)[1] - colSums(is.na(train_1_m))) > 23) == TRUE)
+```
+
+
+```{r}
+percentile_train_2_Kunden = (dim(train_2)[1]-400)/(dim(train_2)[1]/100)/100 ## bis zu welchem percentil müssen Benutzer mit weniger Bewertungen gelöscht werden
+print(quantile(rowCounts(train_1), percentile_train_2_Kunden)) # Wert in Bewertungen
+
+train_2 <- train_1[rowCounts(train_2) > 40] # Reduzieren der Kunden auf 400
+
+percentile_train_2_Filme = (dim(train_2)[2]-700)/(dim(train_2)[2]/100)/100 ## bis zu welchem percentil müssen Filme mit weniger Bewertungen gelöscht werden
+
+print(quantile(colCounts(train_2), percentile_train_1_Filme)) # Wert in Bewertungen
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+print(sum(is.na(as(train_1, "matrix")) == TRUE)/(dim(as(train_1, "matrix"))[1]*dim(as(train_1, "matrix"))[2]))
+
+print(sum(is.na(as(train_2, "matrix")) == TRUE)/(dim(as(train_2, "matrix"))[1]*dim(as(train_2, "matrix"))[2]))
+
+print(sum(is.na(as(train_3, "matrix")) == TRUE)/(dim(as(train_3, "matrix"))[1]*dim(as(train_3, "matrix"))[2]))
+
 
 ```
 
