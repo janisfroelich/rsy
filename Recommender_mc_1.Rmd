@@ -159,7 +159,7 @@ train_1_m <- as(train_1, "matrix")
 
 
 ```{r}
-train_1_m <- train_1_m[(dim(train_1_m)[1] - colSums(is.na(train_1_m))) > 21]
+train_1_m %>% select_if((dim(train_1_m)[1] - colSums(is.na(train_1_m))) > 23)
 ```
 
 
@@ -167,7 +167,10 @@ train_1_m <- train_1_m[(dim(train_1_m)[1] - colSums(is.na(train_1_m))) > 21]
 length(colnames(train_1_m))
 ```
 ```{r}
-length(((dim(train_1_m)[1] - colSums(is.na(train_1_m))) > 23) == TRUE)
+((dim(train_1_m)[1] - colSums(is.na(train_1_m))) > 23)
+```
+```{r}
+(3 > 2) == FALSE
 ```
 
 
