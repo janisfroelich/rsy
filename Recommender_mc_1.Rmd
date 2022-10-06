@@ -138,51 +138,42 @@ print(sum(is.na(as(train_3, "matrix")) == TRUE)/(dim(as(train_3, "matrix"))[1]*d
 ```
 Grösse des train_1 split verkleinern auf 400 Kunden und 700 Filme, dabei sollte die sparsity beim train_1 erhöht werden durch löschen von Kunden die viele Bewertungen abgegeben haben und Filmen die viel Bewertungen haben
 ```{r}
+train_1_before <- train_1
+
 percentile_train_1_Kunden = (dim(train_1)[1]-400)/(dim(train_1)[1]/100)/100 ## bis zu welchem percentil müssen Benutzer mit weniger Bewertungen gelöscht werden
 print(quantile(rowCounts(train_1), percentile_train_1_Kunden)) # Wert in Bewertungen
 
-train_1 <- train_1[rowCounts(train_1) > 40] # Reduzieren der Kunden auf 400
+train_1_m <- train_1_before[rowCounts(train_1_before) > 40] # Reduzieren der Kunden auf 400
 
 percentile_train_1_Filme = (dim(train_1)[2]-700)/(dim(train_1)[2]/100)/100 ## bis zu welchem percentil müssen Filme mit weniger Bewertungen gelöscht werden
 
 print(quantile(colCounts(train_1), percentile_train_1_Filme)) # Wert in Bewertungen
 
-train_1 <- train_1[colCounts(train_1) > 22] # Reduzieren der Kunden auf 700
+train_1_m <- as(train_1_m, "matrix")
+
+train_1_m <- train_1_m[,((colSums(!is.na(train_1_m))) > 22)] # Reduzieren der Kunden auf 700
+```
+
+```{r}
+100-(dim(train_2)[2]-700)/(dim(train_2)[2]/100)
 ```
 
 
 ```{r}
-train_1_m <- as(train_1, "matrix")
+train_2_before <- train_2
 
-
-```
-
-
-```{r}
-train_1_m %>% select_if((dim(train_1_m)[1] - colSums(is.na(train_1_m))) > 23)
-```
-
-
-```{r}
-length(colnames(train_1_m))
-```
-```{r}
-((dim(train_1_m)[1] - colSums(is.na(train_1_m))) > 23)
-```
-```{r}
-(3 > 2) == FALSE
-```
-
-
-```{r}
-percentile_train_2_Kunden = (dim(train_2)[1]-400)/(dim(train_2)[1]/100)/100 ## bis zu welchem percentil müssen Benutzer mit weniger Bewertungen gelöscht werden
+percentile_train_2_Kunden = (100-(dim(train_2)[1]-400)/(dim(train_2)[1]/100))/100 ## bis zu welchem percentil müssen Benutzer mit weniger Bewertungen gelöscht werden
 print(quantile(rowCounts(train_1), percentile_train_2_Kunden)) # Wert in Bewertungen
 
-train_2 <- train_1[rowCounts(train_2) > 40] # Reduzieren der Kunden auf 400
+train_2 <- train_2_before[rowCounts(train_2_before) < 106] # Reduzieren der Kunden auf 400
 
-percentile_train_2_Filme = (dim(train_2)[2]-700)/(dim(train_2)[2]/100)/100 ## bis zu welchem percentil müssen Filme mit weniger Bewertungen gelöscht werden
+percentile_train_2_Filme = (100-(dim(train_2)[2]-700)/(dim(train_2)[2]/100))/100 ## bis zu welchem percentil müssen Filme mit weniger Bewertungen gelöscht werden
 
-print(quantile(colCounts(train_2), percentile_train_1_Filme)) # Wert in Bewertungen
+print(quantile(colCounts(train_2), percentile_train_2_Filme)) # Wert in Bewertungen
+
+train_2_m <- as(train_2_before, "matrix")
+
+train_2_m <- train_2_m[,((colSums(!is.na(train_2_m))) < 2)] # Reduzieren der Kunden auf 700
 ```
 
 
@@ -190,33 +181,67 @@ print(quantile(colCounts(train_2), percentile_train_1_Filme)) # Wert in Bewertun
 
 ```
 
-
+## Vergleich des Trainingset 1 vor und nach der Datenreduktion
 ```{r}
-print(sum(is.na(as(train_1, "matrix")) == TRUE)/(dim(as(train_1, "matrix"))[1]*dim(as(train_1, "matrix"))[2]))
+# Amount of Costumers before
+print(dim(as(train_1_before, "matrix"))[1])
 
-print(sum(is.na(as(train_2, "matrix")) == TRUE)/(dim(as(train_2, "matrix"))[1]*dim(as(train_2, "matrix"))[2]))
+# Amount of Costumers after
+print(dim(train_1_m)[1])
 
-print(sum(is.na(as(train_3, "matrix")) == TRUE)/(dim(as(train_3, "matrix"))[1]*dim(as(train_3, "matrix"))[2]))
+# Amonut of Movies before
+print(dim(as(train_1_before, "matrix"))[2])
+
+# Amount of Movies after
+print(dim(train_1_m)[2])
+
+# Sparsity before
+print(sum(is.na(as(train_1_before, "matrix")))/(dim(as(train_1_before, "matrix"))[1]*dim(as(train_1_before, "matrix"))[2]))
+
+# Sparsity after
+print(sum(is.na(train_1_m))/(dim(train_1_m)[1]*dim(train_1_m)[2]))
+
+# mean customer rating before
+sum(rowMeans(train_1_before))/dim(as(train_1_before, "matrix"))[1]
+
+# mean customer rating after
+sum(rowMeans(train_1_m, na.rm=TRUE))/dim(train_1_m)[1]
+```
+```{r}
 
 
 ```
 
-## Sparsity vor und nach der Datenreduktion
+## Vergleich des Trainingset 2 vor und nach der Datenreduktion
 ```{r}
-# sparsity vor der Datenreduktion
-sum(is.na(MovieLenseMatrix) == TRUE)/(dim(MovieLenseMatrix)[1]*dim(MovieLenseMatrix)[2])
+# Amount of Costumers before
+print(dim(as(train_2_before, "matrix"))[1])
 
-# sparsity nach der Datenreduktion
-sum(is.na(MovieLenseMatrix) == TRUE)/(dim(MovieLenseMatrix)[1]*dim(MovieLenseMatrix)[2])
+# Amount of Costumers after
+print(dim(train_2_m)[1])
+
+# Amonut of Movies before
+print(dim(as(train_2_before, "matrix"))[2])
+
+# Amount of Movies after
+print(dim(train_2_m)[2])
+
+# Sparsity before
+print(sum(is.na(as(train_2_before, "matrix")))/(dim(as(train_2_before, "matrix"))[1]*dim(as(train_2_before, "matrix"))[2]))
+
+# Sparsity after
+print(sum(is.na(train_2_m))/(dim(train_2_m)[1]*dim(train_2_m)[2]))
+
+# mean customer rating before
+sum(rowMeans(train_2_before))/dim(as(train_2_before, "matrix"))[1]
+
+# mean customer rating after
+sum(rowMeans(train_2_m, na.rm=TRUE))/dim(train_2_m)[1]
 ```
 
 
 ```{r}
-# Mittlere Kundenratings pro Film vor der Datenreduktion
-head(colMeans(MovieLense), 10)
-
-# Mittlere Kundenratings pro Film nach der Datenreduktion
-head(colMeans())
+#print(sum(is.na(as(train_3, "matrix")) == TRUE)/(dim(as(train_3, "matrix"))[1]*dim(as(train_3, "matrix"))[2]))
 ```
 
 
