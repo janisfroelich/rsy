@@ -112,19 +112,39 @@ print(quantile(colCounts(MovieLense)))
 ```{r}
 set.seed(1)
 split1<- sample(c(rep(0, 0.65 * nrow(MovieLense_norm)), rep(1, 0.35 * nrow(MovieLense_norm))))
-train_1 <- MovieLense[split1 == 0,]
-test_1 <- MovieLense[split1 == 1,]
+train_1 <- MovieLense_norm[split1 == 0,]
+test_1 <- MovieLense_norm[split1 == 1,]
 
 
 set.seed(2)
 split2<- sample(c(rep(0, 0.65 * nrow(MovieLense_norm)), rep(1, 0.35 * nrow(MovieLense_norm))))
-train_2 <- MovieLense[split2 == 0,]
-test_2 <- MovieLense[split2 == 1,]
+train_2 <- MovieLense_norm[split2 == 0,]
+test_2 <- MovieLense_norm[split2 == 1,]
 
 set.seed(3)
-split3<- sample(c(rep(0, 0.45 * nrow(MovieLense_norm)), rep(1, 0.55 * nrow(MovieLense_norm))))
-train_3 <- MovieLense[split3 == 0,]
-test_3 <- MovieLense[split3 == 1,]
+split3<- sample(c(rep(0, 0.42 * nrow(MovieLense_norm)), rep(1, 0.35 * nrow(MovieLense_norm))))
+train_3 <- MovieLense_norm[split3==0,]
+test_3 <- MovieLense_norm[split3 == 1,]
+dim(test_3)
+```
+
+
+```{r}
+col_drop <- sample(1:length(colnames(train_3)), length(colnames(train_3))-964)
+
+train_3_before <- as(train_3, "matrix")
+
+dim(train_3_before)
+```
+```{r}
+train_3_m <- train_3_before[, col_drop]
+```
+
+```{r}
+dim(train_3_m)
+```
+```{r}
+dim(MovieLense_norm)
 ```
 
 3 mal test train split, da wir drei Personen in der Gruppe sind
@@ -153,12 +173,6 @@ train_1_m <- as(train_1_m, "matrix")
 
 train_1_m <- train_1_m[,((colSums(!is.na(train_1_m))) > 22)] # Reduzieren der Kunden auf 700
 ```
-
-```{r}
-100-(dim(train_2)[2]-700)/(dim(train_2)[2]/100)
-```
-
-
 ```{r}
 train_2_before <- train_2
 
@@ -174,6 +188,10 @@ print(quantile(colCounts(train_2), percentile_train_2_Filme)) # Wert in Bewertun
 train_2_m <- as(train_2_before, "matrix")
 
 train_2_m <- train_2_m[,((colSums(!is.na(train_2_m))) < 2)] # Reduzieren der Kunden auf 700
+```
+```{r}
+train_3_before <- train_3
+train_3_m <- as(train_3_before, "matrix")
 ```
 
 
@@ -241,6 +259,7 @@ sum(rowMeans(train_2_m, na.rm=TRUE))/dim(train_2_m)[1]
 
 
 ```{r}
+dim(as(train_3, "matrix"))
 #print(sum(is.na(as(train_3, "matrix")) == TRUE)/(dim(as(train_3, "matrix"))[1]*dim(as(train_3, "matrix"))[2]))
 ```
 
