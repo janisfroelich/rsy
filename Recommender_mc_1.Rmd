@@ -11,7 +11,7 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 library(tidyverse)
 library(recommenderlab)
 library(ggplot2)
-install.packages("styler")
+library(styler)
 ```
 
 
@@ -312,15 +312,31 @@ df2 <- matrix(team=c('A', 'A', 'B', 'B'),
                   module=c("EDA", "DAW", "RSY", "INK"))
                   
                   
-intersect(df1, df2)
+intersect(train_1_m, train_2_m)
 
 ```
 ## Train test split für IBCF Recommender
 ```{r}
 set.seed(10)
 split1<- sample(c(rep(0, 0.80 * nrow(train_1_m)), rep(1, 0.20 * nrow(train_1_m))))
-train_1_ibcf <- train_1_m[split1 == 0,]
-test_1_ibcf <- train_1_m[split1 == 1,]
+train_1_ibcf <- as(train_1_m[split1 == 0,], "realRatingMatrix")
+test_1_ibcf <- as(train_1_m[split1 == 1,], "realRatingMatrix")
+```
+
+## Train IBCF with train data
+```{r}
+# train recommenderlab IBCF with train_1_ibcf data and k=30, cos similarity
+recommender_ibcf <- Recommender(train_1_ibcf, method = "IBCF", parameter = list(k=30, method="cosine"))
+print(r_ibcf)
+p_1 <- predict(r_ibcf, test_1_ibcf, type="topNList")
+print(as(p_1, "matrix"))
+#p_2 <- predict(r_ibcf, test_1_ibcf, type="")
+```
+```{r}
+cosine_ibcf <- as.data.frame(as(similarity(r_ibcf, method='cosine', which='items'), "matrix"))
+cosine_ibcf
+#hist(sort(colSums(cosine_ibcf, na.rm=TRUE), decreasing = TRUE))
+#train_1_ibcf
 ```
 
 

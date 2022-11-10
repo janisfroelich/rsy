@@ -1776,9 +1776,27 @@ the chunk or by placing your cursor inside it and pressing
 <em>Cmd+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5saWJyYXJ5KHJlY29tbWVuZGVybGFiKVxubGlicmFyeShnZ3Bsb3QyKVxuaW5zdGFsbC5wYWNrYWdlcyhcInN0eWxlclwiKVxuYGBgIn0= -->
-<pre class="r"><code>library(tidyverse)
-library(recommenderlab)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5gYGAifQ== -->
+<pre class="r"><code>library(tidyverse)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2RzIG92ZXJ3cml0dGVuIGJ5ICdkYnBseXInOlxuICBtZXRob2QgICAgICAgICBmcm9tXG4gIHByaW50LnRibF9sYXp5ICAgICBcbiAgcHJpbnQudGJsX3NxbCAgICAgIFxu4pSA4pSAIEF0dGFjaGluZyBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDEuMy4yIOKUgOKUgOKclCBnZ3Bsb3QyIDMuMy42ICAgICAg4pyUIHB1cnJyICAgMC4zLjQgXG7inJQgdGliYmxlICAzLjEuOCAgICAgIOKclCBkcGx5ciAgIDEuMC4xMFxu4pyUIHRpZHlyICAgMS4yLjEgICAgICDinJQgc3RyaW5nciAxLjQuMSBcbuKclCByZWFkciAgIDIuMS4yICAgICAg4pyUIGZvcmNhdHMgMC41LjIg4pSA4pSAIENvbmZsaWN0cyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlX2NvbmZsaWN0cygpIOKUgOKUgFxu4pyWIHRpZHlyOjpleHBhbmQoKSBtYXNrcyBNYXRyaXg6OmV4cGFuZCgpXG7inJYgZHBseXI6OmZpbHRlcigpIG1hc2tzIHN0YXRzOjpmaWx0ZXIoKVxu4pyWIGRwbHlyOjpsYWcoKSAgICBtYXNrcyBzdGF0czo6bGFnKClcbuKcliB0aWR5cjo6cGFjaygpICAgbWFza3MgTWF0cml4OjpwYWNrKClcbuKcliBkcGx5cjo6cmVjb2RlKCkgbWFza3MgYXJ1bGVzOjpyZWNvZGUoKVxu4pyWIHRpZHlyOjp1bnBhY2soKSBtYXNrcyBNYXRyaXg6OnVucGFjaygpXG4ifQ== -->
+<pre><code>Registered S3 methods overwritten by &#39;dbplyr&#39;:
+  method         from
+  print.tbl_lazy     
+  print.tbl_sql      
+── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──✔ ggplot2 3.3.6      ✔ purrr   0.3.4 
+✔ tibble  3.1.8      ✔ dplyr   1.0.10
+✔ tidyr   1.2.1      ✔ stringr 1.4.1 
+✔ readr   2.1.2      ✔ forcats 0.5.2 ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ tidyr::expand() masks Matrix::expand()
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+✖ tidyr::pack()   masks Matrix::pack()
+✖ dplyr::recode() masks arules::recode()
+✖ tidyr::unpack() masks Matrix::unpack()</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWNvbW1lbmRlcmxhYilcbmxpYnJhcnkoZ2dwbG90Milcbmluc3RhbGwucGFja2FnZXMoXCJzdHlsZXJcIilcbmBgYCJ9 -->
+<pre class="r"><code>library(recommenderlab)
 library(ggplot2)
 install.packages(&quot;styler&quot;)</code></pre>
 <!-- rnb-source-end -->
@@ -1788,10 +1806,10 @@ Content type &#39;application/x-gzip&#39; length 713883 bytes (697 KB)
 ==================================================
 downloaded 697 KB</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdC92YXIvZm9sZGVycy9mMC9wcXkyY2x2eDBudjM4eG1fbnB2OGZrbG0wMDAwZ24vVC8vUnRtcGxDc3FLbC9kb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdC92YXIvZm9sZGVycy9mMC9wcXkyY2x2eDBudjM4eG1fbnB2OGZrbG0wMDAwZ24vVC8vUnRtcGs5OU1CcC9kb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== -->
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/f0/pqy2clvx0nv38xm_npv8fklm0000gn/T//RtmplCsqKl/downloaded_packages</code></pre>
+    /var/folders/f0/pqy2clvx0nv38xm_npv8fklm0000gn/T//Rtmpk99MBp/downloaded_packages</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1980,14 +1998,33 @@ dim(MovieLense)[2]</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<div id="test-train-split-für-drei-personen-somit-drei-verschiedene-datensätze" class="section level2">
+<h2>Test train split für drei Personen, somit drei verschiedene
+Datensätze</h2>
+<div id="datensatz-1" class="section level3">
+<h3>Datensatz 1</h3>
+<p>Beim ersten Datensatz werden wir die Sparsity senken durch gezieltes
+entfernen von Filmen und User die wenig bewertet wurden respektive
+bewertet haben.</p>
+</div>
+<div id="datensatz-2" class="section level3">
+<h3>Datensatz 2</h3>
+<p>Beim ersten Datensatz werden wir die Sparsity erhöhen durch gezieltes
+entfernen von Filmen und User die viel bewertet wurden respektive
+bewertet haben.</p>
+</div>
+<div id="datensatz-3" class="section level3">
+<h3>Datensatz 3</h3>
+<p>Beim Datensatz drei werden einfach random User sowie Filme entfernt
+um die Sparsity möglichst nahe an den Original Daten zu halten und somit
+wird sich dieser zwischen Datensatz 1 und Datensatz 2 platzieren.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMSlcbnNwbGl0MTwtIHNhbXBsZShjKHJlcCgwLCAwLjY1ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSwgcmVwKDEsIDAuMzUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpKSlcbnRyYWluXzEgPC0gTW92aWVMZW5zZV9ub3JtW3NwbGl0MSA9PSAwLF1cbnRlc3RfMSA8LSBNb3ZpZUxlbnNlX25vcm1bc3BsaXQxID09IDEsXVxuXG5cbnNldC5zZWVkKDIpXG5zcGxpdDI8LSBzYW1wbGUoYyhyZXAoMCwgMC42NSAqIG5yb3coTW92aWVMZW5zZV9ub3JtKSksIHJlcCgxLCAwLjM1ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSkpXG50cmFpbl8yIDwtIE1vdmllTGVuc2Vfbm9ybVtzcGxpdDIgPT0gMCxdXG50ZXN0XzIgPC0gTW92aWVMZW5zZV9ub3JtW3NwbGl0MiA9PSAxLF1cblxuc2V0LnNlZWQoMylcbnNwbGl0MzwtIHNhbXBsZShjKHJlcCgwLCAwLjI3ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSwgcmVwKDEsIDAuMzUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpKSlcbnRyYWluXzMgPC0gTW92aWVMZW5zZV9ub3JtW3NwbGl0Mz09MCxdXG50ZXN0XzMgPC0gTW92aWVMZW5zZV9ub3JtW3NwbGl0MyA9PSAxLF1cbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMSlcbnNwbGl0MTwtIHNhbXBsZShjKHJlcCgwLCAwLjY1ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSwgcmVwKDEsIDAuMzUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpKSlcbnRyYWluXzEgPC0gTW92aWVMZW5zZV9ub3JtW3NwbGl0MSA9PSAwLF1cbnRlc3RfMSA8LSBNb3ZpZUxlbnNlX25vcm1bc3BsaXQxID09IDEsXVxuXG5zZXQuc2VlZCgyKVxuc3BsaXQyPC0gc2FtcGxlKGMocmVwKDAsIDAuNjUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpLCByZXAoMSwgMC4zNSAqIG5yb3coTW92aWVMZW5zZV9ub3JtKSkpKVxudHJhaW5fMiA8LSBNb3ZpZUxlbnNlX25vcm1bc3BsaXQyID09IDAsXVxudGVzdF8yIDwtIE1vdmllTGVuc2Vfbm9ybVtzcGxpdDIgPT0gMSxdXG5cbnNldC5zZWVkKDMpXG5zcGxpdDM8LSBzYW1wbGUoYyhyZXAoMCwgMC4yNyAqIG5yb3coTW92aWVMZW5zZV9ub3JtKSksIHJlcCgxLCAwLjM1ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSkpXG50cmFpbl8zIDwtIE1vdmllTGVuc2Vfbm9ybVtzcGxpdDM9PTAsXVxudGVzdF8zIDwtIE1vdmllTGVuc2Vfbm9ybVtzcGxpdDMgPT0gMSxdXG5gYGAifQ== -->
 <pre class="r"><code>set.seed(1)
 split1&lt;- sample(c(rep(0, 0.65 * nrow(MovieLense_norm)), rep(1, 0.35 * nrow(MovieLense_norm))))
 train_1 &lt;- MovieLense_norm[split1 == 0,]
 test_1 &lt;- MovieLense_norm[split1 == 1,]
-
 
 set.seed(2)
 split2&lt;- sample(c(rep(0, 0.65 * nrow(MovieLense_norm)), rep(1, 0.35 * nrow(MovieLense_norm))))
@@ -2038,8 +2075,8 @@ print(quantile(rowCounts(train_1), percentile_train_1_Kunden)) # Wert in Bewertu
 <pre><code>34.64052% 
        41 </code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHJhaW5fMSA8LSB0cmFpbl8xW3Jvd0NvdW50cyh0cmFpbl8xKSA+IDQwXSAjIFJlZHV6aWVyZW4gZGVyIEt1bmRlbiBhdWYgNDAwXG5cbnBlcmNlbnRpbGVfdHJhaW5fMV9GaWxtZSA9IChkaW0odHJhaW5fMSlbMl0tNzAwKS8oZGltKHRyYWluXzEpWzJdLzEwMCkvMTAwICMjIGJpcyB6dSB3ZWxjaGVtIHBlcmNlbnRpbCBtw7xzc2VuIEZpbG1lIG1pdCB3ZW5pZ2VyIEJld2VydHVuZ2VuIGdlbMO2c2NodCB3ZXJkZW5cblxucHJpbnQocXVhbnRpbGUoY29sQ291bnRzKHRyYWluXzEpLCBwZXJjZW50aWxlX3RyYWluXzFfRmlsbWUpKSAjIFdlcnQgaW4gQmV3ZXJ0dW5nZW5cbmBgYCJ9 -->
-<pre class="r"><code>train_1 &lt;- train_1[rowCounts(train_1) &gt; 40] # Reduzieren der Kunden auf 400
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHJhaW5fMSA8LSB0cmFpbl8xW3Jvd0NvdW50cyh0cmFpbl8xKSA+IDQwXSAjIEVudGZlcm5lIEt1bmRlbiBtaXQgenUgd2VuaWcgYWJnZWdlYmVuZW4gQmV3ZXJ0dW5nZW4gdW0gU3BhcnNpdHkgenUgc2Vua2VuXG5cbnBlcmNlbnRpbGVfdHJhaW5fMV9GaWxtZSA9IChkaW0odHJhaW5fMSlbMl0tNzAwKS8oZGltKHRyYWluXzEpWzJdLzEwMCkvMTAwICMjIGJpcyB6dSB3ZWxjaGVtIHBlcmNlbnRpbCBtw7xzc2VuIEZpbG1lIG1pdCB3ZW5pZ2VyIEJld2VydHVuZ2VuIGdlbMO2c2NodCB3ZXJkZW5cblxucHJpbnQocXVhbnRpbGUoY29sQ291bnRzKHRyYWluXzEpLCBwZXJjZW50aWxlX3RyYWluXzFfRmlsbWUpKSAjIFdlcnQgaW4gQmV3ZXJ0dW5nZW5cbmBgYCJ9 -->
+<pre class="r"><code>train_1 &lt;- train_1[rowCounts(train_1) &gt; 40] # Entferne Kunden mit zu wenig abgegebenen Bewertungen um Sparsity zu senken
 
 percentile_train_1_Filme = (dim(train_1)[2]-700)/(dim(train_1)[2]/100)/100 ## bis zu welchem percentil müssen Filme mit weniger Bewertungen gelöscht werden
 
@@ -2049,12 +2086,23 @@ print(quantile(colCounts(train_1), percentile_train_1_Filme)) # Wert in Bewertun
 <pre><code>57.93269% 
        23 </code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHJhaW5fMV9tIDwtIGFzKHRyYWluXzEsIFwibWF0cml4XCIpXG5cbnRyYWluXzFfbSA8LSB0cmFpbl8xX21bLCgoY29sU3VtcyghaXMubmEodHJhaW5fMV9tKSkpID4gMjIpXSAjIFJlZHV6aWVyZW4gZGVyIEt1bmRlbiBhdWYgNzAwXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHJhaW5fMV9tIDwtIGFzKHRyYWluXzEsIFwibWF0cml4XCIpXG5cbnRyYWluXzFfbSA8LSB0cmFpbl8xX21bLCgoY29sU3VtcyghaXMubmEodHJhaW5fMV9tKSkpID4gMjIpXSAjIEVudGZlcm5lIEZpbG1lIG1pdCB6dSB3ZW5pZyBCZXdlcnR1bmdlbiB1bSBTcGFyc2l0eSB6dSBzZW5rZW5cblxuIyBFbnRmZXJuZSByYW5kb20gRmlsbWUgdW0gYXVmIDcwMCB6dSBnZWxhbmdlblxud2hpbGUgKDQwMCA8IGRpbSh0cmFpbl8xX20pWzFdKXtcbnRyYWluXzFfbSA8LSB0cmFpbl8xX21bLWMoYXMubnVtZXJpYyhzYW1wbGUocm93bmFtZXModHJhaW5fMV9tKSwgKGRpbSh0cmFpbl8xX20pWzFdLTQwMCkpKSksXVxufVxuIyBFbnRmZXJuZSByYW5kb20gS3VuZGVuIHVtIGF1ZiA0MDAgenUgZ2VsYW5nZW5cbndoaWxlICg3MDAgPCBkaW0odHJhaW5fMV9tKVsyXSl7XG50cmFpbl8xX20gPC0gdHJhaW5fMV9tWyxjb2xuYW1lcyh0cmFpbl8xX20pIT1jKChzYW1wbGUoY29sbmFtZXModHJhaW5fMV9tKSwgKGRpbSh0cmFpbl8xX20pWzJdLTcwMCkpKSldXG59XG5gYGAifQ== -->
 <pre class="r"><code>train_1_m &lt;- as(train_1, &quot;matrix&quot;)
 
-train_1_m &lt;- train_1_m[,((colSums(!is.na(train_1_m))) &gt; 22)] # Reduzieren der Kunden auf 700</code></pre>
+train_1_m &lt;- train_1_m[,((colSums(!is.na(train_1_m))) &gt; 22)] # Entferne Filme mit zu wenig Bewertungen um Sparsity zu senken
+
+# Entferne random Filme um auf 700 zu gelangen
+while (400 &lt; dim(train_1_m)[1]){
+train_1_m &lt;- train_1_m[-c(as.numeric(sample(rownames(train_1_m), (dim(train_1_m)[1]-400)))),]
+}
+# Entferne random Kunden um auf 400 zu gelangen
+while (700 &lt; dim(train_1_m)[2]){
+train_1_m &lt;- train_1_m[,colnames(train_1_m)!=c((sample(colnames(train_1_m), (dim(train_1_m)[2]-700))))]
+}</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGVyY2VudGlsZV90cmFpbl8yX0t1bmRlbiA9ICgxMDAtKGRpbSh0cmFpbl8yKVsxXS00MDApLyhkaW0odHJhaW5fMilbMV0vMTAwKSkvMTAwICMjIGJpcyB6dSB3ZWxjaGVtIHBlcmNlbnRpbCBtw7xzc2VuIEJlbnV0emVyIG1pdCB3ZW5pZ2VyIEJld2VydHVuZ2VuIGdlbMO2c2NodCB3ZXJkZW5cbnByaW50KHF1YW50aWxlKHJvd0NvdW50cyh0cmFpbl8yKSwgcGVyY2VudGlsZV90cmFpbl8yX0t1bmRlbikpICMgV2VydCBpbiBCZXdlcnR1bmdlblxuYGBgIn0= -->
 <pre class="r"><code>percentile_train_2_Kunden = (100-(dim(train_2)[1]-400)/(dim(train_2)[1]/100))/100 ## bis zu welchem percentil müssen Benutzer mit weniger Bewertungen gelöscht werden
@@ -2064,10 +2112,10 @@ print(quantile(rowCounts(train_2), percentile_train_2_Kunden)) # Wert in Bewertu
 <pre><code>65.35948% 
       109 </code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHJhaW5fMiA8LSB0cmFpbl8yW3Jvd0NvdW50cyh0cmFpbl8yKSA8IDEwNl0gIyBSZWR1emllcmVuIGRlciBLdW5kZW4gYXVmIDQwMFxuXG5wZXJjZW50aWxlX3RyYWluXzJfRmlsbWUgPSAoMTAwLShkaW0odHJhaW5fMilbMl0tNzAwKS8oZGltKHRyYWluXzIpWzJdLzEwMCkpLzEwMCAjIyBiaXMgenUgd2VsY2hlbSBwZXJjZW50aWwgbcO8c3NlbiBGaWxtZSBtaXQgd2VuaWdlciBCZXdlcnR1bmdlbiBnZWzDtnNjaHQgd2VyZGVuXG5cbnByaW50KHF1YW50aWxlKGNvbENvdW50cyh0cmFpbl8yKSwgcGVyY2VudGlsZV90cmFpbl8yX0ZpbG1lKSkgIyBXZXJ0IGluIEJld2VydHVuZ2VuXG5gYGAifQ== -->
-<pre class="r"><code>train_2 &lt;- train_2[rowCounts(train_2) &lt; 106] # Reduzieren der Kunden auf 400
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHJhaW5fMiA8LSB0cmFpbl8yW3Jvd0NvdW50cyh0cmFpbl8yKSA8IDExMF0gIyBSZWR1emllcmUgS3VuZGVuIG1pdCB6dSB2aWVsIEJld2VydHVuZ2VuIHVtIFNwYXJzaXR5IHp1IGVyaMOkaGVuXG5cbnBlcmNlbnRpbGVfdHJhaW5fMl9GaWxtZSA9ICgxMDAtKGRpbSh0cmFpbl8yKVsyXS03MDApLyhkaW0odHJhaW5fMilbMl0vMTAwKSkvMTAwICMjICBwZXJjZW50aWwgYmlzIHp1IHdlbGNoZW0gRmlsbWUgbWl0IHdlbmlnZXIgQmV3ZXJ0dW5nZW4gZ2Vsw7ZzY2h0IHdlcmRlbiBtw7xzc2VuXG5cbnByaW50KHF1YW50aWxlKGNvbENvdW50cyh0cmFpbl8yKSwgcGVyY2VudGlsZV90cmFpbl8yX0ZpbG1lKSkgIyBXZXJ0IGluIEJld2VydHVuZ2VuXG5gYGAifQ== -->
+<pre class="r"><code>train_2 &lt;- train_2[rowCounts(train_2) &lt; 110] # Reduziere Kunden mit zu viel Bewertungen um Sparsity zu erhähen
 
-percentile_train_2_Filme = (100-(dim(train_2)[2]-700)/(dim(train_2)[2]/100))/100 ## bis zu welchem percentil müssen Filme mit weniger Bewertungen gelöscht werden
+percentile_train_2_Filme = (100-(dim(train_2)[2]-700)/(dim(train_2)[2]/100))/100 ##  percentil bis zu welchem Filme mit weniger Bewertungen gelöscht werden müssen
 
 print(quantile(colCounts(train_2), percentile_train_2_Filme)) # Wert in Bewertungen</code></pre>
 <!-- rnb-source-end -->
@@ -2075,89 +2123,256 @@ print(quantile(colCounts(train_2), percentile_train_2_Filme)) # Wert in Bewertun
 <pre><code>42.06731% 
         2 </code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHJhaW5fMl9tIDwtIGFzKHRyYWluXzIsIFwibWF0cml4XCIpXG5cbnRyYWluXzJfbSA8LSB0cmFpbl8yX21bLCgoY29sU3VtcyghaXMubmEodHJhaW5fMl9tKSkpIDwgMildICMgUmVkdXppZXJlbiBkZXIgS3VuZGVuIGF1ZiA3MDBcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHJhaW5fMl9tIDwtIGFzKHRyYWluXzIsIFwibWF0cml4XCIpXG5cbnRyYWluXzJfbSA8LSB0cmFpbl8yX21bLCgoY29sU3VtcyghaXMubmEodHJhaW5fMl9tKSkpIDwgMyldICMgUmVkdXppZXJlIEZpbG1lIG1pdCB6dSB2aWVsZW4gQmV3ZXJ0dW5nZW4gdW0gU3BhcnNpdHkgenUgZXJow7ZoZW5cblxuIyBFbnRmZXJuZSByYW5kb20gRmlsbWUgdW0gYXVmIDcwMCB6dSBnZWxhbmdlblxud2hpbGUgKDQwMCA8IGRpbSh0cmFpbl8yX20pWzFdKXtcbnRyYWluXzJfbSA8LSB0cmFpbl8yX21bLWMoYXMubnVtZXJpYyhzYW1wbGUocm93bmFtZXModHJhaW5fMl9tKSwgKGRpbSh0cmFpbl8yX20pWzFdLTQwMCkpKSksXVxufVxuIyBFbnRmZXJuZSByYW5kb20gS3VuZGVuIHVtIGF1ZiA0MDAgenUgZ2VsYW5nZW5cbndoaWxlICg3MDAgPCBkaW0odHJhaW5fMl9tKVsyXSl7XG50cmFpbl8yX20gPC0gdHJhaW5fMl9tWyxjb2xuYW1lcyh0cmFpbl8yX20pIT1jKChzYW1wbGUoY29sbmFtZXModHJhaW5fMl9tKSwgKGRpbSh0cmFpbl8yX20pWzJdLTcwMCkpKSldXG59XG5gYGAifQ== -->
 <pre class="r"><code>train_2_m &lt;- as(train_2, &quot;matrix&quot;)
 
-train_2_m &lt;- train_2_m[,((colSums(!is.na(train_2_m))) &lt; 2)] # Reduzieren der Kunden auf 700</code></pre>
+train_2_m &lt;- train_2_m[,((colSums(!is.na(train_2_m))) &lt; 3)] # Reduziere Filme mit zu vielen Bewertungen um Sparsity zu erhöhen
+
+# Entferne random Filme um auf 700 zu gelangen
+while (400 &lt; dim(train_2_m)[1]){
+train_2_m &lt;- train_2_m[-c(as.numeric(sample(rownames(train_2_m), (dim(train_2_m)[1]-400)))),]
+}
+# Entferne random Kunden um auf 400 zu gelangen
+while (700 &lt; dim(train_2_m)[2]){
+train_2_m &lt;- train_2_m[,colnames(train_2_m)!=c((sample(colnames(train_2_m), (dim(train_2_m)[2]-700))))]
+}</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1dhcm51bmc6IEzDpG5nZSBkZXMgbMOkbmdlcmVuIE9iamVrdGVzXG4gXHQgaXN0IGtlaW4gVmllbGZhY2hlcyBkZXIgTMOkbmdlIGRlcyBrw7xyemVyZW4gT2JqZWt0ZXNXYXJudW5nOiBMw6RuZ2UgZGVzIGzDpG5nZXJlbiBPYmpla3Rlc1xuIFx0IGlzdCBrZWluIFZpZWxmYWNoZXMgZGVyIEzDpG5nZSBkZXMga8O8cnplcmVuIE9iamVrdGVzV2FybnVuZzogTMOkbmdlIGRlcyBsw6RuZ2VyZW4gT2JqZWt0ZXNcbiBcdCBpc3Qga2VpbiBWaWVsZmFjaGVzIGRlciBMw6RuZ2UgZGVzIGvDvHJ6ZXJlbiBPYmpla3Rlc1xuIn0= -->
+<pre><code>Warnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren ObjektesWarnung: Länge des längeren Objektes
+     ist kein Vielfaches der Länge des kürzeren Objektes</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29sX2Ryb3AgPC0gc2FtcGxlKDE6bGVuZ3RoKGNvbG5hbWVzKHRyYWluXzMpKSwgbGVuZ3RoKGNvbG5hbWVzKHRyYWluXzMpKS05NjQpXG5cbnRyYWluXzNfbSA8LSBhcyh0cmFpbl8zLCBcIm1hdHJpeFwiKVxuXG50cmFpbl8zX20gPC0gdHJhaW5fM19tWywgY29sX2Ryb3BdXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29sX2Ryb3AgPC0gc2FtcGxlKDE6bGVuZ3RoKGNvbG5hbWVzKHRyYWluXzMpKSwgbGVuZ3RoKGNvbG5hbWVzKHRyYWluXzMpKS05NjQpXG5cbnRyYWluXzNfbSA8LSBhcyh0cmFpbl8zLCBcIm1hdHJpeFwiKVxuXG50cmFpbl8zX20gPC0gdHJhaW5fM19tWywgY29sX2Ryb3BdXG5cbiMgRW50ZmVybmUgcmFuZG9tIEZpbG1lIHVtIGF1ZiA3MDAgenUgZ2VsYW5nZW5cbndoaWxlICg0MDAgPCBkaW0odHJhaW5fM19tKVsxXSl7XG50cmFpbl8zX20gPC0gdHJhaW5fM19tWy1jKGFzLm51bWVyaWMoc2FtcGxlKHJvd25hbWVzKHRyYWluXzNfbSksIChkaW0odHJhaW5fM19tKVsxXS00MDApKSkpLF1cbn1cbiMgRW50ZmVybmUgcmFuZG9tIEt1bmRlbiB1bSBhdWYgNDAwIHp1IGdlbGFuZ2VuXG53aGlsZSAoNzAwIDwgZGltKHRyYWluXzNfbSlbMl0pe1xudHJhaW5fM19tIDwtIHRyYWluXzNfbVssY29sbmFtZXModHJhaW5fM19tKSE9Yygoc2FtcGxlKGNvbG5hbWVzKHRyYWluXzNfbSksIChkaW0odHJhaW5fM19tKVsyXS03MDApKSkpXVxufVxuYGBgIn0= -->
 <pre class="r"><code>col_drop &lt;- sample(1:length(colnames(train_3)), length(colnames(train_3))-964)
 
 train_3_m &lt;- as(train_3, &quot;matrix&quot;)
 
-train_3_m &lt;- train_3_m[, col_drop]</code></pre>
+train_3_m &lt;- train_3_m[, col_drop]
+
+# Entferne random Filme um auf 700 zu gelangen
+while (400 &lt; dim(train_3_m)[1]){
+train_3_m &lt;- train_3_m[-c(as.numeric(sample(rownames(train_3_m), (dim(train_3_m)[1]-400)))),]
+}
+# Entferne random Kunden um auf 400 zu gelangen
+while (700 &lt; dim(train_3_m)[2]){
+train_3_m &lt;- train_3_m[,colnames(train_3_m)!=c((sample(colnames(train_3_m), (dim(train_3_m)[2]-700))))]
+}</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<pre><code>
-## Vergleich des Trainingset 1 vor und nach der Datenreduktion
-
-&lt;!-- rnb-text-end --&gt;
-
-
-&lt;!-- rnb-chunk-begin --&gt;
-
-
-&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGJlZm9yZVxuY2F0KFwiQW1vdW50IG9mIEN1c3RvbWVycyBiZWZvcmU6IFwiLCBkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMV0sIFwiXFxuXCIpXG5cbiMgQW1vdW50IG9mIENvc3R1bWVycyBhZnRlclxuY2F0KFwiQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcjogXCIsIGRpbSh0cmFpbl8xX20pWzFdLCBcIlxcblwiKVxuXG4jIEFtb251dCBvZiBNb3ZpZXMgYmVmb3JlXG5jYXQoXCJBbW9udXQgb2YgTW92aWVzIGJlZm9yZTogXCIsZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgXCJtYXRyaXhcIikpWzJdLCBcIlxcblwiKVxuXG4jIEFtb3VudCBvZiBNb3ZpZXMgYWZ0ZXJcbmNhdChcIkFtb3VudCBvZiBNb3ZpZXMgYWZ0ZXI6XCIsZGltKHRyYWluXzFfbSlbMl0sIFwiXFxuXCIpXG5cbiMgU3BhcnNpdHkgYmVmb3JlXG5jYXQoXCJTcGFyc2l0eSBiZWZvcmU6IFwiLCBzdW0oaXMubmEoYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSkpLyhkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMV0qZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgXCJtYXRyaXhcIikpWzJdKSwgXCJcXG5cIilcblxuIyBTcGFyc2l0eSBhZnRlclxuY2F0KFwiU3BhcnNpdHkgYWZ0ZXI6IFwiLCBzdW0oaXMubmEodHJhaW5fMV9tKSkvKGRpbSh0cmFpbl8xX20pWzFdKmRpbSh0cmFpbl8xX20pWzJdKSwgXCJcXG5cIilcblxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBiZWZvcmVcbmNhdChcIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZTogXCIsc3VtKHJvd01lYW5zKE1vdmllTGVuc2Vfbm9ybSkpL2RpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsxXSwgXCJcXG5cIilcblxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlclxuY2F0KFwiTWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXI6IFwiLHN1bShyb3dNZWFucyh0cmFpbl8xX20sIG5hLnJtPVRSVUUpKS9kaW0odHJhaW5fMV9tKVsxXSwgXCJcXG5cIilcbmBgYCJ9 --&gt;
-
-```r
-# Amount of Costumers before
-cat(&quot;Amount of Customers before: &quot;, dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)
-
-# Amount of Costumers after
-cat(&quot;Amount of Costumers after: &quot;, dim(train_1_m)[1], &quot;\n&quot;)
-
-# Amonut of Movies before
-cat(&quot;Amonut of Movies before: &quot;,dim(as(MovieLense_norm, &quot;matrix&quot;))[2], &quot;\n&quot;)
-
-# Amount of Movies after
-cat(&quot;Amount of Movies after:&quot;,dim(train_1_m)[2], &quot;\n&quot;)
-
-# Sparsity before
-cat(&quot;Sparsity before: &quot;, sum(is.na(as(MovieLense_norm, &quot;matrix&quot;)))/(dim(as(MovieLense_norm, &quot;matrix&quot;))[1]*dim(as(MovieLense_norm, &quot;matrix&quot;))[2]), &quot;\n&quot;)
-
-# Sparsity after
-cat(&quot;Sparsity after: &quot;, sum(is.na(train_1_m))/(dim(train_1_m)[1]*dim(train_1_m)[2]), &quot;\n&quot;)
-
-# mean customer rating before
-cat(&quot;Mean customer rating before: &quot;,sum(rowMeans(MovieLense_norm))/dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)
-
-# mean customer rating after
+</div>
+</div>
+<div id="vergleich-des-trainingset-1-vor-und-nach-der-datenreduktion" class="section level2">
+<h2>Vergleich des Trainingset 1 vor und nach der Datenreduktion</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGJlZm9yZVxuY2F0KFwiQW1vdW50IG9mIEN1c3RvbWVycyBiZWZvcmU6IFwiLCBkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMV0sIFwiXFxuXCIpXG5gYGAifQ== -->
+<pre class="r"><code># Amount of Costumers before
+cat(&quot;Amount of Customers before: &quot;, dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vdW50IG9mIEN1c3RvbWVycyBiZWZvcmU6ICA5NDMgXG4ifQ== -->
+<pre><code>Amount of Customers before:  943 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyXG5jYXQoXCJBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyOiBcIiwgZGltKHRyYWluXzFfbSlbMV0sIFwiXFxuXCIpXG5gYGAifQ== -->
+<pre class="r"><code># Amount of Costumers after
+cat(&quot;Amount of Costumers after: &quot;, dim(train_1_m)[1], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcjogIDQwMCBcbiJ9 -->
+<pre><code>Amount of Costumers after:  400 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW9udXQgb2YgTW92aWVzIGJlZm9yZVxuY2F0KFwiQW1vbnV0IG9mIE1vdmllcyBiZWZvcmU6IFwiLGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsyXSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># Amonut of Movies before
+cat(&quot;Amonut of Movies before: &quot;,dim(as(MovieLense_norm, &quot;matrix&quot;))[2], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vbnV0IG9mIE1vdmllcyBiZWZvcmU6ICAxNjY0IFxuIn0= -->
+<pre><code>Amonut of Movies before:  1664 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgTW92aWVzIGFmdGVyXG5jYXQoXCJBbW91bnQgb2YgTW92aWVzIGFmdGVyOlwiLGRpbSh0cmFpbl8xX20pWzJdLCBcIlxcblwiKVxuYGBgIn0= -->
+<pre class="r"><code># Amount of Movies after
+cat(&quot;Amount of Movies after:&quot;,dim(train_1_m)[2], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vdW50IG9mIE1vdmllcyBhZnRlcjogNzAwIFxuIn0= -->
+<pre><code>Amount of Movies after: 700 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBTcGFyc2l0eSBiZWZvcmVcbmNhdChcIlNwYXJzaXR5IGJlZm9yZTogXCIsIHN1bShpcy5uYShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKSkvKGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsxXSpkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMl0pLCBcIlxcblwiKVxuYGBgIn0= -->
+<pre class="r"><code># Sparsity before
+cat(&quot;Sparsity before: &quot;, sum(is.na(as(MovieLense_norm, &quot;matrix&quot;)))/(dim(as(MovieLense_norm, &quot;matrix&quot;))[1]*dim(as(MovieLense_norm, &quot;matrix&quot;))[2]), &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU3BhcnNpdHkgYmVmb3JlOiAgMC45MzY2NTg4IFxuIn0= -->
+<pre><code>Sparsity before:  0.9366588 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBTcGFyc2l0eSBhZnRlclxuY2F0KFwiU3BhcnNpdHkgYWZ0ZXI6IFwiLCBzdW0oaXMubmEodHJhaW5fMV9tKSkvKGRpbSh0cmFpbl8xX20pWzFdKmRpbSh0cmFpbl8xX20pWzJdKSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># Sparsity after
+cat(&quot;Sparsity after: &quot;, sum(is.na(train_1_m))/(dim(train_1_m)[1]*dim(train_1_m)[2]), &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU3BhcnNpdHkgYWZ0ZXI6ICAwLjgyMDYzNTcgXG4ifQ== -->
+<pre><code>Sparsity after:  0.8206357 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBiZWZvcmVcbmNhdChcIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZTogXCIsc3VtKHJvd01lYW5zKE1vdmllTGVuc2Vfbm9ybSkpL2RpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsxXSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># mean customer rating before
+cat(&quot;Mean customer rating before: &quot;,sum(rowMeans(MovieLense_norm))/dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTWVhbiBjdXN0b21lciByYXRpbmcgYmVmb3JlOiAgOC40MDE2NjJlLTE4IFxuIn0= -->
+<pre><code>Mean customer rating before:  8.401662e-18 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlclxuY2F0KFwiTWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXI6IFwiLHN1bShyb3dNZWFucyh0cmFpbl8xX20sIG5hLnJtPVRSVUUpKS9kaW0odHJhaW5fMV9tKVsxXSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># mean customer rating after
 cat(&quot;Mean customer rating after: &quot;,sum(rowMeans(train_1_m, na.rm=TRUE))/dim(train_1_m)[1], &quot;\n&quot;)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXI6ICAwLjA0NzI2NTg4IFxuIn0= -->
+<pre><code>Mean customer rating after:  0.04726588 </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
 <div id="vergleich-des-trainingset-2-vor-und-nach-der-datenreduktion" class="section level2">
 <h2>Vergleich des Trainingset 2 vor und nach der Datenreduktion</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGJlZm9yZVxuY2F0KFwiQW1vdW50IG9mIEN1c3RvbWVycyBiZWZvcmU6IFwiLCBkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMV0sIFwiXFxuXCIpXG5cbiMgQW1vdW50IG9mIENvc3R1bWVycyBhZnRlclxuY2F0KFwiQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcjogXCIsIGRpbSh0cmFpbl8yX20pWzFdLCBcIlxcblwiKVxuXG4jIEFtb251dCBvZiBNb3ZpZXMgYmVmb3JlXG5jYXQoXCJBbW9udXQgb2YgTW92aWVzIGJlZm9yZTogXCIsZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgXCJtYXRyaXhcIikpWzJdLCBcIlxcblwiKVxuXG4jIEFtb3VudCBvZiBNb3ZpZXMgYWZ0ZXJcbmNhdChcIkFtb3VudCBvZiBNb3ZpZXMgYWZ0ZXI6XCIsZGltKHRyYWluXzJfbSlbMl0sIFwiXFxuXCIpXG5cbiMgU3BhcnNpdHkgYmVmb3JlXG5jYXQoXCJTcGFyc2l0eSBiZWZvcmU6IFwiLCBzdW0oaXMubmEoYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSkpLyhkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMV0qZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgXCJtYXRyaXhcIikpWzJdKSwgXCJcXG5cIilcblxuIyBTcGFyc2l0eSBhZnRlclxuY2F0KFwiU3BhcnNpdHkgYWZ0ZXI6IFwiLCBzdW0oaXMubmEodHJhaW5fMl9tKSkvKGRpbSh0cmFpbl8yX20pWzFdKmRpbSh0cmFpbl8yX20pWzJdKSwgXCJcXG5cIilcblxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBiZWZvcmVcbmNhdChcIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZTogXCIsc3VtKHJvd01lYW5zKE1vdmllTGVuc2Vfbm9ybSkpL2RpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsxXSwgXCJcXG5cIilcblxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlclxuY2F0KFwiTWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXI6IFwiLHN1bShyb3dNZWFucyh0cmFpbl8yX20sIG5hLnJtPVRSVUUpKS9kaW0odHJhaW5fMl9tKVsxXSwgXCJcXG5cIilcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGJlZm9yZVxuY2F0KFwiQW1vdW50IG9mIEN1c3RvbWVycyBiZWZvcmU6IFwiLCBkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMV0sIFwiXFxuXCIpXG5gYGAifQ== -->
 <pre class="r"><code># Amount of Costumers before
-cat(&quot;Amount of Customers before: &quot;, dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)
-
-# Amount of Costumers after
-cat(&quot;Amount of Costumers after: &quot;, dim(train_2_m)[1], &quot;\n&quot;)
-
-# Amonut of Movies before
-cat(&quot;Amonut of Movies before: &quot;,dim(as(MovieLense_norm, &quot;matrix&quot;))[2], &quot;\n&quot;)
-
-# Amount of Movies after
-cat(&quot;Amount of Movies after:&quot;,dim(train_2_m)[2], &quot;\n&quot;)
-
-# Sparsity before
-cat(&quot;Sparsity before: &quot;, sum(is.na(as(MovieLense_norm, &quot;matrix&quot;)))/(dim(as(MovieLense_norm, &quot;matrix&quot;))[1]*dim(as(MovieLense_norm, &quot;matrix&quot;))[2]), &quot;\n&quot;)
-
-# Sparsity after
-cat(&quot;Sparsity after: &quot;, sum(is.na(train_2_m))/(dim(train_2_m)[1]*dim(train_2_m)[2]), &quot;\n&quot;)
-
-# mean customer rating before
-cat(&quot;Mean customer rating before: &quot;,sum(rowMeans(MovieLense_norm))/dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)
-
-# mean customer rating after
+cat(&quot;Amount of Customers before: &quot;, dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vdW50IG9mIEN1c3RvbWVycyBiZWZvcmU6ICA5NDMgXG4ifQ== -->
+<pre><code>Amount of Customers before:  943 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyXG5jYXQoXCJBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyOiBcIiwgZGltKHRyYWluXzJfbSlbMV0sIFwiXFxuXCIpXG5gYGAifQ== -->
+<pre class="r"><code># Amount of Costumers after
+cat(&quot;Amount of Costumers after: &quot;, dim(train_2_m)[1], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcjogIDQwMCBcbiJ9 -->
+<pre><code>Amount of Costumers after:  400 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW9udXQgb2YgTW92aWVzIGJlZm9yZVxuY2F0KFwiQW1vbnV0IG9mIE1vdmllcyBiZWZvcmU6IFwiLGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsyXSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># Amonut of Movies before
+cat(&quot;Amonut of Movies before: &quot;,dim(as(MovieLense_norm, &quot;matrix&quot;))[2], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vbnV0IG9mIE1vdmllcyBiZWZvcmU6ICAxNjY0IFxuIn0= -->
+<pre><code>Amonut of Movies before:  1664 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgTW92aWVzIGFmdGVyXG5jYXQoXCJBbW91bnQgb2YgTW92aWVzIGFmdGVyOlwiLGRpbSh0cmFpbl8yX20pWzJdLCBcIlxcblwiKVxuYGBgIn0= -->
+<pre class="r"><code># Amount of Movies after
+cat(&quot;Amount of Movies after:&quot;,dim(train_2_m)[2], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vdW50IG9mIE1vdmllcyBhZnRlcjogNzAwIFxuIn0= -->
+<pre><code>Amount of Movies after: 700 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBTcGFyc2l0eSBiZWZvcmVcbmNhdChcIlNwYXJzaXR5IGJlZm9yZTogXCIsIHN1bShpcy5uYShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKSkvKGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsxXSpkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMl0pLCBcIlxcblwiKVxuYGBgIn0= -->
+<pre class="r"><code># Sparsity before
+cat(&quot;Sparsity before: &quot;, sum(is.na(as(MovieLense_norm, &quot;matrix&quot;)))/(dim(as(MovieLense_norm, &quot;matrix&quot;))[1]*dim(as(MovieLense_norm, &quot;matrix&quot;))[2]), &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU3BhcnNpdHkgYmVmb3JlOiAgMC45MzY2NTg4IFxuIn0= -->
+<pre><code>Sparsity before:  0.9366588 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBTcGFyc2l0eSBhZnRlclxuY2F0KFwiU3BhcnNpdHkgYWZ0ZXI6IFwiLCBzdW0oaXMubmEodHJhaW5fMl9tKSkvKGRpbSh0cmFpbl8yX20pWzFdKmRpbSh0cmFpbl8yX20pWzJdKSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># Sparsity after
+cat(&quot;Sparsity after: &quot;, sum(is.na(train_2_m))/(dim(train_2_m)[1]*dim(train_2_m)[2]), &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU3BhcnNpdHkgYWZ0ZXI6ICAwLjk5ODQ4NTcgXG4ifQ== -->
+<pre><code>Sparsity after:  0.9984857 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBiZWZvcmVcbmNhdChcIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZTogXCIsc3VtKHJvd01lYW5zKE1vdmllTGVuc2Vfbm9ybSkpL2RpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsxXSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># mean customer rating before
+cat(&quot;Mean customer rating before: &quot;,sum(rowMeans(MovieLense_norm))/dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTWVhbiBjdXN0b21lciByYXRpbmcgYmVmb3JlOiAgOC40MDE2NjJlLTE4IFxuIn0= -->
+<pre><code>Mean customer rating before:  8.401662e-18 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlclxuY2F0KFwiTWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXI6IFwiLHN1bShyb3dNZWFucyh0cmFpbl8yX20sIG5hLnJtPVRSVUUpKS9kaW0odHJhaW5fMl9tKVsxXSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># mean customer rating after
 cat(&quot;Mean customer rating after: &quot;,sum(rowMeans(train_2_m, na.rm=TRUE))/dim(train_2_m)[1], &quot;\n&quot;)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXI6ICBOYU4gXG4ifQ== -->
+<pre><code>Mean customer rating after:  NaN </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -2165,31 +2380,62 @@ cat(&quot;Mean customer rating after: &quot;,sum(rowMeans(train_2_m, na.rm=TRUE)
 <h2>Vergleich des Trainingset 3 vor und nach der Datenreduktion</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGJlZm9yZVxuY2F0KFwiQW1vdW50IG9mIENvc3R1bWVycyBiZWZvcmU6IFwiLGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsxXSwgXCJcXG5cIilcblxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyXG5jYXQoXCJBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyOiBcIixkaW0odHJhaW5fM19tKVsxXSwgXCJcXG5cIilcblxuIyBBbW9udXQgb2YgTW92aWVzIGJlZm9yZVxuY2F0KFwiTUFtb3VudCBvZiBNb3ZpZXMgYmVmb3JlOiBcIixkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMl0sIFwiXFxuXCIpXG5cbiMgQW1vdW50IG9mIE1vdmllcyBhZnRlclxuY2F0KFwiQW1vdW50IG9mIE1vdmllcyBhZnRlcjogXCIsZGltKHRyYWluXzNfbSlbMl0sIFwiXFxuXCIpXG5cbiMgU3BhcnNpdHkgYmVmb3JlXG5jYXQoXCJTcGFyc2l0eSBiZWZvcmU6IFwiLHN1bShpcy5uYShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKSkvKGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsxXSpkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMl0pKVxuXG4jIFNwYXJzaXR5IGFmdGVyXG5jYXQoXCJTcGFyc2l0eSBhZnRlcjogXCIsc3VtKGlzLm5hKHRyYWluXzNfbSkpLyhkaW0odHJhaW5fM19tKVsxXSpkaW0odHJhaW5fM19tKVsyXSksIFwiXFxuXCIpXG5cbiMgbWVhbiBjdXN0b21lciByYXRpbmcgYmVmb3JlXG5jYXQoXCJNZWFuIGN1c3RvbWVyIHJhdGluZyBiZWZvcmU6IFwiLChzdW0ocm93TWVhbnMoTW92aWVMZW5zZV9ub3JtLCBuYS5ybT1UUlVFKSkvZGltKE1vdmllTGVuc2Vfbm9ybSlbMV0pLCBcIlxcblwiKVxuXG4jIG1lYW4gY3VzdG9tZXIgcmF0aW5nIGFmdGVyXG5jYXQoXCJNZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlcjogXCIsKHN1bShyb3dNZWFucyh0cmFpbl8zX20sIG5hLnJtPVRSVUUpKS9kaW0odHJhaW5fM19tKVsxXSksIFwiXFxuXCIpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGJlZm9yZVxuY2F0KFwiQW1vdW50IG9mIENvc3R1bWVycyBiZWZvcmU6IFwiLGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsxXSwgXCJcXG5cIilcbmBgYCJ9 -->
 <pre class="r"><code># Amount of Costumers before
-cat(&quot;Amount of Costumers before: &quot;,dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)
-
-# Amount of Costumers after
-cat(&quot;Amount of Costumers after: &quot;,dim(train_3_m)[1], &quot;\n&quot;)
-
-# Amonut of Movies before
-cat(&quot;MAmount of Movies before: &quot;,dim(as(MovieLense_norm, &quot;matrix&quot;))[2], &quot;\n&quot;)
-
-# Amount of Movies after
-cat(&quot;Amount of Movies after: &quot;,dim(train_3_m)[2], &quot;\n&quot;)
-
-# Sparsity before
-cat(&quot;Sparsity before: &quot;,sum(is.na(as(MovieLense_norm, &quot;matrix&quot;)))/(dim(as(MovieLense_norm, &quot;matrix&quot;))[1]*dim(as(MovieLense_norm, &quot;matrix&quot;))[2]))
-
-# Sparsity after
-cat(&quot;Sparsity after: &quot;,sum(is.na(train_3_m))/(dim(train_3_m)[1]*dim(train_3_m)[2]), &quot;\n&quot;)
-
-# mean customer rating before
-cat(&quot;Mean customer rating before: &quot;,(sum(rowMeans(MovieLense_norm, na.rm=TRUE))/dim(MovieLense_norm)[1]), &quot;\n&quot;)
-
-# mean customer rating after
+cat(&quot;Amount of Costumers before: &quot;,dim(as(MovieLense_norm, &quot;matrix&quot;))[1], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vdW50IG9mIENvc3R1bWVycyBiZWZvcmU6ICA5NDMgXG4ifQ== -->
+<pre><code>Amount of Costumers before:  943 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyXG5jYXQoXCJBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyOiBcIixkaW0odHJhaW5fM19tKVsxXSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># Amount of Costumers after
+cat(&quot;Amount of Costumers after: &quot;,dim(train_3_m)[1], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcjogIDQwMCBcbiJ9 -->
+<pre><code>Amount of Costumers after:  400 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW9udXQgb2YgTW92aWVzIGJlZm9yZVxuY2F0KFwiTUFtb3VudCBvZiBNb3ZpZXMgYmVmb3JlOiBcIixkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCBcIm1hdHJpeFwiKSlbMl0sIFwiXFxuXCIpXG5gYGAifQ== -->
+<pre class="r"><code># Amonut of Movies before
+cat(&quot;MAmount of Movies before: &quot;,dim(as(MovieLense_norm, &quot;matrix&quot;))[2], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTUFtb3VudCBvZiBNb3ZpZXMgYmVmb3JlOiAgMTY2NCBcbiJ9 -->
+<pre><code>MAmount of Movies before:  1664 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBbW91bnQgb2YgTW92aWVzIGFmdGVyXG5jYXQoXCJBbW91bnQgb2YgTW92aWVzIGFmdGVyOiBcIixkaW0odHJhaW5fM19tKVsyXSwgXCJcXG5cIilcbmBgYCJ9 -->
+<pre class="r"><code># Amount of Movies after
+cat(&quot;Amount of Movies after: &quot;,dim(train_3_m)[2], &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQW1vdW50IG9mIE1vdmllcyBhZnRlcjogIDcwMCBcbiJ9 -->
+<pre><code>Amount of Movies after:  700 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBTcGFyc2l0eSBiZWZvcmVcbmNhdChcIlNwYXJzaXR5IGJlZm9yZTogXCIsc3VtKGlzLm5hKGFzKE1vdmllTGVuc2Vfbm9ybSwgXCJtYXRyaXhcIikpKS8oZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgXCJtYXRyaXhcIikpWzFdKmRpbShhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpKVsyXSkpXG5gYGAifQ== -->
+<pre class="r"><code># Sparsity before
+cat(&quot;Sparsity before: &quot;,sum(is.na(as(MovieLense_norm, &quot;matrix&quot;)))/(dim(as(MovieLense_norm, &quot;matrix&quot;))[1]*dim(as(MovieLense_norm, &quot;matrix&quot;))[2]))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU3BhcnNpdHkgYmVmb3JlOiAgMC45MzY2NTg4XG4ifQ== -->
+<pre><code>Sparsity before:  0.9366588</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBTcGFyc2l0eSBhZnRlclxuY2F0KFwiU3BhcnNpdHkgYWZ0ZXI6IFwiLHN1bShpcy5uYSh0cmFpbl8zX20pKS8oZGltKHRyYWluXzNfbSlbMV0qZGltKHRyYWluXzNfbSlbMl0pLCBcIlxcblwiKVxuYGBgIn0= -->
+<pre class="r"><code># Sparsity after
+cat(&quot;Sparsity after: &quot;,sum(is.na(train_3_m))/(dim(train_3_m)[1]*dim(train_3_m)[2]), &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU3BhcnNpdHkgYWZ0ZXI6ICAwLjk0MDEwMzYgXG4ifQ== -->
+<pre><code>Sparsity after:  0.9401036 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBiZWZvcmVcbmNhdChcIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZTogXCIsKHN1bShyb3dNZWFucyhNb3ZpZUxlbnNlX25vcm0sIG5hLnJtPVRSVUUpKS9kaW0oTW92aWVMZW5zZV9ub3JtKVsxXSksIFwiXFxuXCIpXG5gYGAifQ== -->
+<pre class="r"><code># mean customer rating before
+cat(&quot;Mean customer rating before: &quot;,(sum(rowMeans(MovieLense_norm, na.rm=TRUE))/dim(MovieLense_norm)[1]), &quot;\n&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTWVhbiBjdXN0b21lciByYXRpbmcgYmVmb3JlOiAgOC40MDE2NjJlLTE4IFxuIn0= -->
+<pre><code>Mean customer rating before:  8.401662e-18 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlclxuY2F0KFwiTWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXI6IFwiLChzdW0ocm93TWVhbnModHJhaW5fM19tLCBuYS5ybT1UUlVFKSkvZGltKHRyYWluXzNfbSlbMV0pLCBcIlxcblwiKVxuYGBgIn0= -->
+<pre class="r"><code># mean customer rating after
 cat(&quot;Mean customer rating after: &quot;,(sum(rowMeans(train_3_m, na.rm=TRUE))/dim(train_3_m)[1]), &quot;\n&quot;)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXI6ICAtMC4wNDEzMjYzOSBcbiJ9 -->
+<pre><code>Mean customer rating after:  -0.04132639 </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -2197,28 +2443,382 @@ cat(&quot;Mean customer rating after: &quot;,(sum(rowMeans(train_3_m, na.rm=TRUE
 <h2>Wie stark überschneiden sich die 3 Datensätze?</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoXCJoZWxsbyB3b3JsZFwiKVxuYGBgIn0= -->
-<pre class="r"><code>print(&quot;hello world&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBjaGVjayBmb3IgZGF0YWZyYW1lcyB0cmFpbl8xIGFuZCB0cmFpbl8yXG4jdGVzdCA8LSBpbnRlcnNlY3QodHJhaW5fMV9tWzosMTBdLCB0cmFpbl8yX20pXG5cbiMgY2hlY2sgZm9yIGRhdGFmcmFtZXMgdHJhaW5fMSBhbmQgdHJhaW5fM1xuI2ludGVyc2VjdChhcyhNb3ZpZUxlbnNlX25vcm0sIFwibWF0cml4XCIpLCBNb3ZpZUxlbnNlTWF0cml4KVxuXG4jIGNoZWNrIGZvciBkYXRhZnJhbWVzIHRyYWluXzIgYW5kIHRyYWluXzNcblxuYXModHJhaW5fMV9tLCBcImRhdGEuZnJhbWVcIilcbmBgYCJ9 -->
+<pre class="r"><code># check for dataframes train_1 and train_2
+#test &lt;- intersect(train_1_m[:,10], train_2_m)
+
+# check for dataframes train_1 and train_3
+#intersect(as(MovieLense_norm, &quot;matrix&quot;), MovieLenseMatrix)
+
+# check for dataframes train_2 and train_3
+
+as(train_1_m, &quot;data.frame&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRmVobGVyIGluIGFzKHRyYWluXzFfbSwgXCJkYXRhLmZyYW1lXCIpIDogXG4gIG5vIG1ldGhvZCBvciBkZWZhdWx0IGZvciBjb2VyY2luZyDigJxtYXRyaXjigJ0gdG8g4oCcZGF0YS5mcmFtZeKAnVxuIn0= -->
+<pre><code>Fehler in as(train_1_m, &quot;data.frame&quot;) : 
+  no method or default for coercing “matrix” to “data.frame”</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG4gICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgIFxuaW50ZXJzZWN0KHRyYWluXzFfbSwgdHJhaW5fMl9tKVxuYGBgIn0= -->
+<pre class="r"><code>
+                  
+                  
+intersect(train_1_m, train_2_m)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICBbMV0gICAgICAgIE5BICAxLjM5NTgzMyAgMC43MDY4OTcgIDAuNzMyMTQzICAwLjA5NDExOCAgMC4wMDAwMDAgIDEuMjQwMDAwICAwLjk3MTQyOSAtMS4wMDAwMDAgIDAuODQwOTA5ICAwLjA1ODgyNCAtMC40NzkxNjcgIDAuMjEwNTI2XG4gWzE0XSAgMC42NDAwMDAgLTAuMDk1MjM4IC0wLjY1NTczOCAgMC42NzkyNDUgLTEuODQ4NDg1ICAwLjQ5MzgyNyAtMC4zNjAwMDAgIDAuMDY1MjE3ICAwLjYzNDE0NiAtMS4xOTMxODIgLTAuMTYwNzE0ICAwLjQ1ODMzMyAtMC4zMTAzNDVcbiBbMjddIC0wLjQ2MTUzOCAtMC43OTY2MTAgLTAuNjA0MTY3IC0wLjkwNTg4MiAgMS4wMDAwMDAgIDEuMzAwMDAwIC0wLjM5MDYyNSAgMC4zNzY4MTIgLTAuNjMyNjUzIC0wLjAxOTIzMSAtMC40MDgxNjMgIDAuMzA3NjkyIC0wLjMyMDc1NVxuIFs0MF0gIDAuNjM2MzY0ICAwLjczNjg0MiAtMC4zMTM3MjUgIDAuNTQyMDU2ICAwLjY3NjQ3MSAgMS42MjMxODggLTEuMDI4NTcxIC0wLjMzMzMzMyAtMC42MjMxODggIDAuMTUyMTc0IC0xLjk2ODc1MCAtMC4wOTE4MzcgIDEuMTI2MjE0XG4gWzUzXSAgMC4yMjk3MzAgIDEuMjEwNTI2ICAxLjI4NTcxNCAtMC41NTU1NTYgIDAuNDUzMTI1ICAxLjcwMjcwMyAtMC43Mzc1MDAgLTAuMDI4NTcxIC0xLjYyMzE4OCAgMC44MDY4MTggIDAuMzA2MTIyICAwLjMwMDAwMCAgMC4xMjc2NjBcbiBbNjZdICAwLjk2NDkxMiAgMC4yNjI1MDAgLTAuNzc3Nzc4IC0wLjM4NTU0MiAtMS41Mzk2ODMgIDAuMjg1NzE0ICAwLjI2NjY2NyAtMC4yMDE5MjMgIDIuMTUxNTE1IC0xLjI2ODUxOSAtMS42MzU1MTQgLTAuNDM3NTAwICAxLjMwNjEyMlxuIFs3OV0gIDEuNTI4MzAyICAwLjU5MTgzNyAtMC4xMDQ0NzggLTAuNzMyMzk0IC0yLjAyODU3MSAtMS4yNDM5MDIgLTAuMjMxODg0ICAwLjExMjI0NSAgMC4wMTYzOTMgLTAuMTkzMTgyIC0yLjMxMzcyNSAtMC40ODgzNzIgLTEuMzYwMDAwXG4gWzkyXSAgMS4yNjI1MDAgIDEuMzc2ODEyIC0wLjM2NTg1NCAtMC44Mjc1ODYgLTIuMzc2ODEyICAwLjUyMDgzMyAgMS4xNzA3MzIgIDEuODA3MDE4IC0yLjUyNzI3MyAtMS4yOTU0NTUgIDAuMDMxMjUwICAxLjIyOTczMCAgMS42MTQ0NThcblsxMDVdIC0xLjMxMzcyNSAtMi4yNjMxNTggIDEuMDE2MzkzIC0wLjAzNTA4OCAgMC43NTYwOTggLTAuMjY3ODU3IC0xLjk0MTE3NiAtMS4zNjU4NTQgIDAuNjIzMTg4IC0wLjcxNDI4NiAgMC41MDAwMDAgLTAuNzQ0NjgxIC0xLjQzNzUwMFxuWzExOF0gLTAuNjM1NTE0IC0xLjg4Nzc1NSAgMS40NDQ0NDQgLTIuMjY4NTE5IC0xLjExNDc1NCAtMi40NjE1MzggLTEuNTA5MDkxIC0xLjkwNTg4MiAtMC40MjM3MjkgLTAuMzc2ODEyIC0wLjUwMDAwMCAtMC44ODc3NTUgLTIuMzg1NTQyXG5bMTMxXSAtMS42MDkzNzUgLTEuNDg4MzcyIC0xLjc5MjIwOCAtMS40MTQyODYgLTEuMDM3NzM2IC0yLjAzNTA4OCAgMS40ODgzNzIgIDAuMjU3MTQzIC0yLjUwMDAwMCAgMS4yNTcxNDMgLTAuMjE5MTc4IC0wLjIxMTI2OCAgMS43NTYwOThcblsxNDRdIC0xLjc0Mjg1NyAtMi4xNTY4NjMgLTEuODc3NTUxIC0wLjE1Njg2MyAgMC43ODg3MzIgLTEuNzcwMjcwIC0xLjg5MzYxNyAtMi4yMTEyNjggLTEuMTU2ODYzIC0yLjcxNDI4NiAtMi4zNjU4NTQgLTIuMTkyOTgyIC0xLjU1NTU1NlxuWzE1N10gLTMuNTYzMzgwIC0xLjg1MTg1MlxuIn0= -->
+<pre><code>  [1]        NA  1.395833  0.706897  0.732143  0.094118  0.000000  1.240000  0.971429 -1.000000  0.840909  0.058824 -0.479167  0.210526
+ [14]  0.640000 -0.095238 -0.655738  0.679245 -1.848485  0.493827 -0.360000  0.065217  0.634146 -1.193182 -0.160714  0.458333 -0.310345
+ [27] -0.461538 -0.796610 -0.604167 -0.905882  1.000000  1.300000 -0.390625  0.376812 -0.632653 -0.019231 -0.408163  0.307692 -0.320755
+ [40]  0.636364  0.736842 -0.313725  0.542056  0.676471  1.623188 -1.028571 -0.333333 -0.623188  0.152174 -1.968750 -0.091837  1.126214
+ [53]  0.229730  1.210526  1.285714 -0.555556  0.453125  1.702703 -0.737500 -0.028571 -1.623188  0.806818  0.306122  0.300000  0.127660
+ [66]  0.964912  0.262500 -0.777778 -0.385542 -1.539683  0.285714  0.266667 -0.201923  2.151515 -1.268519 -1.635514 -0.437500  1.306122
+ [79]  1.528302  0.591837 -0.104478 -0.732394 -2.028571 -1.243902 -0.231884  0.112245  0.016393 -0.193182 -2.313725 -0.488372 -1.360000
+ [92]  1.262500  1.376812 -0.365854 -0.827586 -2.376812  0.520833  1.170732  1.807018 -2.527273 -1.295455  0.031250  1.229730  1.614458
+[105] -1.313725 -2.263158  1.016393 -0.035088  0.756098 -0.267857 -1.941176 -1.365854  0.623188 -0.714286  0.500000 -0.744681 -1.437500
+[118] -0.635514 -1.887755  1.444444 -2.268519 -1.114754 -2.461538 -1.509091 -1.905882 -0.423729 -0.376812 -0.500000 -0.887755 -2.385542
+[131] -1.609375 -1.488372 -1.792208 -1.414286 -1.037736 -2.035088  1.488372  0.257143 -2.500000  1.257143 -0.219178 -0.211268  1.756098
+[144] -1.742857 -2.156863 -1.877551 -0.156863  0.788732 -1.770270 -1.893617 -2.211268 -1.156863 -2.714286 -2.365854 -2.192982 -1.555556
+[157] -3.563380 -1.851852</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="train-test-split-für-ibcf-recommender" class="section level2">
+<h2>Train test split für IBCF Recommender</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMTApXG5zcGxpdDE8LSBzYW1wbGUoYyhyZXAoMCwgMC44MCAqIG5yb3codHJhaW5fMV9tKSksIHJlcCgxLCAwLjIwICogbnJvdyh0cmFpbl8xX20pKSkpXG50cmFpbl8xX2liY2YgPC0gYXModHJhaW5fMV9tW3NwbGl0MSA9PSAwLF0sIFwicmVhbFJhdGluZ01hdHJpeFwiKVxudGVzdF8xX2liY2YgPC0gYXModHJhaW5fMV9tW3NwbGl0MSA9PSAxLF0sIFwicmVhbFJhdGluZ01hdHJpeFwiKVxuYGBgIn0= -->
+<pre class="r"><code>set.seed(10)
+split1&lt;- sample(c(rep(0, 0.80 * nrow(train_1_m)), rep(1, 0.20 * nrow(train_1_m))))
+train_1_ibcf &lt;- as(train_1_m[split1 == 0,], &quot;realRatingMatrix&quot;)
+test_1_ibcf &lt;- as(train_1_m[split1 == 1,], &quot;realRatingMatrix&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="train-ibcf-with-train-data" class="section level2">
+<h2>Train IBCF with train data</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBjaGVjayBmb3IgZGF0YWZyYW1lcyB0cmFpbl8xIGFuZCB0cmFpbl8yXG5pbnRlcnNlY3QodHJhaW5fMSwgdHJhaW5fMilcblxuIyBjaGVjayBmb3IgZGF0YWZyYW1lcyB0cmFpbl8xIGFuZCB0cmFpbl8zXG5cblxuIyBjaGVjayBmb3IgZGF0YWZyYW1lcyB0cmFpbl8yIGFuZCB0cmFpbl8zXG5gYGAifQ== -->
-<pre class="r"><code># check for dataframes train_1 and train_2
-intersect(train_1, train_2)
-
-# check for dataframes train_1 and train_3
-
-
-# check for dataframes train_2 and train_3</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyB0cmFpbiByZWNvbW1lbmRlcmxhYiBJQkNGIHdpdGggdHJhaW5fMV9pYmNmIGRhdGEgYW5kIGs9MzAsIGNvcyBzaW1pbGFyaXR5XG5yZWNvbW1lbmRlcl9pYmNmIDwtIFJlY29tbWVuZGVyKHRyYWluXzFfaWJjZiwgbWV0aG9kID0gXCJJQkNGXCIsIHBhcmFtZXRlciA9IGxpc3Qoaz0zMCwgbWV0aG9kPVwiY29zaW5lXCIpKVxucHJpbnQocl9pYmNmKVxuYGBgIn0= -->
+<pre class="r"><code># train recommenderlab IBCF with train_1_ibcf data and k=30, cos similarity
+recommender_ibcf &lt;- Recommender(train_1_ibcf, method = &quot;IBCF&quot;, parameter = list(k=30, method=&quot;cosine&quot;))
+print(r_ibcf)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUmVjb21tZW5kZXIgb2YgdHlwZSDigJhJQkNG4oCZIGZvciDigJhyZWFsUmF0aW5nTWF0cml44oCZIFxubGVhcm5lZCB1c2luZyAzMjAgdXNlcnMuXG4ifQ== -->
+<pre><code>Recommender of type ‘IBCF’ for ‘realRatingMatrix’ 
+learned using 320 users.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucF8xIDwtIHByZWRpY3Qocl9pYmNmLCB0ZXN0XzFfaWJjZiwgdHlwZT1cInRvcE5MaXN0XCIpXG5wcmludChhcyhwXzEsIFwibWF0cml4XCIpKVxuYGBgIn0= -->
+<pre class="r"><code>p_1 &lt;- predict(r_ibcf, test_1_ibcf, type=&quot;topNList&quot;)
+print(as(p_1, &quot;matrix&quot;))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgVG95IFN0b3J5ICgxOTk1KSBHb2xkZW5FeWUgKDE5OTUpIEZvdXIgUm9vbXMgKDE5OTUpIEdldCBTaG9ydHkgKDE5OTUpIENvcHljYXQgKDE5OTUpIFR3ZWx2ZSBNb25rZXlzICgxOTk1KSBCYWJlICgxOTk1KVxuMCAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICBOQVxuICAgRGVhZCBNYW4gV2Fsa2luZyAoMTk5NSkgUmljaGFyZCBJSUkgKDE5OTUpIFNldmVuIChTZTdlbikgKDE5OTUpIFVzdWFsIFN1c3BlY3RzLCBUaGUgKDE5OTUpIE1pZ2h0eSBBcGhyb2RpdGUgKDE5OTUpXG4wICAgICAgICAgICAgICAgICAyLjEyNTcxNCAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIFBvc3Rpbm8sIElsICgxOTk0KSBNci4gSG9sbGFuZCdzIE9wdXMgKDE5OTUpIEZyZW5jaCBUd2lzdCAoR2F6b24gbWF1ZGl0KSAoMTk5NSkgRnJvbSBEdXNrIFRpbGwgRGF3biAoMTk5NikgQW50b25pYSdzIExpbmUgKDE5OTUpXG4wICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICBOQVxuICAgQW5nZWxzIGFuZCBJbnNlY3RzICgxOTk1KSBNdXBwZXQgVHJlYXN1cmUgSXNsYW5kICgxOTk2KSBCcmF2ZWhlYXJ0ICgxOTk1KSBUYXhpIERyaXZlciAoMTk3NikgUnVtYmxlIGluIHRoZSBCcm9ueCAoMTk5NSlcbjAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBCaXJkY2FnZSwgVGhlICgxOTk2KSBCcm90aGVycyBNY011bGxlbiwgVGhlICgxOTk1KSBCYWQgQm95cyAoMTk5NSkgQXBvbGxvIDEzICgxOTk1KSBCYXRtYW4gRm9yZXZlciAoMTk5NSkgQ3JpbXNvbiBUaWRlICgxOTk1KVxuMCAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkFcbiAgIENydW1iICgxOTk0KSBEZXNwZXJhZG8gKDE5OTUpIE5ldCwgVGhlICgxOTk1KSBTdHJhbmdlIERheXMgKDE5OTUpIFRvIFdvbmcgRm9vLCBUaGFua3MgZm9yIEV2ZXJ5dGhpbmchIEp1bGllIE5ld21hciAoMTk5NSlcbjAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEJpbGx5IE1hZGlzb24gKDE5OTUpIENsZXJrcyAoMTk5NCkgRGlzY2xvc3VyZSAoMTk5NCkgRG9sb3JlcyBDbGFpYm9ybmUgKDE5OTQpIEVhdCBEcmluayBNYW4gV29tYW4gKDE5OTQpIEVkIFdvb2QgKDE5OTQpXG4wICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICBOQVxuICAgSG9vcCBEcmVhbXMgKDE5OTQpIEkuUS4gKDE5OTQpIFN0YXIgV2FycyAoMTk3NykgTGVnZW5kcyBvZiB0aGUgRmFsbCAoMTk5NCkgTWFkbmVzcyBvZiBLaW5nIEdlb3JnZSwgVGhlICgxOTk0KVxuMCAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgTmF0dXJhbCBCb3JuIEtpbGxlcnMgKDE5OTQpIE91dGJyZWFrICgxOTk1KSBQcm9mZXNzaW9uYWwsIFRoZSAoMTk5NCkgUHVscCBGaWN0aW9uICgxOTk0KSBRdWl6IFNob3cgKDE5OTQpIFRocmVlIENvbG9yczogUmVkICgxOTk0KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgVGhyZWUgQ29sb3JzOiBCbHVlICgxOTkzKSBUaHJlZSBDb2xvcnM6IFdoaXRlICgxOTk0KSBTdGFyZ2F0ZSAoMTk5NCkgU2FudGEgQ2xhdXNlLCBUaGUgKDE5OTQpIFNoYXdzaGFuayBSZWRlbXB0aW9uLCBUaGUgKDE5OTQpXG4wICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIFdoYXQncyBFYXRpbmcgR2lsYmVydCBHcmFwZSAoMTk5MykgV2hpbGUgWW91IFdlcmUgU2xlZXBpbmcgKDE5OTUpIEFjZSBWZW50dXJhOiBQZXQgRGV0ZWN0aXZlICgxOTk0KSBDcm93LCBUaGUgKDE5OTQpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQVxuICAgRm9ycmVzdCBHdW1wICgxOTk0KSBGb3VyIFdlZGRpbmdzIGFuZCBhIEZ1bmVyYWwgKDE5OTQpIExpb24gS2luZywgVGhlICgxOTk0KSBNYXZlcmljayAoMTk5NCkgQ2FybGl0bydzIFdheSAoMTk5MykgRmlybSwgVGhlICgxOTkzKVxuMCAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQVxuICAgRnVnaXRpdmUsIFRoZSAoMTk5MykgSG90IFNob3RzISBQYXJ0IERldXggKDE5OTMpIEh1ZHN1Y2tlciBQcm94eSwgVGhlICgxOTk0KSBKdXJhc3NpYyBQYXJrICgxOTkzKSBNdWNoIEFkbyBBYm91dCBOb3RoaW5nICgxOTkzKVxuMCAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgUmVmLCBUaGUgKDE5OTQpIFJlbWFpbnMgb2YgdGhlIERheSwgVGhlICgxOTkzKSBTZWFyY2hpbmcgZm9yIEJvYmJ5IEZpc2NoZXIgKDE5OTMpIFNsZWVwbGVzcyBpbiBTZWF0dGxlICgxOTkzKSBCbGFkZSBSdW5uZXIgKDE5ODIpXG4wICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkFcbiAgIFNvIEkgTWFycmllZCBhbiBBeGUgTXVyZGVyZXIgKDE5OTMpIE5pZ2h0bWFyZSBCZWZvcmUgQ2hyaXN0bWFzLCBUaGUgKDE5OTMpIFRydWUgUm9tYW5jZSAoMTk5MykgSG9tZSBBbG9uZSAoMTk5MCkgQWxhZGRpbiAoMTk5MilcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkFcbiAgIFRlcm1pbmF0b3IgMjogSnVkZ21lbnQgRGF5ICgxOTkxKSBEYW5jZXMgd2l0aCBXb2x2ZXMgKDE5OTApIFNpbGVuY2Ugb2YgdGhlIExhbWJzLCBUaGUgKDE5OTEpIFNub3cgV2hpdGUgYW5kIHRoZSBTZXZlbiBEd2FyZnMgKDE5MzcpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgRmFyZ28gKDE5OTYpIEhlYXZ5IE1ldGFsICgxOTgxKSBBcmlzdG9jYXRzLCBUaGUgKDE5NzApIFNndC4gQmlsa28gKDE5OTYpIERpYWJvbGlxdWUgKDE5OTYpIEtpZHMgaW4gdGhlIEhhbGw6IEJyYWluIENhbmR5ICgxOTk2KVxuMCAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgTXlzdGVyeSBTY2llbmNlIFRoZWF0ZXIgMzAwMDogVGhlIE1vdmllICgxOTk2KSBUcnV0aCBBYm91dCBDYXRzICYgRG9ncywgVGhlICgxOTk2KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgV2FsbGFjZSAmIEdyb21pdDogVGhlIEJlc3Qgb2YgQWFyZG1hbiBBbmltYXRpb24gKDE5OTYpIENvbGQgQ29tZm9ydCBGYXJtICgxOTk1KSBSb2NrLCBUaGUgKDE5OTYpIFR3aXN0ZXIgKDE5OTYpIFN0cmlwdGVhc2UgKDE5OTYpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkFcbiAgIEluZGVwZW5kZW5jZSBEYXkgKElENCkgKDE5OTYpIENhYmxlIEd1eSwgVGhlICgxOTk2KSBGcmlnaHRlbmVycywgVGhlICgxOTk2KSBMb25lIFN0YXIgKDE5OTYpIFBoZW5vbWVub24gKDE5OTYpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgIDIuMTI1NzE0MCAgICAgICAgICAgICAgICBOQVxuICAgU3BpdGZpcmUgR3JpbGwsIFRoZSAoMTk5NikgR29kZmF0aGVyLCBUaGUgKDE5NzIpIFN1cGVyY29wICgxOTkyKSBCb3VuZCAoMTk5NikgQnJlYWtmYXN0IGF0IFRpZmZhbnkncyAoMTk2MSlcbjAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkEgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBXaXphcmQgb2YgT3osIFRoZSAoMTkzOSkgR29uZSB3aXRoIHRoZSBXaW5kICgxOTM5KSBDaXRpemVuIEthbmUgKDE5NDEpIDIwMDE6IEEgU3BhY2UgT2R5c3NleSAoMTk2OClcbjAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgMi4xMjU3MTQgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgTXIuIFNtaXRoIEdvZXMgdG8gV2FzaGluZ3RvbiAoMTkzOSkgQmlnIE5pZ2h0ICgxOTk2KSBMb3ZlIEJ1ZywgVGhlICgxOTY5KSBIb21ld2FyZCBCb3VuZDogVGhlIEluY3JlZGlibGUgSm91cm5leSAoMTk5MylcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICAyMCwwMDAgTGVhZ3VlcyBVbmRlciB0aGUgU2VhICgxOTU0KSBCZWRrbm9icyBhbmQgQnJvb21zdGlja3MgKDE5NzEpIFNvdW5kIG9mIE11c2ljLCBUaGUgKDE5NjUpIERpZSBIYXJkICgxOTg4KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkFcbiAgIExhd25tb3dlciBNYW4sIFRoZSAoMTk5MikgTG9uZyBLaXNzIEdvb2RuaWdodCwgVGhlICgxOTk2KSBHaG9zdCBhbmQgdGhlIERhcmtuZXNzLCBUaGUgKDE5OTYpIFN3aW5nZXJzICgxOTk2KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgIE5BXG4gICBXaWxseSBXb25rYSBhbmQgdGhlIENob2NvbGF0ZSBGYWN0b3J5ICgxOTcxKSBTbGVlcGVyICgxOTczKSBGaXNoIENhbGxlZCBXYW5kYSwgQSAoMTk4OCkgTW9udHkgUHl0aG9uJ3MgTGlmZSBvZiBCcmlhbiAoMTk3OSlcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgRGlydHkgRGFuY2luZyAoMTk4NykgUmVzZXJ2b2lyIERvZ3MgKDE5OTIpIFBsYXRvb24gKDE5ODYpIFdlZWtlbmQgYXQgQmVybmllJ3MgKDE5ODkpIEJhc2ljIEluc3RpbmN0ICgxOTkyKVxuMCAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICBOQVxuICAgR2xlbmdhcnJ5IEdsZW4gUm9zcyAoMTk5MikgVG9wIEd1biAoMTk4NikgT24gR29sZGVuIFBvbmQgKDE5ODEpIFJldHVybiBvZiB0aGUgUGluayBQYW50aGVyLCBUaGUgKDE5NzQpIEFieXNzLCBUaGUgKDE5ODkpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkFcbiAgIEplYW4gZGUgRmxvcmV0dGUgKDE5ODYpIE1hbm9uIG9mIHRoZSBTcHJpbmcgKE1hbm9uIGRlcyBzb3VyY2VzKSAoMTk4NikgUHJpdmF0ZSBCZW5qYW1pbiAoMTk4MClcbjAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIE1vbnR5IFB5dGhvbiBhbmQgdGhlIEhvbHkgR3JhaWwgKDE5NzQpIFdyb25nIFRyb3VzZXJzLCBUaGUgKDE5OTMpIENpbmVtYSBQYXJhZGlzbyAoMTk4OCkgRGVsaWNhdGVzc2VuICgxOTkxKVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BXG4gICBFbXBpcmUgU3RyaWtlcyBCYWNrLCBUaGUgKDE5ODApIFByaW5jZXNzIEJyaWRlLCBUaGUgKDE5ODcpIFJhaWRlcnMgb2YgdGhlIExvc3QgQXJrICgxOTgxKSBCcmF6aWwgKDE5ODUpIEFsaWVucyAoMTk4NilcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgTkEgICAgICAgICAgICBOQVxuICAgR29vZCwgVGhlIEJhZCBhbmQgVGhlIFVnbHksIFRoZSAoMTk2NikgMTIgQW5ncnkgTWVuICgxOTU3KSBDbG9ja3dvcmsgT3JhbmdlLCBBICgxOTcxKSBBcG9jYWx5cHNlIE5vdyAoMTk3OSlcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BXG4gICBSZXR1cm4gb2YgdGhlIEplZGkgKDE5ODMpIEdvb2RGZWxsYXMgKDE5OTApIEFsaWVuICgxOTc5KSBBcm15IG9mIERhcmtuZXNzICgxOTkzKSBQc3ljaG8gKDE5NjApIEJsdWVzIEJyb3RoZXJzLCBUaGUgKDE5ODApXG4wICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAyLjEyNTcxNCAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBHb2RmYXRoZXI6IFBhcnQgSUksIFRoZSAoMTk3NCkgRnVsbCBNZXRhbCBKYWNrZXQgKDE5ODcpIEdyYW5kIERheSBPdXQsIEEgKDE5OTIpIEhlbnJ5IFYgKDE5ODkpIEFtYWRldXMgKDE5ODQpIFJhZ2luZyBCdWxsICgxOTgwKVxuMCAgICAgICAgICAgICAgICAgICAgICAgMi4xMjU3MTQwICAgICAgICAgICAgICAgICAyLjEyNTcxNCAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICBOQSAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgTkFcbiAgIFJpZ2h0IFN0dWZmLCBUaGUgKDE5ODMpIFN0aW5nLCBUaGUgKDE5NzMpIFRlcm1pbmF0b3IsIFRoZSAoMTk4NCkgRGVhZCBQb2V0cyBTb2NpZXR5ICgxOTg5KSBHcmFkdWF0ZSwgVGhlICgxOTY3KVxuMCAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgIE5BXG4gICBOaWtpdGEgKExhIEZlbW1lIE5pa2l0YSkgKDE5OTApIEJyaWRnZSBvbiB0aGUgUml2ZXIgS3dhaSwgVGhlICgxOTU3KSBTaGluaW5nLCBUaGUgKDE5ODApIEV2aWwgRGVhZCBJSSAoMTk4NykgR3JvdW5kaG9nIERheSAoMTk5MylcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQVxuICAgVW5mb3JnaXZlbiAoMTk5MikgQmFjayB0byB0aGUgRnV0dXJlICgxOTg1KSBQYXR0b24gKDE5NzApIEFraXJhICgxOTg4KSBDeXJhbm8gZGUgQmVyZ2VyYWMgKDE5OTApIFlvdW5nIEZyYW5rZW5zdGVpbiAoMTk3NClcbjAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICBOQSAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBUaGlzIElzIFNwaW5hbCBUYXAgKDE5ODQpIEluZGlhbmEgSm9uZXMgYW5kIHRoZSBMYXN0IENydXNhZGUgKDE5ODkpIE0qQSpTKkggKDE5NzApIFVuYmVhcmFibGUgTGlnaHRuZXNzIG9mIEJlaW5nLCBUaGUgKDE5ODgpXG4wICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBSb29tIHdpdGggYSBWaWV3LCBBICgxOTg2KSBQaW5rIEZsb3lkIC0gVGhlIFdhbGwgKDE5ODIpIEZpZWxkIG9mIERyZWFtcyAoMTk4OSkgV2hlbiBIYXJyeSBNZXQgU2FsbHkuLi4gKDE5ODkpXG4wICAgICAgICAgICAgICAgICAgICAyLjEyNTcxNCAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBCcmFtIFN0b2tlcidzIERyYWN1bGEgKDE5OTIpIENhcGUgRmVhciAoMTk5MSkgTmlnaHRtYXJlIG9uIEVsbSBTdHJlZXQsIEEgKDE5ODQpIE1pcnJvciBIYXMgVHdvIEZhY2VzLCBUaGUgKDE5OTYpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBCcmVha2luZyB0aGUgV2F2ZXMgKDE5OTYpIFN0YXIgVHJlazogRmlyc3QgQ29udGFjdCAoMTk5NikgU2xpbmcgQmxhZGUgKDE5OTYpIFJpZGljdWxlICgxOTk2KSAxMDEgRGFsbWF0aWFucyAoMTk5NilcbjAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICBOQVxuICAgRGllIEhhcmQgMiAoMTk5MCkgU3RhciBUcmVrIFZJOiBUaGUgVW5kaXNjb3ZlcmVkIENvdW50cnkgKDE5OTEpIFN0YXIgVHJlazogVGhlIFdyYXRoIG9mIEtoYW4gKDE5ODIpXG4wICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIFN0YXIgVHJlayBJSUk6IFRoZSBTZWFyY2ggZm9yIFNwb2NrICgxOTg0KSBTdGFyIFRyZWsgSVY6IFRoZSBWb3lhZ2UgSG9tZSAoMTk4NikgQmF0bWFuIFJldHVybnMgKDE5OTIpIFlvdW5nIEd1bnMgKDE5ODgpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICBOQVxuICAgVW5kZXIgU2llZ2UgKDE5OTIpIEphd3MgKDE5NzUpIE1hcnMgQXR0YWNrcyEgKDE5OTYpIENpdGl6ZW4gUnV0aCAoMTk5NikgSmVycnkgTWFndWlyZSAoMTk5NikgUmFpc2luZyBBcml6b25hICgxOTg3KSBTbmVha2VycyAoMTk5MilcbjAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgIE5BXG4gICBCZWF2aXMgYW5kIEJ1dHQtaGVhZCBEbyBBbWVyaWNhICgxOTk2KSBMYXN0IG9mIHRoZSBNb2hpY2FucywgVGhlICgxOTkyKSBLb2x5YSAoMTk5NikgSnVuZ2xlMkp1bmdsZSAoMTk5NylcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQVxuICAgU21pbGxhJ3MgU2Vuc2Ugb2YgU25vdyAoMTk5NykgRGV2aWwncyBPd24sIFRoZSAoMTk5NykgQ2hhc2luZyBBbXkgKDE5OTcpIEdyb3NzZSBQb2ludGUgQmxhbmsgKDE5OTcpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEF1c3RpbiBQb3dlcnM6IEludGVybmF0aW9uYWwgTWFuIG9mIE15c3RlcnkgKDE5OTcpIEZpZnRoIEVsZW1lbnQsIFRoZSAoMTk5NykgTG9zdCBXb3JsZDogSnVyYXNzaWMgUGFyaywgVGhlICgxOTk3KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBCYXRtYW4gJiBSb2JpbiAoMTk5NykgTXkgQmVzdCBGcmllbmQncyBXZWRkaW5nICgxOTk3KSBNZW4gaW4gQmxhY2sgKDE5OTcpIENvbnRhY3QgKDE5OTcpIEdlb3JnZSBvZiB0aGUgSnVuZ2xlICgxOTk3KVxuMCAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEV2ZW50IEhvcml6b24gKDE5OTcpIEluIHRoZSBDb21wYW55IG9mIE1lbiAoMTk5NykgTWltaWMgKDE5OTcpIEh1bnQgZm9yIFJlZCBPY3RvYmVyLCBUaGUgKDE5OTApIEZ1bGwgTW9udHksIFRoZSAoMTk5NylcbjAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEdhdHRhY2EgKDE5OTcpIFN0YXJzaGlwIFRyb29wZXJzICgxOTk3KSBHb29kIFdpbGwgSHVudGluZyAoMTk5NykgSGVhdCAoMTk5NSkgU2FicmluYSAoMTk5NSkgU2Vuc2UgYW5kIFNlbnNpYmlsaXR5ICgxOTk1KVxuMCAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICBOQSAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgIDIuMTI1NzE0XG4gICBMZWF2aW5nIExhcyBWZWdhcyAoMTk5NSkgUmVzdG9yYXRpb24gKDE5OTUpIEJlZCBvZiBSb3NlcyAoMTk5NikgVXAgQ2xvc2UgYW5kIFBlcnNvbmFsICgxOTk2KSBSaXZlciBXaWxkLCBUaGUgKDE5OTQpXG4wICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBUaW1lIHRvIEtpbGwsIEEgKDE5OTYpIEVtbWEgKDE5OTYpIFRpbiBDdXAgKDE5OTYpIFNlY3JldHMgJiBMaWVzICgxOTk2KSBFbmdsaXNoIFBhdGllbnQsIFRoZSAoMTk5NikgTWFydmluJ3MgUm9vbSAoMTk5NilcbjAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQVxuICAgU2NyZWFtICgxOTk2KSBFdml0YSAoMTk5NikgRmllcmNlIENyZWF0dXJlcyAoMTk5NykgQWJzb2x1dGUgUG93ZXIgKDE5OTcpIFJvc2V3b29kICgxOTk3KSBEb25uaWUgQnJhc2NvICgxOTk3KSBMaWFyIExpYXIgKDE5OTcpXG4wICAgICAgICAgICAgIE5BICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkFcbiAgIEJyZWFrZG93biAoMTk5NykgVWxlZSdzIEdvbGQgKDE5OTcpIEZhY2UvT2ZmICgxOTk3KSBIb29kbHVtICgxOTk3KSBBaXIgRm9yY2UgT25lICgxOTk3KSBJbiAmIE91dCAoMTk5NykgTC5BLiBDb25maWRlbnRpYWwgKDE5OTcpXG4wICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgRmx5IEF3YXkgSG9tZSAoMTk5NikgSWNlIFN0b3JtLCBUaGUgKDE5OTcpIE1ycy4gQnJvd24gKEhlciBNYWplc3R5LCBNcnMuIEJyb3duKSAoMTk5NykgRGV2aWwncyBBZHZvY2F0ZSwgVGhlICgxOTk3KVxuMCAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgUmFpbm1ha2VyLCBUaGUgKDE5OTcpIFdpbmdzIG9mIHRoZSBEb3ZlLCBUaGUgKDE5OTcpIE1pZG5pZ2h0IGluIHRoZSBHYXJkZW4gb2YgR29vZCBhbmQgRXZpbCAoMTk5NykgVGl0YW5pYyAoMTk5NykgQXB0IFB1cGlsICgxOTk4KVxuMCAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQVxuICAgQXMgR29vZCBBcyBJdCBHZXRzICgxOTk3KSBJbiB0aGUgTmFtZSBvZiB0aGUgRmF0aGVyICgxOTkzKSBTY2hpbmRsZXIncyBMaXN0ICgxOTkzKSBFdmVyeW9uZSBTYXlzIEkgTG92ZSBZb3UgKDE5OTYpIE1vdGhlciAoMTk5NilcbjAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgIE5BXG4gICBNdXJkZXIgYXQgMTYwMCAoMTk5NykgRGFudGUncyBQZWFrICgxOTk3KSBMb3N0IEhpZ2h3YXkgKDE5OTcpIENyYXNoICgxOTk2KSBHLkkuIEphbmUgKDE5OTcpIENvcCBMYW5kICgxOTk3KVxuMCAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkFcbiAgIENvbnNwaXJhY3kgVGhlb3J5ICgxOTk3KSBFZGdlLCBUaGUgKDE5OTcpIEtpc3MgdGhlIEdpcmxzICgxOTk3KSBHYW1lLCBUaGUgKDE5OTcpIFUgVHVybiAoMTk5NykgQmVhbiAoMTk5NykgTWFkIENpdHkgKDE5OTcpXG4wICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQSAgICAgICAgICAgIE5BICAgICAgICAgIE5BICAgICAgICAgICAgICBOQVxuICAgQm9vZ2llIE5pZ2h0cyAoMTk5NykgTWFuIFdobyBLbmV3IFRvbyBMaXR0bGUsIFRoZSAoMTk5NykgQWxpZW46IFJlc3VycmVjdGlvbiAoMTk5NykgQXBvc3RsZSwgVGhlICgxOTk3KSBEZWNvbnN0cnVjdGluZyBIYXJyeSAoMTk5NylcbjAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBKYWNraWUgQnJvd24gKDE5OTcpIFdhZyB0aGUgRG9nICgxOTk3KSBXZWRkaW5nIFNpbmdlciwgVGhlICgxOTk4KSBTcGhlcmUgKDE5OTgpIENsaWVudCwgVGhlICgxOTk0KVxuMCAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgTkFcbiAgIE9uZSBGbGV3IE92ZXIgdGhlIEN1Y2tvbydzIE5lc3QgKDE5NzUpIFNwYXduICgxOTk3KSBTdWRkZW4gRGVhdGggKDE5OTUpIEFjZSBWZW50dXJhOiBXaGVuIE5hdHVyZSBDYWxscyAoMTk5NSkgUG93ZGVyICgxOTk1KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgIE5BXG4gICBEYW5nZXJvdXMgTWluZHMgKDE5OTUpIENsdWVsZXNzICgxOTk1KSBCaW8tRG9tZSAoMTk5NikgQmxhY2sgU2hlZXAgKDE5OTYpIE1hcnkgUmVpbGx5ICgxOTk2KSBCcmlkZ2VzIG9mIE1hZGlzb24gQ291bnR5LCBUaGUgKDE5OTUpXG4wICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBKdWRnZSBEcmVkZCAoMTk5NSkgTWlyYWNsZSBvbiAzNHRoIFN0cmVldCAoMTk5NCkgVGFsZXMgRnJvbSB0aGUgQ3J5cHQgUHJlc2VudHM6IERlbW9uIEtuaWdodCAoMTk5NSkgU3RhciBUcmVrOiBHZW5lcmF0aW9ucyAoMTk5NClcbjAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgTXVyaWVsJ3MgV2VkZGluZyAoMTk5NCkgQWR2ZW50dXJlcyBvZiBQcmlzY2lsbGEsIFF1ZWVuIG9mIHRoZSBEZXNlcnQsIFRoZSAoMTk5NCkgTmFrZWQgR3VuIDMzIDEvMzogVGhlIEZpbmFsIEluc3VsdCAoMTk5NClcbjAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBUcnVlIExpZXMgKDE5OTQpIEFkZGFtcyBGYW1pbHkgVmFsdWVzICgxOTkzKSBBZ2Ugb2YgSW5ub2NlbmNlLCBUaGUgKDE5OTMpIExhc3QgQWN0aW9uIEhlcm8gKDE5OTMpIE1hbiBXaXRob3V0IGEgRmFjZSwgVGhlICgxOTkzKVxuMCAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIE1ycy4gRG91YnRmaXJlICgxOTkzKSBSb2JpbiBIb29kOiBNZW4gaW4gVGlnaHRzICgxOTkzKSBTZXJpYWwgTW9tICgxOTk0KSBUaHJlZSBNdXNrZXRlZXJzLCBUaGUgKDE5OTMpIEJyYWR5IEJ1bmNoIE1vdmllLCBUaGUgKDE5OTUpXG4wICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgR2hvc3QgKDE5OTApIEJhdG1hbiAoMTk4OSkgUGlub2NjaGlvICgxOTQwKSBNaXNzaW9uOiBJbXBvc3NpYmxlICgxOTk2KSBUaGlubmVyICgxOTk2KSBTcHkgSGFyZCAoMTk5NikgQ2xvc2UgU2hhdmUsIEEgKDE5OTUpXG4wICAgICAgICAgICAgTkEgICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEphY2sgKDE5OTYpIEtpbmdwaW4gKDE5OTYpIE51dHR5IFByb2Zlc3NvciwgVGhlICgxOTk2KSBWZXJ5IEJyYWR5IFNlcXVlbCwgQSAoMTk5NilcbjAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIFRhbGVzIGZyb20gdGhlIENyeXB0IFByZXNlbnRzOiBCb3JkZWxsbyBvZiBCbG9vZCAoMTk5NikgTXkgRmF2b3JpdGUgWWVhciAoMTk4MikgT2xkIFllbGxlciAoMTk1NykgUGFyZW50IFRyYXAsIFRoZSAoMTk2MSlcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIENpbmRlcmVsbGEgKDE5NTApIE1hcnkgUG9wcGlucyAoMTk2NCkgQWxpY2UgaW4gV29uZGVybGFuZCAoMTk1MSkgV2lsbGlhbSBTaGFrZXNwZWFyZSdzIFJvbWVvIGFuZCBKdWxpZXQgKDE5OTYpXG4wICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgRS5ULiB0aGUgRXh0cmEtVGVycmVzdHJpYWwgKDE5ODIpIEJvYiBSb2JlcnRzICgxOTkyKSBUcmFuc2Zvcm1lcnM6IFRoZSBNb3ZpZSwgVGhlICgxOTg2KSBUbyBLaWxsIGEgTW9ja2luZ2JpcmQgKDE5NjIpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEhhcm9sZCBhbmQgTWF1ZGUgKDE5NzEpIERheSB0aGUgRWFydGggU3Rvb2QgU3RpbGwsIFRoZSAoMTk1MSkgRHVjayBTb3VwICgxOTMzKSBIaWdobGFuZGVyICgxOTg2KSBGYW50YXNpYSAoMTk0MCkgSGVhdGhlcnMgKDE5ODkpXG4wICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICBOQVxuICAgRm9yYmlkZGVuIFBsYW5ldCAoMTk1NikgQnV0Y2ggQ2Fzc2lkeSBhbmQgdGhlIFN1bmRhbmNlIEtpZCAoMTk2OSkgQW1lcmljYW4gV2VyZXdvbGYgaW4gTG9uZG9uLCBBbiAoMTk4MSlcbjAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBBbWl0eXZpbGxlIEhvcnJvciwgVGhlICgxOTc5KSBCaXJkcywgVGhlICgxOTYzKSBCbG9iLCBUaGUgKDE5NTgpIENhcnJpZSAoMTk3NikgT21lbiwgVGhlICgxOTc2KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQSAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkFcbiAgIFN0YXIgVHJlazogVGhlIE1vdGlvbiBQaWN0dXJlICgxOTc5KSBTdGFyIFRyZWsgVjogVGhlIEZpbmFsIEZyb250aWVyICgxOTg5KSBHcmVhc2UgKDE5NzgpIEphd3MgMiAoMTk3OClcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgIE5BICAgICAgICAgICAgTkFcbiAgIEphY2tpZSBDaGFuJ3MgRmlyc3QgU3RyaWtlICgxOTk2KSBCZXZlcmx5IEhpbGxzIE5pbmphICgxOTk3KSBOaXhvbiAoMTk5NSkgU21va2UgKDE5OTUpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgIE5BICAgICAgICAgICBOQVxuICAgTGlrZSBXYXRlciBGb3IgQ2hvY29sYXRlIChDb21vIGFndWEgcGFyYSBjaG9jb2xhdGUpICgxOTkyKSBTZWNyZXQgb2YgUm9hbiBJbmlzaCwgVGhlICgxOTk0KSBKdW5nbGUgQm9vaywgVGhlICgxOTk0KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgUmVkIFJvY2sgV2VzdCAoMTk5MikgQnJvbnggVGFsZSwgQSAoMTk5MykgUnVkeSAoMTk5MykgU2hvcnQgQ3V0cyAoMTk5MykgVG9tYnN0b25lICgxOTkzKSBDb3VyYWdlIFVuZGVyIEZpcmUgKDE5OTYpXG4wICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICBOQSAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgMi4xMjU3MTRcbiAgIERyYWdvbmhlYXJ0ICgxOTk2KSBKYW1lcyBhbmQgdGhlIEdpYW50IFBlYWNoICgxOTk2KSBEci4gU3RyYW5nZWxvdmUgb3I6IEhvdyBJIExlYXJuZWQgdG8gU3RvcCBXb3JyeWluZyBhbmQgTG92ZSB0aGUgQm9tYiAoMTk2MylcbjAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIFRyYWluc3BvdHRpbmcgKDE5OTYpIEZpcnN0IFdpdmVzIENsdWIsIFRoZSAoMTk5NikgTWF0aWxkYSAoMTk5NikgUGhpbGFkZWxwaGlhIFN0b3J5LCBUaGUgKDE5NDApIFZlcnRpZ28gKDE5NTgpXG4wICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAyLjEyNTcxNFxuICAgTm9ydGggYnkgTm9ydGh3ZXN0ICgxOTU5KSBBcGFydG1lbnQsIFRoZSAoMTk2MCkgU29tZSBMaWtlIEl0IEhvdCAoMTk1OSkgQ2FzYWJsYW5jYSAoMTk0MikgTWFsdGVzZSBGYWxjb24sIFRoZSAoMTk0MSlcbjAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBNeSBGYWlyIExhZHkgKDE5NjQpIFNhYnJpbmEgKDE5NTQpIFJvbWFuIEhvbGlkYXkgKDE5NTMpIFN1bnNldCBCbHZkLiAoMTk1MCkgTm90b3Jpb3VzICgxOTQ2KSBUbyBDYXRjaCBhIFRoaWVmICgxOTU1KVxuMCAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEFkdmVudHVyZXMgb2YgUm9iaW4gSG9vZCwgVGhlICgxOTM4KSBFYXN0IG9mIEVkZW4gKDE5NTUpIFRoaW4gTWFuLCBUaGUgKDE5MzQpIEhpcyBHaXJsIEZyaWRheSAoMTk0MClcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEFyb3VuZCB0aGUgV29ybGQgaW4gODAgRGF5cyAoMTk1NikgSXQncyBhIFdvbmRlcmZ1bCBMaWZlICgxOTQ2KSBCcmluZ2luZyBVcCBCYWJ5ICgxOTM4KSBBZnJpY2FuIFF1ZWVuLCBUaGUgKDE5NTEpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgQ2F0IG9uIGEgSG90IFRpbiBSb29mICgxOTU4KSBEdW1ibyAoMTk0MSkgQmFuYW5hcyAoMTk3MSkgQ2FuZGlkYXRlLCBUaGUgKDE5NzIpIEJvbm5pZSBhbmQgQ2x5ZGUgKDE5NjcpIERpYWwgTSBmb3IgTXVyZGVyICgxOTU0KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgUmViZWwgV2l0aG91dCBhIENhdXNlICgxOTU1KSBTdHJlZXRjYXIgTmFtZWQgRGVzaXJlLCBBICgxOTUxKSBQZW9wbGUgdnMuIExhcnJ5IEZseW50LCBUaGUgKDE5OTYpIE15IExlZnQgRm9vdCAoMTk4OSlcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BXG4gICBNYWduaWZpY2VudCBTZXZlbiwgVGhlICgxOTU0KSBMYXdyZW5jZSBvZiBBcmFiaWEgKDE5NjIpIFdpbmdzIG9mIERlc2lyZSAoMTk4NykgVGhpcmQgTWFuLCBUaGUgKDE5NDkpIEFubmllIEhhbGwgKDE5NzcpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BXG4gICBCb290LCBEYXMgKDE5ODEpIExvY2FsIEhlcm8gKDE5ODMpIE1hbmhhdHRhbiAoMTk3OSkgTWlsbGVyJ3MgQ3Jvc3NpbmcgKDE5OTApIFRyZWFzdXJlIG9mIHRoZSBTaWVycmEgTWFkcmUsIFRoZSAoMTk0OClcbjAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgR3JlYXQgRXNjYXBlLCBUaGUgKDE5NjMpIERlZXIgSHVudGVyLCBUaGUgKDE5NzgpIENvb2wgSGFuZCBMdWtlICgxOTY3KSBCaWcgU2xlZXAsIFRoZSAoMTk0NikgQmVuLUh1ciAoMTk1OSkgR2FuZGhpICgxOTgyKVxuMCAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICBOQVxuICAgS2lsbGluZyBGaWVsZHMsIFRoZSAoMTk4NCkgTXkgTGlmZSBhcyBhIERvZyAoTWl0dCBsaXYgc29tIGh1bmQpICgxOTg1KSBNYW4gV2hvIFdvdWxkIEJlIEtpbmcsIFRoZSAoMTk3NSkgU2hpbmUgKDE5OTYpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgTkFcbiAgIEFkZGljdGVkIHRvIExvdmUgKDE5OTcpIEFuYXN0YXNpYSAoMTk5NykgTW9uZXkgVHJhaW4gKDE5OTUpIE1vcnRhbCBLb21iYXQgKDE5OTUpIFBvY2Fob250YXMgKDE5OTUpXG4wICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICBOQVxuICAgVGhpbmdzIHRvIERvIGluIERlbnZlciB3aGVuIFlvdSdyZSBEZWFkICgxOTk1KSBCcm9rZW4gQXJyb3cgKDE5OTYpIFlvdW5nIFBvaXNvbmVyJ3MgSGFuZGJvb2ssIFRoZSAoMTk5NSkgUm9iIFJveSAoMTk5NSlcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BXG4gICBEaWUgSGFyZDogV2l0aCBhIFZlbmdlYW5jZSAoMTk5NSkgU3BlY2llcyAoMTk5NSkgV2FsayBpbiB0aGUgQ2xvdWRzLCBBICgxOTk1KSBXYXRlcndvcmxkICgxOTk1KSBIZWF2ZW5seSBDcmVhdHVyZXMgKDE5OTQpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBJbnRlcnZpZXcgd2l0aCB0aGUgVmFtcGlyZSAoMTk5NCkgTWFyeSBTaGVsbGV5J3MgRnJhbmtlbnN0ZWluICgxOTk0KSBRdWljayBhbmQgdGhlIERlYWQsIFRoZSAoMTk5NSkgQ2xlYXIgYW5kIFByZXNlbnQgRGFuZ2VyICgxOTk0KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIFNwZWVkICgxOTk0KSBXb2xmICgxOTk0KSBXeWF0dCBFYXJwICgxOTk0KSBDaXR5IFNsaWNrZXJzIElJOiBUaGUgTGVnZW5kIG9mIEN1cmx5J3MgR29sZCAoMTk5NCkgQ2xpZmZoYW5nZXIgKDE5OTMpIENvbmVoZWFkcyAoMTk5MylcbjAgICAgICAgICAgICBOQSAgICAgICAgICBOQSAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkFcbiAgIERlbW9saXRpb24gTWFuICgxOTkzKSBLYWxpZm9ybmlhICgxOTkzKSBQaWFubywgVGhlICgxOTkzKSBTZWNyZXQgR2FyZGVuLCBUaGUgKDE5OTMpIEJlYXV0eSBhbmQgdGhlIEJlYXN0ICgxOTkxKVxuMCAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBXaWxkIEJ1bmNoLCBUaGUgKDE5NjkpIFByaW1hbCBGZWFyICgxOTk2KSBGYW4sIFRoZSAoMTk5NikgSHVuY2hiYWNrIG9mIE5vdHJlIERhbWUsIFRoZSAoMTk5NikgRXJhc2VyICgxOTk2KVxuMCAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgTkFcbiAgIEFtZXJpY2FuIGluIFBhcmlzLCBBbiAoMTk1MSkgUmVhciBXaW5kb3cgKDE5NTQpIEl0IEhhcHBlbmVkIE9uZSBOaWdodCAoMTkzNCkgQWxsIEFib3V0IEV2ZSAoMTk1MCkgUmViZWNjYSAoMTk0MClcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkFcbiAgIEZhdGhlciBvZiB0aGUgQnJpZGUgKDE5NTApIEdpZ2kgKDE5NTgpIEdpYW50ICgxOTU2KSAzOSBTdGVwcywgVGhlICgxOTM1KSBOaWdodCBvZiB0aGUgTGl2aW5nIERlYWQgKDE5NjgpIEV4dHJlbWUgTWVhc3VyZXMgKDE5OTYpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICBOQSAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgQ2hhbWJlciwgVGhlICgxOTk2KSBTd2lzcyBGYW1pbHkgUm9iaW5zb24gKDE5NjApIEFuZ2VscyBpbiB0aGUgT3V0ZmllbGQgKDE5OTQpIFN3b3JkIGluIHRoZSBTdG9uZSwgVGhlICgxOTYzKVxuMCAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgUm9iaW4gSG9vZDogUHJpbmNlIG9mIFRoaWV2ZXMgKDE5OTEpIFNsZWVwZXJzICgxOTk2KSBWaWN0b3IvVmljdG9yaWEgKDE5ODIpIENyeWluZyBHYW1lLCBUaGUgKDE5OTIpIFNvcGhpZSdzIENob2ljZSAoMTk4MilcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBDaHJpc3RtYXMgQ2Fyb2wsIEEgKDE5MzgpIEVzY2FwZSBmcm9tIE5ldyBZb3JrICgxOTgxKSBSZXR1cm4gb2YgTWFydGluIEd1ZXJyZSwgVGhlIChSZXRvdXIgZGUgTWFydGluIEd1ZXJyZSwgTGUpICgxOTgyKVxuMCAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIFRpbiBEcnVtLCBUaGUgKEJsZWNodHJvbW1lbCwgRGllKSAoMTk3OSkgQ29vayB0aGUgVGhpZWYgSGlzIFdpZmUgJiBIZXIgTG92ZXIsIFRoZSAoMTk4OSkgR3JpZnRlcnMsIFRoZSAoMTk5MClcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkFcbiAgIE9uY2UgVXBvbiBhIFRpbWUgaW4gdGhlIFdlc3QgKDE5NjkpIFJhbiAoMTk4NSkgUXVpZXQgTWFuLCBUaGUgKDE5NTIpIE9uY2UgVXBvbiBhIFRpbWUgaW4gQW1lcmljYSAoMTk4NClcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIFNldmVudGggU2VhbCwgVGhlIChTanVuZGUgaW5zZWdsZXQsIERldCkgKDE5NTcpIEdsb3J5ICgxOTg5KSBSb3NlbmNyYW50eiBhbmQgR3VpbGRlbnN0ZXJuIEFyZSBEZWFkICgxOTkwKSBDaGluYXRvd24gKDE5NzQpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQVxuICAgU3RhbmQgYnkgTWUgKDE5ODYpIE0gKDE5MzEpIE1hbmNodXJpYW4gQ2FuZGlkYXRlLCBUaGUgKDE5NjIpIFB1bXAgVXAgdGhlIFZvbHVtZSAoMTk5MCkgQXJzZW5pYyBhbmQgT2xkIExhY2UgKDE5NDQpXG4wICAgICAgICAgICAgICAgICAgTkEgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEZyaWVkIEdyZWVuIFRvbWF0b2VzICgxOTkxKSBIaWdoIE5vb24gKDE5NTIpIFNvbWV3aGVyZSBpbiBUaW1lICgxOTgwKSBCZWluZyBUaGVyZSAoMTk3OSkgUGFyaXMsIFRleGFzICgxOTg0KSBBbGllbiAzICgxOTkyKVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BXG4gICBCcmlkZSBvZiBGcmFua2Vuc3RlaW4gKDE5MzUpIENhbmR5bWFuICgxOTkyKSBDYXBlIEZlYXIgKDE5NjIpIENhdCBQZW9wbGUgKDE5ODIpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BXG4gICBOb3NmZXJhdHUgKE5vc2ZlcmF0dSwgZWluZSBTeW1waG9uaWUgZGVzIEdyYXVlbnMpICgxOTIyKSBDcnVjaWJsZSwgVGhlICgxOTk2KSBWb2xjYW5vICgxOTk3KSBDb25hbiB0aGUgQmFyYmFyaWFuICgxOTgxKVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEkgS25vdyBXaGF0IFlvdSBEaWQgTGFzdCBTdW1tZXIgKDE5OTcpIEluIHRoZSBMaW5lIG9mIEZpcmUgKDE5OTMpIEV4ZWN1dGl2ZSBEZWNpc2lvbiAoMTk5NikgUGVyZmVjdCBXb3JsZCwgQSAoMTk5MylcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIE1jSGFsZSdzIE5hdnkgKDE5OTcpIEphY2thbCwgVGhlICgxOTk3KSBTZXZlbiBZZWFycyBpbiBUaWJldCAoMTk5NykgQW1lcmljYW4gUHJlc2lkZW50LCBUaGUgKDE5OTUpIENhc2lubyAoMTk5NSkgUGVyc3Vhc2lvbiAoMTk5NSlcbjAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkFcbiAgIENpdHkgSGFsbCAoMTk5NikgQmFza2V0YmFsbCBEaWFyaWVzLCBUaGUgKDE5OTUpIExpdHRsZSBXb21lbiAoMTk5NCkgQmFyY2Vsb25hICgxOTk0KSBTaW5naW4nIGluIHRoZSBSYWluICgxOTUyKVxuMCAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBFbmNoYW50ZWQgQXByaWwgKDE5OTEpIFNleCwgTGllcywgYW5kIFZpZGVvdGFwZSAoMTk4OSkgU3RyaWN0bHkgQmFsbHJvb20gKDE5OTIpIEJldHRlciBPZmYgRGVhZC4uLiAoMTk4NSkgVGluIE1lbiAoMTk4NylcbjAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICBOQVxuICAgT3RoZWxsbyAoMTk5NSkgVG8gRGllIEZvciAoMTk5NSkgSG9tZSBmb3IgdGhlIEhvbGlkYXlzICgxOTk1KSBKdXJvciwgVGhlICgxOTk2KSBGaXJzdCBLbmlnaHQgKDE5OTUpIE1hbGxyYXRzICgxOTk1KVxuMCAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICBOQVxuICAgTmluZSBNb250aHMgKDE5OTUpIENpcmNsZSBvZiBGcmllbmRzICgxOTk1KSBJbW1vcnRhbCBCZWxvdmVkICgxOTk0KSBKdW5pb3IgKDE5OTQpIE5lbGwgKDE5OTQpIERhdmUgKDE5OTMpIFBoaWxhZGVscGhpYSAoMTk5MylcbjAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICBOQSAgICAgICAgICBOQSAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BXG4gICBTaGFkb3dsYW5kcyAoMTk5MykgU2lyZW5zICgxOTk0KSBQcmV0dHkgV29tYW4gKDE5OTApIEphbmUgRXlyZSAoMTk5NikgTGFzdCBTdXBwZXIsIFRoZSAoMTk5NSkgUmFuc29tICgxOTk2KSBNaWNoYWVsIENvbGxpbnMgKDE5OTYpXG4wICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBSZWFsIEdlbml1cyAoMTk4NSkgQmVubnkgJiBKb29uICgxOTkzKSBTYWludCwgVGhlICgxOTk3KSBBbWlzdGFkICgxOTk3KSBUb21vcnJvdyBOZXZlciBEaWVzICgxOTk3KSBSZWQgQ29ybmVyICgxOTk3KSBKdW1hbmppICgxOTk1KVxuMCAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkFcbiAgIEZhdGhlciBvZiB0aGUgQnJpZGUgUGFydCBJSSAoMTk5NSkgU2NyZWFtZXJzICgxOTk1KSBOaWNrIG9mIFRpbWUgKDE5OTUpIEJlYXV0aWZ1bCBHaXJscyAoMTk5NikgSGFwcHkgR2lsbW9yZSAoMTk5NikgQ2FzcGVyICgxOTk1KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgIE5BXG4gICBDb25nbyAoMTk5NSkgRGV2aWwgaW4gYSBCbHVlIERyZXNzICgxOTk1KSBKb2hubnkgTW5lbW9uaWMgKDE5OTUpIEtpZHMgKDE5OTUpIERvbiBKdWFuIERlTWFyY28gKDE5OTUpIER1bWIgJiBEdW1iZXIgKDE5OTQpXG4wICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgIE5BXG4gICBGcmVuY2ggS2lzcyAoMTk5NSkgTWlsayBNb25leSAoMTk5NCkgT25seSBZb3UgKDE5OTQpIFN3aW1taW5nIHdpdGggU2hhcmtzICgxOTk1KSBUb21teSBCb3kgKDE5OTUpIEJ1bGxldHMgT3ZlciBCcm9hZHdheSAoMTk5NClcbjAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgSXQgQ291bGQgSGFwcGVuIHRvIFlvdSAoMTk5NCkgSGFyZCBUYXJnZXQgKDE5OTMpIE1lbmFjZSBJSSBTb2NpZXR5ICgxOTkzKSBSaXNpbmcgU3VuICgxOTkzKSBTaGFkb3csIFRoZSAoMTk5NClcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgIE5BXG4gICBDZWxsdWxvaWQgQ2xvc2V0LCBUaGUgKDE5OTUpIE9uZSBGaW5lIERheSAoMTk5NikgRWRkaWUgKDE5OTYpIFNwYWNlIEphbSAoMTk5NikgTXVsaG9sbGFuZCBGYWxscyAoMTk5NikgR3JlYXQgV2hpdGUgSHlwZSwgVGhlICgxOTk2KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICBOQSAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEFycml2YWwsIFRoZSAoMTk5NikgUGhhbnRvbSwgVGhlICgxOTk2KSBEYXlsaWdodCAoMTk5NikgRXNjYXBlIGZyb20gTC5BLiAoMTk5NikgQnVsbGV0cHJvb2YgKDE5OTYpIExhc3QgTWFuIFN0YW5kaW5nICgxOTk2KVxuMCAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBHbGltbWVyIE1hbiwgVGhlICgxOTk2KSBUaGF0IFRoaW5nIFlvdSBEbyEgKDE5OTYpIFRvIEdpbGxpYW4gb24gSGVyIDM3dGggQmlydGhkYXkgKDE5OTYpIExvb2tpbmcgZm9yIFJpY2hhcmQgKDE5OTYpXG4wICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBEYXlzIG9mIFRodW5kZXIgKDE5OTApIERpdmEgKDE5ODEpIE5pZ2h0IG9uIEVhcnRoICgxOTkxKSBNeSBGZWxsb3cgQW1lcmljYW5zICgxOTk2KSBNaWNoYWVsICgxOTk2KSBWZWdhcyBWYWNhdGlvbiAoMTk5NylcbjAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICBOQVxuICAgUGljdHVyZSBQZXJmZWN0ICgxOTk3KSBFeGNlc3MgQmFnZ2FnZSAoMTk5NykgUGVhY2VtYWtlciwgVGhlICgxOTk3KSBTb3VsIEZvb2QgKDE5OTcpIExpZmUgTGVzcyBPcmRpbmFyeSwgQSAoMTk5NylcbjAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BXG4gICBFdmUncyBCYXlvdSAoMTk5NykgU2NyZWFtIDIgKDE5OTcpIENpdHkgb2YgTG9zdCBDaGlsZHJlbiwgVGhlICgxOTk1KSBGYXJld2VsbCBNeSBDb25jdWJpbmUgKDE5OTMpIFJhaXNlIHRoZSBSZWQgTGFudGVybiAoMTk5MSlcbjAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgV2hpdGUgU3F1YWxsICgxOTk2KSBEb3duIFBlcmlzY29wZSAoMTk5NikgQ3JhZnQsIFRoZSAoMTk5NikgSGFycmlldCB0aGUgU3B5ICgxOTk2KSBDaGFpbiBSZWFjdGlvbiAoMTk5NilcbjAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BXG4gICBJc2xhbmQgb2YgRHIuIE1vcmVhdSwgVGhlICgxOTk2KSBGaXJzdCBLaWQgKDE5OTYpIFByZWFjaGVyJ3MgV2lmZSwgVGhlICgxOTk2KSBNdXJkZXIgaW4gdGhlIEZpcnN0ICgxOTk1KSBXaXRoIEhvbm9ycyAoMTk5NClcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICBOQVxuICAgV2hhdCdzIExvdmUgR290IHRvIERvIHdpdGggSXQgKDE5OTMpIEtpbGxpbmcgWm9lICgxOTk0KSBSZW5haXNzYW5jZSBNYW4gKDE5OTQpIENoYXJhZGUgKDE5NjMpIEZveCBhbmQgdGhlIEhvdW5kLCBUaGUgKDE5ODEpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEhvdyB0byBNYWtlIGFuIEFtZXJpY2FuIFF1aWx0ICgxOTk1KSBJbmRpYW4gaW4gdGhlIEN1cGJvYXJkLCBUaGUgKDE5OTUpIEJsdWUgaW4gdGhlIEZhY2UgKDE5OTUpIEJlZm9yZSBTdW5yaXNlICgxOTk1KVxuMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BXG4gICBOb2JvZHkncyBGb29sICgxOTk0KSBEYXplZCBhbmQgQ29uZnVzZWQgKDE5OTMpIE9ybGFuZG8gKDE5OTMpIFNvbWUgRm9sa3MgQ2FsbCBJdCBhIFNsaW5nIEJsYWRlICgxOTkzKVxuMCAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIFdpbm5pZSB0aGUgUG9vaCBhbmQgdGhlIEJsdXN0ZXJ5IERheSAoMTk2OCkgU3Vic3RpdHV0ZSwgVGhlICgxOTk2KSBTaGFkb3cgQ29uc3BpcmFjeSAoMTk5NykgQmVhdXRpY2lhbiBhbmQgdGhlIEJlYXN0LCBUaGUgKDE5OTcpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQVxuICAgSGVyY3VsZXMgKDE5OTcpIFdhaXRpbmcgZm9yIEd1ZmZtYW4gKDE5OTYpIFN0ZWFsaW5nIEJlYXV0eSAoMTk5NikgQmFzcXVpYXQgKDE5OTYpIDIgRGF5cyBpbiB0aGUgVmFsbGV5ICgxOTk2KSBQcml2YXRlIFBhcnRzICgxOTk3KVxuMCAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQVxuICAgUm9teSBhbmQgTWljaGVsZSdzIEhpZ2ggU2Nob29sIFJldW5pb24gKDE5OTcpIENvbiBBaXIgKDE5OTcpIFRyZWVzIExvdW5nZSAoMTk5NikgR2FzbGlnaHQgKDE5NDQpIEdydW1waWVyIE9sZCBNZW4gKDE5OTUpXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIENvb2wgUnVubmluZ3MgKDE5OTMpIEhhbWxldCAoMTk5NikgRm9yZ2V0IFBhcmlzICgxOTk1KSBQYXBlciwgVGhlICgxOTk0KSBNYWxpY2UgKDE5OTMpIE11bHRpcGxpY2l0eSAoMTk5NikgU2hlJ3MgdGhlIE9uZSAoMTk5NilcbjAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkFcbiAgIEdob3N0IGFuZCBNcnMuIE11aXIsIFRoZSAoMTk0NykgQXNzb2NpYXRlLCBUaGUgKDE5OTYpIEFkdmVudHVyZXMgb2YgUGlub2NjaGlvLCBUaGUgKDE5OTYpIExpdHRsZSBQcmluY2VzcywgQSAoMTk5NSlcbjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5BICAgICAgICAgICAgICAgICAgICAgICAgTkFcbiAgIEtveWFhbmlzcWF0c2kgKDE5ODMpIEJvdHRsZSBSb2NrZXQgKDE5OTYpIFNoYWxsb3cgR3JhdmUgKDE5OTQpIFJlYWxpdHkgQml0ZXMgKDE5OTQpIEpvZSdzIEFwYXJ0bWVudCAoMTk5NikgU2xpdmVyICgxOTkzKVxuMCAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgIE5BXG4gICBQZXRlJ3MgRHJhZ29uICgxOTc3KSBGbGlydGluZyBXaXRoIERpc2FzdGVyICgxOTk2KSBTaXggRGVncmVlcyBvZiBTZXBhcmF0aW9uICgxOTkzKSBUYW5rIEdpcmwgKDE5OTUpIFVwIGluIFNtb2tlICgxOTc4KVxuMCAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgTkFcbiAgIFNvbWUgS2luZCBvZiBXb25kZXJmdWwgKDE5ODcpIEdldCBvbiB0aGUgQnVzICgxOTk2KSBEb29ycywgVGhlICgxOTkxKSBIYWNrZXJzICgxOTk1KSBXaGVuIFdlIFdlcmUgS2luZ3MgKDE5OTYpIFlvdW5nIEd1bnMgSUkgKDE5OTApXG4wICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICBOQVxuICAgRmFtaWx5IFRoaW5nLCBBICgxOTk2KSBWaXJ0dW9zaXR5ICgxOTk1KSBBc3Nhc3NpbnMgKDE5OTUpIFVuZGVyIFNpZWdlIDI6IERhcmsgVGVycml0b3J5ICgxOTk1KSBNZXRybyAoMTk5NylcbjAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICAgTkEgICAgICAgICAgICAgICBOQSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEgICAgICAgICAgIE5BXG4gWyBlcnJlaWNodGUgZ2V0T3B0aW9uKFwibWF4LnByaW50XCIpIC0tICA3OSBaZWlsZW4gYXVzZ2VsYXNzZW4gXVxuIn0= -->
+<pre><code>   Toy Story (1995) GoldenEye (1995) Four Rooms (1995) Get Shorty (1995) Copycat (1995) Twelve Monkeys (1995) Babe (1995)
+0                NA               NA                NA                NA             NA                    NA          NA
+   Dead Man Walking (1995) Richard III (1995) Seven (Se7en) (1995) Usual Suspects, The (1995) Mighty Aphrodite (1995)
+0                 2.125714                 NA                   NA                         NA                      NA
+   Postino, Il (1994) Mr. Holland&#39;s Opus (1995) French Twist (Gazon maudit) (1995) From Dusk Till Dawn (1996) Antonia&#39;s Line (1995)
+0                  NA                        NA                                 NA                         NA                    NA
+   Angels and Insects (1995) Muppet Treasure Island (1996) Braveheart (1995) Taxi Driver (1976) Rumble in the Bronx (1995)
+0                         NA                            NA                NA                 NA                         NA
+   Birdcage, The (1996) Brothers McMullen, The (1995) Bad Boys (1995) Apollo 13 (1995) Batman Forever (1995) Crimson Tide (1995)
+0                    NA                            NA              NA               NA                    NA                  NA
+   Crumb (1994) Desperado (1995) Net, The (1995) Strange Days (1995) To Wong Foo, Thanks for Everything! Julie Newmar (1995)
+0            NA               NA              NA                  NA                                                      NA
+   Billy Madison (1995) Clerks (1994) Disclosure (1994) Dolores Claiborne (1994) Eat Drink Man Woman (1994) Ed Wood (1994)
+0                    NA            NA                NA                       NA                         NA             NA
+   Hoop Dreams (1994) I.Q. (1994) Star Wars (1977) Legends of the Fall (1994) Madness of King George, The (1994)
+0                  NA          NA               NA                         NA                                 NA
+   Natural Born Killers (1994) Outbreak (1995) Professional, The (1994) Pulp Fiction (1994) Quiz Show (1994) Three Colors: Red (1994)
+0                           NA              NA                       NA                  NA               NA                       NA
+   Three Colors: Blue (1993) Three Colors: White (1994) Stargate (1994) Santa Clause, The (1994) Shawshank Redemption, The (1994)
+0                         NA                         NA              NA                       NA                               NA
+   What&#39;s Eating Gilbert Grape (1993) While You Were Sleeping (1995) Ace Ventura: Pet Detective (1994) Crow, The (1994)
+0                                  NA                             NA                                NA               NA
+   Forrest Gump (1994) Four Weddings and a Funeral (1994) Lion King, The (1994) Maverick (1994) Carlito&#39;s Way (1993) Firm, The (1993)
+0                   NA                                 NA                    NA              NA                   NA               NA
+   Fugitive, The (1993) Hot Shots! Part Deux (1993) Hudsucker Proxy, The (1994) Jurassic Park (1993) Much Ado About Nothing (1993)
+0                    NA                          NA                          NA                   NA                            NA
+   Ref, The (1994) Remains of the Day, The (1993) Searching for Bobby Fischer (1993) Sleepless in Seattle (1993) Blade Runner (1982)
+0               NA                             NA                                 NA                          NA                  NA
+   So I Married an Axe Murderer (1993) Nightmare Before Christmas, The (1993) True Romance (1993) Home Alone (1990) Aladdin (1992)
+0                                   NA                                     NA                  NA                NA             NA
+   Terminator 2: Judgment Day (1991) Dances with Wolves (1990) Silence of the Lambs, The (1991) Snow White and the Seven Dwarfs (1937)
+0                                 NA                        NA                               NA                                     NA
+   Fargo (1996) Heavy Metal (1981) Aristocats, The (1970) Sgt. Bilko (1996) Diabolique (1996) Kids in the Hall: Brain Candy (1996)
+0            NA                 NA                     NA                NA                NA                                   NA
+   Mystery Science Theater 3000: The Movie (1996) Truth About Cats &amp; Dogs, The (1996)
+0                                              NA                                  NA
+   Wallace &amp; Gromit: The Best of Aardman Animation (1996) Cold Comfort Farm (1995) Rock, The (1996) Twister (1996) Striptease (1996)
+0                                                      NA                       NA               NA             NA                NA
+   Independence Day (ID4) (1996) Cable Guy, The (1996) Frighteners, The (1996) Lone Star (1996) Phenomenon (1996)
+0                             NA                    NA                      NA        2.1257140                NA
+   Spitfire Grill, The (1996) Godfather, The (1972) Supercop (1992) Bound (1996) Breakfast at Tiffany&#39;s (1961)
+0                          NA                    NA              NA           NA                            NA
+   Wizard of Oz, The (1939) Gone with the Wind (1939) Citizen Kane (1941) 2001: A Space Odyssey (1968)
+0                        NA                        NA            2.125714                           NA
+   Mr. Smith Goes to Washington (1939) Big Night (1996) Love Bug, The (1969) Homeward Bound: The Incredible Journey (1993)
+0                                   NA               NA                   NA                                            NA
+   20,000 Leagues Under the Sea (1954) Bedknobs and Broomsticks (1971) Sound of Music, The (1965) Die Hard (1988)
+0                                   NA                              NA                         NA              NA
+   Lawnmower Man, The (1992) Long Kiss Goodnight, The (1996) Ghost and the Darkness, The (1996) Swingers (1996)
+0                         NA                              NA                                 NA              NA
+   Willy Wonka and the Chocolate Factory (1971) Sleeper (1973) Fish Called Wanda, A (1988) Monty Python&#39;s Life of Brian (1979)
+0                                            NA             NA                          NA                                  NA
+   Dirty Dancing (1987) Reservoir Dogs (1992) Platoon (1986) Weekend at Bernie&#39;s (1989) Basic Instinct (1992)
+0                    NA                    NA             NA                         NA                    NA
+   Glengarry Glen Ross (1992) Top Gun (1986) On Golden Pond (1981) Return of the Pink Panther, The (1974) Abyss, The (1989)
+0                          NA             NA                    NA                                     NA                NA
+   Jean de Florette (1986) Manon of the Spring (Manon des sources) (1986) Private Benjamin (1980)
+0                       NA                                             NA                      NA
+   Monty Python and the Holy Grail (1974) Wrong Trousers, The (1993) Cinema Paradiso (1988) Delicatessen (1991)
+0                                      NA                         NA                     NA                  NA
+   Empire Strikes Back, The (1980) Princess Bride, The (1987) Raiders of the Lost Ark (1981) Brazil (1985) Aliens (1986)
+0                               NA                         NA                             NA            NA            NA
+   Good, The Bad and The Ugly, The (1966) 12 Angry Men (1957) Clockwork Orange, A (1971) Apocalypse Now (1979)
+0                                      NA                  NA                         NA                    NA
+   Return of the Jedi (1983) GoodFellas (1990) Alien (1979) Army of Darkness (1993) Psycho (1960) Blues Brothers, The (1980)
+0                         NA                NA           NA                2.125714            NA                         NA
+   Godfather: Part II, The (1974) Full Metal Jacket (1987) Grand Day Out, A (1992) Henry V (1989) Amadeus (1984) Raging Bull (1980)
+0                       2.1257140                 2.125714                      NA             NA             NA                 NA
+   Right Stuff, The (1983) Sting, The (1973) Terminator, The (1984) Dead Poets Society (1989) Graduate, The (1967)
+0                       NA                NA                     NA                        NA                   NA
+   Nikita (La Femme Nikita) (1990) Bridge on the River Kwai, The (1957) Shining, The (1980) Evil Dead II (1987) Groundhog Day (1993)
+0                               NA                                   NA                  NA                  NA                   NA
+   Unforgiven (1992) Back to the Future (1985) Patton (1970) Akira (1988) Cyrano de Bergerac (1990) Young Frankenstein (1974)
+0                 NA                        NA            NA           NA                        NA                        NA
+   This Is Spinal Tap (1984) Indiana Jones and the Last Crusade (1989) M*A*S*H (1970) Unbearable Lightness of Being, The (1988)
+0                         NA                                        NA             NA                                        NA
+   Room with a View, A (1986) Pink Floyd - The Wall (1982) Field of Dreams (1989) When Harry Met Sally... (1989)
+0                    2.125714                           NA                     NA                             NA
+   Bram Stoker&#39;s Dracula (1992) Cape Fear (1991) Nightmare on Elm Street, A (1984) Mirror Has Two Faces, The (1996)
+0                            NA               NA                                NA                               NA
+   Breaking the Waves (1996) Star Trek: First Contact (1996) Sling Blade (1996) Ridicule (1996) 101 Dalmatians (1996)
+0                         NA                              NA                 NA              NA                    NA
+   Die Hard 2 (1990) Star Trek VI: The Undiscovered Country (1991) Star Trek: The Wrath of Khan (1982)
+0                 NA                                            NA                                  NA
+   Star Trek III: The Search for Spock (1984) Star Trek IV: The Voyage Home (1986) Batman Returns (1992) Young Guns (1988)
+0                                          NA                                   NA                    NA                NA
+   Under Siege (1992) Jaws (1975) Mars Attacks! (1996) Citizen Ruth (1996) Jerry Maguire (1996) Raising Arizona (1987) Sneakers (1992)
+0                  NA          NA                   NA                  NA                   NA                     NA              NA
+   Beavis and Butt-head Do America (1996) Last of the Mohicans, The (1992) Kolya (1996) Jungle2Jungle (1997)
+0                                      NA                               NA           NA                   NA
+   Smilla&#39;s Sense of Snow (1997) Devil&#39;s Own, The (1997) Chasing Amy (1997) Grosse Pointe Blank (1997)
+0                             NA                      NA                 NA                         NA
+   Austin Powers: International Man of Mystery (1997) Fifth Element, The (1997) Lost World: Jurassic Park, The (1997)
+0                                                  NA                        NA                                    NA
+   Batman &amp; Robin (1997) My Best Friend&#39;s Wedding (1997) Men in Black (1997) Contact (1997) George of the Jungle (1997)
+0                     NA                              NA                  NA             NA                          NA
+   Event Horizon (1997) In the Company of Men (1997) Mimic (1997) Hunt for Red October, The (1990) Full Monty, The (1997)
+0                    NA                           NA           NA                               NA                     NA
+   Gattaca (1997) Starship Troopers (1997) Good Will Hunting (1997) Heat (1995) Sabrina (1995) Sense and Sensibility (1995)
+0              NA                       NA                       NA          NA             NA                     2.125714
+   Leaving Las Vegas (1995) Restoration (1995) Bed of Roses (1996) Up Close and Personal (1996) River Wild, The (1994)
+0                        NA                 NA                  NA                           NA                     NA
+   Time to Kill, A (1996) Emma (1996) Tin Cup (1996) Secrets &amp; Lies (1996) English Patient, The (1996) Marvin&#39;s Room (1996)
+0                      NA          NA             NA                    NA                          NA                   NA
+   Scream (1996) Evita (1996) Fierce Creatures (1997) Absolute Power (1997) Rosewood (1997) Donnie Brasco (1997) Liar Liar (1997)
+0             NA           NA                      NA                    NA              NA                   NA               NA
+   Breakdown (1997) Ulee&#39;s Gold (1997) Face/Off (1997) Hoodlum (1997) Air Force One (1997) In &amp; Out (1997) L.A. Confidential (1997)
+0                NA                 NA              NA             NA                   NA              NA                       NA
+   Fly Away Home (1996) Ice Storm, The (1997) Mrs. Brown (Her Majesty, Mrs. Brown) (1997) Devil&#39;s Advocate, The (1997)
+0                    NA                    NA                                          NA                           NA
+   Rainmaker, The (1997) Wings of the Dove, The (1997) Midnight in the Garden of Good and Evil (1997) Titanic (1997) Apt Pupil (1998)
+0                     NA                            NA                                             NA             NA               NA
+   As Good As It Gets (1997) In the Name of the Father (1993) Schindler&#39;s List (1993) Everyone Says I Love You (1996) Mother (1996)
+0                         NA                               NA                      NA                              NA            NA
+   Murder at 1600 (1997) Dante&#39;s Peak (1997) Lost Highway (1997) Crash (1996) G.I. Jane (1997) Cop Land (1997)
+0                     NA                  NA                  NA           NA               NA              NA
+   Conspiracy Theory (1997) Edge, The (1997) Kiss the Girls (1997) Game, The (1997) U Turn (1997) Bean (1997) Mad City (1997)
+0                        NA               NA                    NA               NA            NA          NA              NA
+   Boogie Nights (1997) Man Who Knew Too Little, The (1997) Alien: Resurrection (1997) Apostle, The (1997) Deconstructing Harry (1997)
+0                    NA                                  NA                         NA                  NA                          NA
+   Jackie Brown (1997) Wag the Dog (1997) Wedding Singer, The (1998) Sphere (1998) Client, The (1994)
+0                   NA                 NA                         NA            NA                 NA
+   One Flew Over the Cuckoo&#39;s Nest (1975) Spawn (1997) Sudden Death (1995) Ace Ventura: When Nature Calls (1995) Powder (1995)
+0                                      NA           NA                  NA                                    NA            NA
+   Dangerous Minds (1995) Clueless (1995) Bio-Dome (1996) Black Sheep (1996) Mary Reilly (1996) Bridges of Madison County, The (1995)
+0                      NA              NA              NA                 NA                 NA                                    NA
+   Judge Dredd (1995) Miracle on 34th Street (1994) Tales From the Crypt Presents: Demon Knight (1995) Star Trek: Generations (1994)
+0                  NA                            NA                                                 NA                            NA
+   Muriel&#39;s Wedding (1994) Adventures of Priscilla, Queen of the Desert, The (1994) Naked Gun 33 1/3: The Final Insult (1994)
+0                       NA                                                       NA                                        NA
+   True Lies (1994) Addams Family Values (1993) Age of Innocence, The (1993) Last Action Hero (1993) Man Without a Face, The (1993)
+0                NA                          NA                           NA                      NA                             NA
+   Mrs. Doubtfire (1993) Robin Hood: Men in Tights (1993) Serial Mom (1994) Three Musketeers, The (1993) Brady Bunch Movie, The (1995)
+0                     NA                               NA                NA                           NA                            NA
+   Ghost (1990) Batman (1989) Pinocchio (1940) Mission: Impossible (1996) Thinner (1996) Spy Hard (1996) Close Shave, A (1995)
+0            NA            NA               NA                         NA             NA              NA                    NA
+   Jack (1996) Kingpin (1996) Nutty Professor, The (1996) Very Brady Sequel, A (1996)
+0           NA             NA                          NA                          NA
+   Tales from the Crypt Presents: Bordello of Blood (1996) My Favorite Year (1982) Old Yeller (1957) Parent Trap, The (1961)
+0                                                       NA                      NA                NA                      NA
+   Cinderella (1950) Mary Poppins (1964) Alice in Wonderland (1951) William Shakespeare&#39;s Romeo and Juliet (1996)
+0                 NA                  NA                         NA                                            NA
+   E.T. the Extra-Terrestrial (1982) Bob Roberts (1992) Transformers: The Movie, The (1986) To Kill a Mockingbird (1962)
+0                                 NA                 NA                                  NA                           NA
+   Harold and Maude (1971) Day the Earth Stood Still, The (1951) Duck Soup (1933) Highlander (1986) Fantasia (1940) Heathers (1989)
+0                       NA                                    NA               NA                NA              NA              NA
+   Forbidden Planet (1956) Butch Cassidy and the Sundance Kid (1969) American Werewolf in London, An (1981)
+0                       NA                                        NA                                     NA
+   Amityville Horror, The (1979) Birds, The (1963) Blob, The (1958) Carrie (1976) Omen, The (1976)
+0                             NA                NA               NA            NA               NA
+   Star Trek: The Motion Picture (1979) Star Trek V: The Final Frontier (1989) Grease (1978) Jaws 2 (1978)
+0                                    NA                                     NA            NA            NA
+   Jackie Chan&#39;s First Strike (1996) Beverly Hills Ninja (1997) Nixon (1995) Smoke (1995)
+0                                 NA                         NA           NA           NA
+   Like Water For Chocolate (Como agua para chocolate) (1992) Secret of Roan Inish, The (1994) Jungle Book, The (1994)
+0                                                          NA                               NA                      NA
+   Red Rock West (1992) Bronx Tale, A (1993) Rudy (1993) Short Cuts (1993) Tombstone (1993) Courage Under Fire (1996)
+0                    NA                   NA          NA                NA               NA                  2.125714
+   Dragonheart (1996) James and the Giant Peach (1996) Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963)
+0                  NA                               NA                                                                          NA
+   Trainspotting (1996) First Wives Club, The (1996) Matilda (1996) Philadelphia Story, The (1940) Vertigo (1958)
+0                    NA                           NA             NA                             NA       2.125714
+   North by Northwest (1959) Apartment, The (1960) Some Like It Hot (1959) Casablanca (1942) Maltese Falcon, The (1941)
+0                         NA                    NA                      NA                NA                         NA
+   My Fair Lady (1964) Sabrina (1954) Roman Holiday (1953) Sunset Blvd. (1950) Notorious (1946) To Catch a Thief (1955)
+0                   NA             NA                   NA                  NA               NA                      NA
+   Adventures of Robin Hood, The (1938) East of Eden (1955) Thin Man, The (1934) His Girl Friday (1940)
+0                                    NA                  NA                   NA                     NA
+   Around the World in 80 Days (1956) It&#39;s a Wonderful Life (1946) Bringing Up Baby (1938) African Queen, The (1951)
+0                                  NA                           NA                      NA                        NA
+   Cat on a Hot Tin Roof (1958) Dumbo (1941) Bananas (1971) Candidate, The (1972) Bonnie and Clyde (1967) Dial M for Murder (1954)
+0                            NA           NA             NA                    NA                      NA                       NA
+   Rebel Without a Cause (1955) Streetcar Named Desire, A (1951) People vs. Larry Flynt, The (1996) My Left Foot (1989)
+0                            NA                               NA                                 NA                  NA
+   Magnificent Seven, The (1954) Lawrence of Arabia (1962) Wings of Desire (1987) Third Man, The (1949) Annie Hall (1977)
+0                             NA                        NA                     NA                    NA                NA
+   Boot, Das (1981) Local Hero (1983) Manhattan (1979) Miller&#39;s Crossing (1990) Treasure of the Sierra Madre, The (1948)
+0                NA                NA               NA                       NA                                       NA
+   Great Escape, The (1963) Deer Hunter, The (1978) Cool Hand Luke (1967) Big Sleep, The (1946) Ben-Hur (1959) Gandhi (1982)
+0                        NA                      NA                    NA                    NA             NA            NA
+   Killing Fields, The (1984) My Life as a Dog (Mitt liv som hund) (1985) Man Who Would Be King, The (1975) Shine (1996)
+0                          NA                                          NA                                NA           NA
+   Addicted to Love (1997) Anastasia (1997) Money Train (1995) Mortal Kombat (1995) Pocahontas (1995)
+0                       NA               NA                 NA                   NA                NA
+   Things to Do in Denver when You&#39;re Dead (1995) Broken Arrow (1996) Young Poisoner&#39;s Handbook, The (1995) Rob Roy (1995)
+0                                              NA                  NA                                    NA             NA
+   Die Hard: With a Vengeance (1995) Species (1995) Walk in the Clouds, A (1995) Waterworld (1995) Heavenly Creatures (1994)
+0                                 NA             NA                           NA                NA                        NA
+   Interview with the Vampire (1994) Mary Shelley&#39;s Frankenstein (1994) Quick and the Dead, The (1995) Clear and Present Danger (1994)
+0                                 NA                                 NA                             NA                              NA
+   Speed (1994) Wolf (1994) Wyatt Earp (1994) City Slickers II: The Legend of Curly&#39;s Gold (1994) Cliffhanger (1993) Coneheads (1993)
+0            NA          NA                NA                                                  NA                 NA               NA
+   Demolition Man (1993) Kalifornia (1993) Piano, The (1993) Secret Garden, The (1993) Beauty and the Beast (1991)
+0                     NA                NA                NA                        NA                          NA
+   Wild Bunch, The (1969) Primal Fear (1996) Fan, The (1996) Hunchback of Notre Dame, The (1996) Eraser (1996)
+0                      NA                 NA              NA                                  NA            NA
+   American in Paris, An (1951) Rear Window (1954) It Happened One Night (1934) All About Eve (1950) Rebecca (1940)
+0                            NA                 NA                           NA                   NA             NA
+   Father of the Bride (1950) Gigi (1958) Giant (1956) 39 Steps, The (1935) Night of the Living Dead (1968) Extreme Measures (1996)
+0                          NA          NA           NA                   NA                              NA                      NA
+   Chamber, The (1996) Swiss Family Robinson (1960) Angels in the Outfield (1994) Sword in the Stone, The (1963)
+0                   NA                           NA                            NA                             NA
+   Robin Hood: Prince of Thieves (1991) Sleepers (1996) Victor/Victoria (1982) Crying Game, The (1992) Sophie&#39;s Choice (1982)
+0                                    NA              NA                     NA                      NA                     NA
+   Christmas Carol, A (1938) Escape from New York (1981) Return of Martin Guerre, The (Retour de Martin Guerre, Le) (1982)
+0                         NA                          NA                                                                NA
+   Tin Drum, The (Blechtrommel, Die) (1979) Cook the Thief His Wife &amp; Her Lover, The (1989) Grifters, The (1990)
+0                                        NA                                              NA                   NA
+   Once Upon a Time in the West (1969) Ran (1985) Quiet Man, The (1952) Once Upon a Time in America (1984)
+0                                   NA         NA                    NA                                 NA
+   Seventh Seal, The (Sjunde inseglet, Det) (1957) Glory (1989) Rosencrantz and Guildenstern Are Dead (1990) Chinatown (1974)
+0                                               NA           NA                                           NA               NA
+   Stand by Me (1986) M (1931) Manchurian Candidate, The (1962) Pump Up the Volume (1990) Arsenic and Old Lace (1944)
+0                  NA       NA                               NA                        NA                          NA
+   Fried Green Tomatoes (1991) High Noon (1952) Somewhere in Time (1980) Being There (1979) Paris, Texas (1984) Alien 3 (1992)
+0                           NA               NA                       NA                 NA                  NA             NA
+   Bride of Frankenstein (1935) Candyman (1992) Cape Fear (1962) Cat People (1982)
+0                            NA              NA               NA                NA
+   Nosferatu (Nosferatu, eine Symphonie des Grauens) (1922) Crucible, The (1996) Volcano (1997) Conan the Barbarian (1981)
+0                                                        NA                   NA             NA                         NA
+   I Know What You Did Last Summer (1997) In the Line of Fire (1993) Executive Decision (1996) Perfect World, A (1993)
+0                                      NA                         NA                        NA                      NA
+   McHale&#39;s Navy (1997) Jackal, The (1997) Seven Years in Tibet (1997) American President, The (1995) Casino (1995) Persuasion (1995)
+0                    NA                 NA                          NA                             NA            NA                NA
+   City Hall (1996) Basketball Diaries, The (1995) Little Women (1994) Barcelona (1994) Singin&#39; in the Rain (1952)
+0                NA                             NA                  NA               NA                         NA
+   Enchanted April (1991) Sex, Lies, and Videotape (1989) Strictly Ballroom (1992) Better Off Dead... (1985) Tin Men (1987)
+0                      NA                              NA                       NA                        NA             NA
+   Othello (1995) To Die For (1995) Home for the Holidays (1995) Juror, The (1996) First Knight (1995) Mallrats (1995)
+0              NA                NA                           NA                NA                  NA              NA
+   Nine Months (1995) Circle of Friends (1995) Immortal Beloved (1994) Junior (1994) Nell (1994) Dave (1993) Philadelphia (1993)
+0                  NA                       NA                      NA            NA          NA          NA                  NA
+   Shadowlands (1993) Sirens (1994) Pretty Woman (1990) Jane Eyre (1996) Last Supper, The (1995) Ransom (1996) Michael Collins (1996)
+0                  NA            NA                  NA               NA                      NA            NA                     NA
+   Real Genius (1985) Benny &amp; Joon (1993) Saint, The (1997) Amistad (1997) Tomorrow Never Dies (1997) Red Corner (1997) Jumanji (1995)
+0                  NA                  NA                NA             NA                         NA                NA             NA
+   Father of the Bride Part II (1995) Screamers (1995) Nick of Time (1995) Beautiful Girls (1996) Happy Gilmore (1996) Casper (1995)
+0                                  NA               NA                  NA                     NA                   NA            NA
+   Congo (1995) Devil in a Blue Dress (1995) Johnny Mnemonic (1995) Kids (1995) Don Juan DeMarco (1995) Dumb &amp; Dumber (1994)
+0            NA                           NA                     NA          NA                      NA                   NA
+   French Kiss (1995) Milk Money (1994) Only You (1994) Swimming with Sharks (1995) Tommy Boy (1995) Bullets Over Broadway (1994)
+0                  NA                NA              NA                          NA               NA                           NA
+   It Could Happen to You (1994) Hard Target (1993) Menace II Society (1993) Rising Sun (1993) Shadow, The (1994)
+0                             NA                 NA                       NA                NA                 NA
+   Celluloid Closet, The (1995) One Fine Day (1996) Eddie (1996) Space Jam (1996) Mulholland Falls (1996) Great White Hype, The (1996)
+0                            NA                  NA           NA               NA                      NA                           NA
+   Arrival, The (1996) Phantom, The (1996) Daylight (1996) Escape from L.A. (1996) Bulletproof (1996) Last Man Standing (1996)
+0                   NA                  NA              NA                      NA                 NA                       NA
+   Glimmer Man, The (1996) That Thing You Do! (1996) To Gillian on Her 37th Birthday (1996) Looking for Richard (1996)
+0                       NA                        NA                                     NA                         NA
+   Days of Thunder (1990) Diva (1981) Night on Earth (1991) My Fellow Americans (1996) Michael (1996) Vegas Vacation (1997)
+0                      NA          NA                    NA                         NA             NA                    NA
+   Picture Perfect (1997) Excess Baggage (1997) Peacemaker, The (1997) Soul Food (1997) Life Less Ordinary, A (1997)
+0                      NA                    NA                     NA               NA                           NA
+   Eve&#39;s Bayou (1997) Scream 2 (1997) City of Lost Children, The (1995) Farewell My Concubine (1993) Raise the Red Lantern (1991)
+0                  NA              NA                                NA                           NA                           NA
+   White Squall (1996) Down Periscope (1996) Craft, The (1996) Harriet the Spy (1996) Chain Reaction (1996)
+0                   NA                    NA                NA                     NA                    NA
+   Island of Dr. Moreau, The (1996) First Kid (1996) Preacher&#39;s Wife, The (1996) Murder in the First (1995) With Honors (1994)
+0                                NA               NA                          NA                         NA                 NA
+   What&#39;s Love Got to Do with It (1993) Killing Zoe (1994) Renaissance Man (1994) Charade (1963) Fox and the Hound, The (1981)
+0                                    NA                 NA                     NA             NA                            NA
+   How to Make an American Quilt (1995) Indian in the Cupboard, The (1995) Blue in the Face (1995) Before Sunrise (1995)
+0                                    NA                                 NA                      NA                    NA
+   Nobody&#39;s Fool (1994) Dazed and Confused (1993) Orlando (1993) Some Folks Call It a Sling Blade (1993)
+0                    NA                        NA             NA                                      NA
+   Winnie the Pooh and the Blustery Day (1968) Substitute, The (1996) Shadow Conspiracy (1997) Beautician and the Beast, The (1997)
+0                                           NA                     NA                       NA                                   NA
+   Hercules (1997) Waiting for Guffman (1996) Stealing Beauty (1996) Basquiat (1996) 2 Days in the Valley (1996) Private Parts (1997)
+0               NA                         NA                     NA              NA                          NA                   NA
+   Romy and Michele&#39;s High School Reunion (1997) Con Air (1997) Trees Lounge (1996) Gaslight (1944) Grumpier Old Men (1995)
+0                                             NA             NA                  NA              NA                      NA
+   Cool Runnings (1993) Hamlet (1996) Forget Paris (1995) Paper, The (1994) Malice (1993) Multiplicity (1996) She&#39;s the One (1996)
+0                    NA            NA                  NA                NA            NA                  NA                   NA
+   Ghost and Mrs. Muir, The (1947) Associate, The (1996) Adventures of Pinocchio, The (1996) Little Princess, A (1995)
+0                               NA                    NA                                  NA                        NA
+   Koyaanisqatsi (1983) Bottle Rocket (1996) Shallow Grave (1994) Reality Bites (1994) Joe&#39;s Apartment (1996) Sliver (1993)
+0                    NA                   NA                   NA                   NA                     NA            NA
+   Pete&#39;s Dragon (1977) Flirting With Disaster (1996) Six Degrees of Separation (1993) Tank Girl (1995) Up in Smoke (1978)
+0                    NA                            NA                               NA               NA                 NA
+   Some Kind of Wonderful (1987) Get on the Bus (1996) Doors, The (1991) Hackers (1995) When We Were Kings (1996) Young Guns II (1990)
+0                             NA                    NA                NA             NA                        NA                   NA
+   Family Thing, A (1996) Virtuosity (1995) Assassins (1995) Under Siege 2: Dark Territory (1995) Metro (1997)
+0                      NA                NA               NA                                   NA           NA
+ [ erreichte getOption(&quot;max.print&quot;) --  79 Zeilen ausgelassen ]</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI3BfMiA8LSBwcmVkaWN0KHJfaWJjZiwgdGVzdF8xX2liY2YsIHR5cGU9XCJcIilcbmBgYCJ9 -->
+<pre class="r"><code>#p_2 &lt;- predict(r_ibcf, test_1_ibcf, type=&quot;&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29zaW5lX2liY2YgPC0gYXMuZGF0YS5mcmFtZShhcyhzaW1pbGFyaXR5KHJfaWJjZiwgbWV0aG9kPSdjb3NpbmUnLCB3aGljaD0naXRlbXMnKSwgXCJtYXRyaXhcIikpXG5gYGAifQ== -->
+<pre class="r"><code>cosine_ibcf &lt;- as.data.frame(as(similarity(r_ibcf, method=&#39;cosine&#39;, which=&#39;items&#39;), &quot;matrix&quot;))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRmVobGVyIGluIChmdW5jdGlvbiAoY2xhc3NlcywgZmRlZiwgbXRhYmxlKSAgOiBcbiAgdW5hYmxlIHRvIGZpbmQgYW4gaW5oZXJpdGVkIG1ldGhvZCBmb3IgZnVuY3Rpb24g4oCYc2ltaWxhcml0eeKAmSBmb3Igc2lnbmF0dXJlIOKAmFwiUmVjb21tZW5kZXJcIuKAmVxuIn0= -->
+<pre><code>Fehler in (function (classes, fdef, mtable)  : 
+  unable to find an inherited method for function ‘similarity’ for signature ‘&quot;Recommender&quot;’</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkocmVjb21tZW5kZXJsYWIpCmxpYnJhcnkoZ2dwbG90MikKaW5zdGFsbC5wYWNrYWdlcygic3R5bGVyIikKYGBgCgoKYGBge3J9CiMgZ2V0IGRhdGEgZnJvbSByZWNvbW1lZGVybGFiIHBhY2thZ2UKZGF0YSgiTW92aWVMZW5zZSIpCgojIHRyYW5zZm9ybSBkYXRhIGZyb20gUmVhbHJhdGluZ21hdHJpeCB0byBNYXRyaXgKTW92aWVMZW5zZU1hdHJpeCA8LSBhcyhNb3ZpZUxlbnNlLCAibWF0cml4IikKYGBgCgoKMS4gV2VsY2hlcyBzaW5kIGRpZSBhbSBow6R1Zmlnc3RlbiBnZXNjaGF1dGVuIEZpbG1lPyAKYGBge3J9CmhlYWQoc29ydChjb2xDb3VudHMoTW92aWVMZW5zZSksIGRlY3JlYXNpbmcgPSBUUlVFKSwgMTApICMjIHRvcCAxMCBGaWxtZSBtaXQgZGVuIG1laXN0ZW4gUmF0aW5ncwpgYGAKCldlbGNoZXMgc2luZCBkaWUgbWVpc3QgZ2VzY2hhdXRlbiBHZW5yZXM/CmBgYHtyfQp3YXRjaGVkX21vdmllcyA8LSBjb2xDb3VudHMoTW92aWVMZW5zZSkgIyMgVmVrdG9yIG1pdCB2aWV3cyBwcm8gRmlsbSAKCk1vdmllTGVuc2VfbW92aWVzIDwtIE1vdmllTGVuc2VNZXRhICU+JSAjIyBLb3BpZSB2b24gTW92aWVMZW5zZU1ldGEgbnVyIG1pdCBHZW5yZXMgdW5kIFRpdGxlCiAgc2VsZWN0KHRpdGxlLCBBY3Rpb246V2VzdGVybikKYGBgCgoKYGBge3J9CiMjIE1pdCB6d2VpIGZvciBsb29wcyBkdXJjaCBkYXMgRGF0YWZyYW1lIE1vdmllTGVuc2VfbW92aWVzIGxvb3BlbiB1bSBkaWUgQW56YWhsIHZpZXdzIHBybyBGaWxtIGVpbnp1dHJhZ2VuCm4gPC0gMApmb3IgKHggaW4gd2F0Y2hlZF9tb3ZpZXMpIHsKICBuIDwtIG4gKyAxCiAgZm9yIChpIGluIDI6MTkpIHsKICAgIGlmIChNb3ZpZUxlbnNlX21vdmllc1tuLGldID09IDEpIHsKICAgICAgTW92aWVMZW5zZV9tb3ZpZXNbbixpXSA8LSB4CiAgICB9CiAgfQp9CmBgYAoKYGBge3J9CmhlYWQoc29ydChjb2xTdW1zKE1vdmllTGVuc2VfbW92aWVzWywyOjE5XSksIGRlY3JlYXNpbmcgPSBUUlVFKSwxMCkgIyMgQW56YWhsIHZpZXdzIHBybyBHZW5yZQpgYGAKCgozLiBXaWUgdmVydGVpbGVuIHNpY2ggZGllIG1pdHRsZXJlbiBLdW5kZW5yYXRpbmdzIHBybyBGaWxtPwpgYGB7cn0KbWVhbl9yYXRpbmdzIDwtIGNvbFN1bXMoTW92aWVMZW5zZSkvY29sQ291bnRzKE1vdmllTGVuc2UpCmhpc3QobWVhbl9yYXRpbmdzLCBwcm9iYWJpbGl0eSA9IFRSVUUpCmBgYAoKNC4gV2llIHN0YXJrIHN0cmV1ZW4gZGllIFJhdGluZ3Mgdm9uIGluZGl2aWR1ZWxsZW4gS3VuZGVuPwpgYGB7cn0KCmBgYAoKNS4gV2VsY2hlbiBFaW5mbHVzcyBoYXQgZGllIE5vcm1pZXJ1bmcgZGVyIFJhdGluZ3MgcHJvIEt1bmRlIGF1ZgpkZXJlbiBWZXJ0ZWlsdW5nPwpgYGB7cn0KTW92aWVMZW5zZV9ub3JtIDwtIG5vcm1hbGl6ZShNb3ZpZUxlbnNlLCBtZXRob2Q9ImNlbnRlciIsIHJvdz1UUlVFKQoKaGlzdChnZXRSYXRpbmdzKE1vdmllTGVuc2Vfbm9ybSkpCmhpc3QoZ2V0UmF0aW5ncyhNb3ZpZUxlbnNlKSkKYGBgCgo2LiBXZWxjaGUgc3RydWt0dXJlbGxlbiBDaGFyYWt0ZXJpc3Rpa2EgKHouQi4gU3BhcnNpdHkpIHVuZCBBdWZmw6RsbGlna2VpdGVuIHplaWd0IGRpZSBVc2VyLUl0ZW0gTWF0cml4PwpgYGB7cn0KIyBzcGFyc2l0eQpzdW0oaXMubmEoTW92aWVMZW5zZU1hdHJpeCkgPT0gVFJVRSkvKGRpbShNb3ZpZUxlbnNlTWF0cml4KVsxXSpkaW0oTW92aWVMZW5zZU1hdHJpeClbMl0pCgojIERpbWVuc2lvbnMKZGltKE1vdmllTGVuc2UpCgojIEZpbG1lCmRpbShNb3ZpZUxlbnNlKVsxXQoKIyBVc2VyCmRpbShNb3ZpZUxlbnNlKVsyXQoKIyAKYGBgCgpEYXRlbnJlZHVrdGlvbgoKV2llIHZpZWxlIFJhdGluZ3MgaGFiZW4gS3VuZGVuIGltIER1cmNoc2Nobml0dCBhYmdlZ2ViZW4/CmBgYHtyfQpib3hwbG90KHJvd0NvdW50cyhNb3ZpZUxlbnNlKSkKcHJpbnQocXVhbnRpbGUocm93Q291bnRzKE1vdmllTGVuc2UpKSkKYGBgCgoKYGBge3J9CmJveHBsb3QoY29sQ291bnRzKE1vdmllTGVuc2UpKQpwcmludChxdWFudGlsZShjb2xDb3VudHMoTW92aWVMZW5zZSkpKQpgYGAKCgpgYGB7cn0Kc2V0LnNlZWQoMSkKc3BsaXQxPC0gc2FtcGxlKGMocmVwKDAsIDAuNjUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpLCByZXAoMSwgMC4zNSAqIG5yb3coTW92aWVMZW5zZV9ub3JtKSkpKQp0cmFpbl8xIDwtIE1vdmllTGVuc2Vfbm9ybVtzcGxpdDEgPT0gMCxdCnRlc3RfMSA8LSBNb3ZpZUxlbnNlX25vcm1bc3BsaXQxID09IDEsXQoKCnNldC5zZWVkKDIpCnNwbGl0MjwtIHNhbXBsZShjKHJlcCgwLCAwLjY1ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSwgcmVwKDEsIDAuMzUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpKSkKdHJhaW5fMiA8LSBNb3ZpZUxlbnNlX25vcm1bc3BsaXQyID09IDAsXQp0ZXN0XzIgPC0gTW92aWVMZW5zZV9ub3JtW3NwbGl0MiA9PSAxLF0KCnNldC5zZWVkKDMpCnNwbGl0MzwtIHNhbXBsZShjKHJlcCgwLCAwLjI3ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSwgcmVwKDEsIDAuMzUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpKSkKdHJhaW5fMyA8LSBNb3ZpZUxlbnNlX25vcm1bc3BsaXQzPT0wLF0KdGVzdF8zIDwtIE1vdmllTGVuc2Vfbm9ybVtzcGxpdDMgPT0gMSxdCmBgYAoKMyBtYWwgdGVzdCB0cmFpbiBzcGxpdCwgZGEgd2lyIGRyZWkgUGVyc29uZW4gaW4gZGVyIEdydXBwZSBzaW5kCmBgYHtyfQpwcmludChzdW0oaXMubmEoYXModHJhaW5fMSwgIm1hdHJpeCIpKSA9PSBUUlVFKS8oZGltKGFzKHRyYWluXzEsICJtYXRyaXgiKSlbMV0qZGltKGFzKHRyYWluXzEsICJtYXRyaXgiKSlbMl0pKQoKcHJpbnQoc3VtKGlzLm5hKGFzKHRyYWluXzIsICJtYXRyaXgiKSkgPT0gVFJVRSkvKGRpbShhcyh0cmFpbl8yLCAibWF0cml4IikpWzFdKmRpbShhcyh0cmFpbl8yLCAibWF0cml4IikpWzJdKSkKCnByaW50KHN1bShpcy5uYShhcyh0cmFpbl8zLCAibWF0cml4IikpID09IFRSVUUpLyhkaW0oYXModHJhaW5fMywgIm1hdHJpeCIpKVsxXSpkaW0oYXModHJhaW5fMywgIm1hdHJpeCIpKVsyXSkpCmBgYApHcsO2c3NlIGRlcyB0cmFpbl8xIHNwbGl0IHZlcmtsZWluZXJuIGF1ZiA0MDAgS3VuZGVuIHVuZCA3MDAgRmlsbWUsIGRhYmVpIHNvbGx0ZSBkaWUgc3BhcnNpdHkgYmVpbSB0cmFpbl8xIGVyaMO2aHQgd2VyZGVuIGR1cmNoIGzDtnNjaGVuIHZvbiBLdW5kZW4gZGllIHZpZWxlIEJld2VydHVuZ2VuIGFiZ2VnZWJlbiBoYWJlbiB1bmQgRmlsbWVuIGRpZSB2aWVsIEJld2VydHVuZ2VuIGhhYmVuCmBgYHtyfQpwZXJjZW50aWxlX3RyYWluXzFfS3VuZGVuID0gKGRpbSh0cmFpbl8xKVsxXS00MDApLyhkaW0odHJhaW5fMSlbMV0vMTAwKS8xMDAgIyMgYmlzIHp1IHdlbGNoZW0gcGVyY2VudGlsIG3DvHNzZW4gQmVudXR6ZXIgbWl0IHdlbmlnZXIgQmV3ZXJ0dW5nZW4gZ2Vsw7ZzY2h0IHdlcmRlbgpwcmludChxdWFudGlsZShyb3dDb3VudHModHJhaW5fMSksIHBlcmNlbnRpbGVfdHJhaW5fMV9LdW5kZW4pKSAjIFdlcnQgaW4gQmV3ZXJ0dW5nZW4KCnRyYWluXzEgPC0gdHJhaW5fMVtyb3dDb3VudHModHJhaW5fMSkgPiA0MF0gIyBSZWR1emllcmVuIGRlciBLdW5kZW4gYXVmIDQwMAoKcGVyY2VudGlsZV90cmFpbl8xX0ZpbG1lID0gKGRpbSh0cmFpbl8xKVsyXS03MDApLyhkaW0odHJhaW5fMSlbMl0vMTAwKS8xMDAgIyMgYmlzIHp1IHdlbGNoZW0gcGVyY2VudGlsIG3DvHNzZW4gRmlsbWUgbWl0IHdlbmlnZXIgQmV3ZXJ0dW5nZW4gZ2Vsw7ZzY2h0IHdlcmRlbgoKcHJpbnQocXVhbnRpbGUoY29sQ291bnRzKHRyYWluXzEpLCBwZXJjZW50aWxlX3RyYWluXzFfRmlsbWUpKSAjIFdlcnQgaW4gQmV3ZXJ0dW5nZW4KCnRyYWluXzFfbSA8LSBhcyh0cmFpbl8xLCAibWF0cml4IikKCnRyYWluXzFfbSA8LSB0cmFpbl8xX21bLCgoY29sU3VtcyghaXMubmEodHJhaW5fMV9tKSkpID4gMjIpXSAjIFJlZHV6aWVyZW4gZGVyIEt1bmRlbiBhdWYgNzAwCmBgYApgYGB7cn0KcGVyY2VudGlsZV90cmFpbl8yX0t1bmRlbiA9ICgxMDAtKGRpbSh0cmFpbl8yKVsxXS00MDApLyhkaW0odHJhaW5fMilbMV0vMTAwKSkvMTAwICMjIGJpcyB6dSB3ZWxjaGVtIHBlcmNlbnRpbCBtw7xzc2VuIEJlbnV0emVyIG1pdCB3ZW5pZ2VyIEJld2VydHVuZ2VuIGdlbMO2c2NodCB3ZXJkZW4KcHJpbnQocXVhbnRpbGUocm93Q291bnRzKHRyYWluXzIpLCBwZXJjZW50aWxlX3RyYWluXzJfS3VuZGVuKSkgIyBXZXJ0IGluIEJld2VydHVuZ2VuCgp0cmFpbl8yIDwtIHRyYWluXzJbcm93Q291bnRzKHRyYWluXzIpIDwgMTA2XSAjIFJlZHV6aWVyZW4gZGVyIEt1bmRlbiBhdWYgNDAwCgpwZXJjZW50aWxlX3RyYWluXzJfRmlsbWUgPSAoMTAwLShkaW0odHJhaW5fMilbMl0tNzAwKS8oZGltKHRyYWluXzIpWzJdLzEwMCkpLzEwMCAjIyBiaXMgenUgd2VsY2hlbSBwZXJjZW50aWwgbcO8c3NlbiBGaWxtZSBtaXQgd2VuaWdlciBCZXdlcnR1bmdlbiBnZWzDtnNjaHQgd2VyZGVuCgpwcmludChxdWFudGlsZShjb2xDb3VudHModHJhaW5fMiksIHBlcmNlbnRpbGVfdHJhaW5fMl9GaWxtZSkpICMgV2VydCBpbiBCZXdlcnR1bmdlbgoKdHJhaW5fMl9tIDwtIGFzKHRyYWluXzIsICJtYXRyaXgiKQoKdHJhaW5fMl9tIDwtIHRyYWluXzJfbVssKChjb2xTdW1zKCFpcy5uYSh0cmFpbl8yX20pKSkgPCAyKV0gIyBSZWR1emllcmVuIGRlciBLdW5kZW4gYXVmIDcwMApgYGAKYGBge3J9CmNvbF9kcm9wIDwtIHNhbXBsZSgxOmxlbmd0aChjb2xuYW1lcyh0cmFpbl8zKSksIGxlbmd0aChjb2xuYW1lcyh0cmFpbl8zKSktOTY0KQoKdHJhaW5fM19tIDwtIGFzKHRyYWluXzMsICJtYXRyaXgiKQoKdHJhaW5fM19tIDwtIHRyYWluXzNfbVssIGNvbF9kcm9wXQpgYGAKYGBgCgojIyBWZXJnbGVpY2ggZGVzIFRyYWluaW5nc2V0IDEgdm9yIHVuZCBuYWNoIGRlciBEYXRlbnJlZHVrdGlvbgpgYGB7cn0KIyBBbW91bnQgb2YgQ29zdHVtZXJzIGJlZm9yZQpjYXQoIkFtb3VudCBvZiBDdXN0b21lcnMgYmVmb3JlOiAiLCBkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpWzFdLCAiXG4iKQoKIyBBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyCmNhdCgiQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcjogIiwgZGltKHRyYWluXzFfbSlbMV0sICJcbiIpCgojIEFtb251dCBvZiBNb3ZpZXMgYmVmb3JlCmNhdCgiQW1vbnV0IG9mIE1vdmllcyBiZWZvcmU6ICIsZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsyXSwgIlxuIikKCiMgQW1vdW50IG9mIE1vdmllcyBhZnRlcgpjYXQoIkFtb3VudCBvZiBNb3ZpZXMgYWZ0ZXI6IixkaW0odHJhaW5fMV9tKVsyXSwgIlxuIikKCiMgU3BhcnNpdHkgYmVmb3JlCmNhdCgiU3BhcnNpdHkgYmVmb3JlOiAiLCBzdW0oaXMubmEoYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpKS8oZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsxXSpkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpWzJdKSwgIlxuIikKCiMgU3BhcnNpdHkgYWZ0ZXIKY2F0KCJTcGFyc2l0eSBhZnRlcjogIiwgc3VtKGlzLm5hKHRyYWluXzFfbSkpLyhkaW0odHJhaW5fMV9tKVsxXSpkaW0odHJhaW5fMV9tKVsyXSksICJcbiIpCgojIG1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZQpjYXQoIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZTogIixzdW0ocm93TWVhbnMoTW92aWVMZW5zZV9ub3JtKSkvZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsxXSwgIlxuIikKCiMgbWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXIKY2F0KCJNZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlcjogIixzdW0ocm93TWVhbnModHJhaW5fMV9tLCBuYS5ybT1UUlVFKSkvZGltKHRyYWluXzFfbSlbMV0sICJcbiIpCmBgYAoKIyMgVmVyZ2xlaWNoIGRlcyBUcmFpbmluZ3NldCAyIHZvciB1bmQgbmFjaCBkZXIgRGF0ZW5yZWR1a3Rpb24KYGBge3J9CiMgQW1vdW50IG9mIENvc3R1bWVycyBiZWZvcmUKY2F0KCJBbW91bnQgb2YgQ3VzdG9tZXJzIGJlZm9yZTogIiwgZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsxXSwgIlxuIikKCiMgQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcgpjYXQoIkFtb3VudCBvZiBDb3N0dW1lcnMgYWZ0ZXI6ICIsIGRpbSh0cmFpbl8yX20pWzFdLCAiXG4iKQoKIyBBbW9udXQgb2YgTW92aWVzIGJlZm9yZQpjYXQoIkFtb251dCBvZiBNb3ZpZXMgYmVmb3JlOiAiLGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sICJtYXRyaXgiKSlbMl0sICJcbiIpCgojIEFtb3VudCBvZiBNb3ZpZXMgYWZ0ZXIKY2F0KCJBbW91bnQgb2YgTW92aWVzIGFmdGVyOiIsZGltKHRyYWluXzJfbSlbMl0sICJcbiIpCgojIFNwYXJzaXR5IGJlZm9yZQpjYXQoIlNwYXJzaXR5IGJlZm9yZTogIiwgc3VtKGlzLm5hKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKSkvKGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sICJtYXRyaXgiKSlbMV0qZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsyXSksICJcbiIpCgojIFNwYXJzaXR5IGFmdGVyCmNhdCgiU3BhcnNpdHkgYWZ0ZXI6ICIsIHN1bShpcy5uYSh0cmFpbl8yX20pKS8oZGltKHRyYWluXzJfbSlbMV0qZGltKHRyYWluXzJfbSlbMl0pLCAiXG4iKQoKIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBiZWZvcmUKY2F0KCJNZWFuIGN1c3RvbWVyIHJhdGluZyBiZWZvcmU6ICIsc3VtKHJvd01lYW5zKE1vdmllTGVuc2Vfbm9ybSkpL2RpbShhcyhNb3ZpZUxlbnNlX25vcm0sICJtYXRyaXgiKSlbMV0sICJcbiIpCgojIG1lYW4gY3VzdG9tZXIgcmF0aW5nIGFmdGVyCmNhdCgiTWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXI6ICIsc3VtKHJvd01lYW5zKHRyYWluXzJfbSwgbmEucm09VFJVRSkpL2RpbSh0cmFpbl8yX20pWzFdLCAiXG4iKQpgYGAKCiMjIFZlcmdsZWljaCBkZXMgVHJhaW5pbmdzZXQgMyB2b3IgdW5kIG5hY2ggZGVyIERhdGVucmVkdWt0aW9uCmBgYHtyfQojIEFtb3VudCBvZiBDb3N0dW1lcnMgYmVmb3JlCmNhdCgiQW1vdW50IG9mIENvc3R1bWVycyBiZWZvcmU6ICIsZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsxXSwgIlxuIikKCiMgQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcgpjYXQoIkFtb3VudCBvZiBDb3N0dW1lcnMgYWZ0ZXI6ICIsZGltKHRyYWluXzNfbSlbMV0sICJcbiIpCgojIEFtb251dCBvZiBNb3ZpZXMgYmVmb3JlCmNhdCgiTUFtb3VudCBvZiBNb3ZpZXMgYmVmb3JlOiAiLGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sICJtYXRyaXgiKSlbMl0sICJcbiIpCgojIEFtb3VudCBvZiBNb3ZpZXMgYWZ0ZXIKY2F0KCJBbW91bnQgb2YgTW92aWVzIGFmdGVyOiAiLGRpbSh0cmFpbl8zX20pWzJdLCAiXG4iKQoKIyBTcGFyc2l0eSBiZWZvcmUKY2F0KCJTcGFyc2l0eSBiZWZvcmU6ICIsc3VtKGlzLm5hKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKSkvKGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sICJtYXRyaXgiKSlbMV0qZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsyXSkpCgojIFNwYXJzaXR5IGFmdGVyCmNhdCgiU3BhcnNpdHkgYWZ0ZXI6ICIsc3VtKGlzLm5hKHRyYWluXzNfbSkpLyhkaW0odHJhaW5fM19tKVsxXSpkaW0odHJhaW5fM19tKVsyXSksICJcbiIpCgojIG1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZQpjYXQoIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZTogIiwoc3VtKHJvd01lYW5zKE1vdmllTGVuc2Vfbm9ybSwgbmEucm09VFJVRSkpL2RpbShNb3ZpZUxlbnNlX25vcm0pWzFdKSwgIlxuIikKCiMgbWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXIKY2F0KCJNZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlcjogIiwoc3VtKHJvd01lYW5zKHRyYWluXzNfbSwgbmEucm09VFJVRSkpL2RpbSh0cmFpbl8zX20pWzFdKSwgIlxuIikKYGBgCgojIyBXaWUgc3Rhcmsgw7xiZXJzY2huZWlkZW4gc2ljaCBkaWUgMyBEYXRlbnPDpHR6ZT8KYGBge3J9CnByaW50KCJoZWxsbyB3b3JsZCIpCmBgYAoKYGBge3J9CiMgY2hlY2sgZm9yIGRhdGFmcmFtZXMgdHJhaW5fMSBhbmQgdHJhaW5fMgppbnRlcnNlY3QodHJhaW5fMSwgdHJhaW5fMikKCiMgY2hlY2sgZm9yIGRhdGFmcmFtZXMgdHJhaW5fMSBhbmQgdHJhaW5fMwoKCiMgY2hlY2sgZm9yIGRhdGFmcmFtZXMgdHJhaW5fMiBhbmQgdHJhaW5fMwpgYGAKCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkocmVjb21tZW5kZXJsYWIpCmxpYnJhcnkoZ2dwbG90MikKbGlicmFyeShzdHlsZXIpCmBgYAoKCmBgYHtyfQojIGdldCBkYXRhIGZyb20gcmVjb21tZWRlcmxhYiBwYWNrYWdlCmRhdGEoIk1vdmllTGVuc2UiKQoKIyB0cmFuc2Zvcm0gZGF0YSBmcm9tIFJlYWxyYXRpbmdtYXRyaXggdG8gTWF0cml4Ck1vdmllTGVuc2VNYXRyaXggPC0gYXMoTW92aWVMZW5zZSwgIm1hdHJpeCIpCmBgYAoKCjEuIFdlbGNoZXMgc2luZCBkaWUgYW0gaMOkdWZpZ3N0ZW4gZ2VzY2hhdXRlbiBGaWxtZT8gCmBgYHtyfQpoZWFkKHNvcnQoY29sQ291bnRzKE1vdmllTGVuc2UpLCBkZWNyZWFzaW5nID0gVFJVRSksIDEwKSAjIyB0b3AgMTAgRmlsbWUgbWl0IGRlbiBtZWlzdGVuIFJhdGluZ3MKYGBgCgpXZWxjaGVzIHNpbmQgZGllIG1laXN0IGdlc2NoYXV0ZW4gR2VucmVzPwpgYGB7cn0Kd2F0Y2hlZF9tb3ZpZXMgPC0gY29sQ291bnRzKE1vdmllTGVuc2UpICMjIFZla3RvciBtaXQgdmlld3MgcHJvIEZpbG0gCgpNb3ZpZUxlbnNlX21vdmllcyA8LSBNb3ZpZUxlbnNlTWV0YSAlPiUgIyMgS29waWUgdm9uIE1vdmllTGVuc2VNZXRhIG51ciBtaXQgR2VucmVzIHVuZCBUaXRsZQogIHNlbGVjdCh0aXRsZSwgQWN0aW9uOldlc3Rlcm4pCmBgYAoKCmBgYHtyfQojIyBNaXQgendlaSBmb3IgbG9vcHMgZHVyY2ggZGFzIERhdGFmcmFtZSBNb3ZpZUxlbnNlX21vdmllcyBsb29wZW4gdW0gZGllIEFuemFobCB2aWV3cyBwcm8gRmlsbSBlaW56dXRyYWdlbgpuIDwtIDAKZm9yICh4IGluIHdhdGNoZWRfbW92aWVzKSB7CiAgbiA8LSBuICsgMQogIGZvciAoaSBpbiAyOjE5KSB7CiAgICBpZiAoTW92aWVMZW5zZV9tb3ZpZXNbbixpXSA9PSAxKSB7CiAgICAgIE1vdmllTGVuc2VfbW92aWVzW24saV0gPC0geAogICAgfQogIH0KfQpgYGAKCmBgYHtyfQpoZWFkKHNvcnQoY29sU3VtcyhNb3ZpZUxlbnNlX21vdmllc1ssMjoxOV0pLCBkZWNyZWFzaW5nID0gVFJVRSksMTApICMjIEFuemFobCB2aWV3cyBwcm8gR2VucmUKYGBgCgoKMy4gV2llIHZlcnRlaWxlbiBzaWNoIGRpZSBtaXR0bGVyZW4gS3VuZGVucmF0aW5ncyBwcm8gRmlsbT8KYGBge3J9Cm1lYW5fcmF0aW5ncyA8LSBjb2xTdW1zKE1vdmllTGVuc2UpL2NvbENvdW50cyhNb3ZpZUxlbnNlKQpoaXN0KG1lYW5fcmF0aW5ncywgcHJvYmFiaWxpdHkgPSBUUlVFKQpgYGAKCjQuIFdpZSBzdGFyayBzdHJldWVuIGRpZSBSYXRpbmdzIHZvbiBpbmRpdmlkdWVsbGVuIEt1bmRlbj8KYGBge3J9CgpgYGAKCjUuIFdlbGNoZW4gRWluZmx1c3MgaGF0IGRpZSBOb3JtaWVydW5nIGRlciBSYXRpbmdzIHBybyBLdW5kZSBhdWYKZGVyZW4gVmVydGVpbHVuZz8KYGBge3J9Ck1vdmllTGVuc2Vfbm9ybSA8LSBub3JtYWxpemUoTW92aWVMZW5zZSwgbWV0aG9kPSJjZW50ZXIiLCByb3c9VFJVRSkKCmhpc3QoZ2V0UmF0aW5ncyhNb3ZpZUxlbnNlX25vcm0pKQpoaXN0KGdldFJhdGluZ3MoTW92aWVMZW5zZSkpCmBgYAoKNi4gV2VsY2hlIHN0cnVrdHVyZWxsZW4gQ2hhcmFrdGVyaXN0aWthICh6LkIuIFNwYXJzaXR5KSB1bmQgQXVmZsOkbGxpZ2tlaXRlbiB6ZWlndCBkaWUgVXNlci1JdGVtIE1hdHJpeD8KYGBge3J9CiMgc3BhcnNpdHkKc3VtKGlzLm5hKE1vdmllTGVuc2VNYXRyaXgpID09IFRSVUUpLyhkaW0oTW92aWVMZW5zZU1hdHJpeClbMV0qZGltKE1vdmllTGVuc2VNYXRyaXgpWzJdKQoKIyBEaW1lbnNpb25zCmRpbShNb3ZpZUxlbnNlKQoKIyBGaWxtZQpkaW0oTW92aWVMZW5zZSlbMV0KCiMgVXNlcgpkaW0oTW92aWVMZW5zZSlbMl0KCiMgCmBgYAoKRGF0ZW5yZWR1a3Rpb24KCldpZSB2aWVsZSBSYXRpbmdzIGhhYmVuIEt1bmRlbiBpbSBEdXJjaHNjaG5pdHQgYWJnZWdlYmVuPwpgYGB7cn0KYm94cGxvdChyb3dDb3VudHMoTW92aWVMZW5zZSkpCnByaW50KHF1YW50aWxlKHJvd0NvdW50cyhNb3ZpZUxlbnNlKSkpCmBgYAoKCmBgYHtyfQpib3hwbG90KGNvbENvdW50cyhNb3ZpZUxlbnNlKSkKcHJpbnQocXVhbnRpbGUoY29sQ291bnRzKE1vdmllTGVuc2UpKSkKYGBgCgojIyBUZXN0IHRyYWluIHNwbGl0IGbDvHIgZHJlaSBQZXJzb25lbiwgc29taXQgZHJlaSB2ZXJzY2hpZWRlbmUgRGF0ZW5zw6R0emUKCiMjIyBEYXRlbnNhdHogMQpCZWltIGVyc3RlbiBEYXRlbnNhdHogd2VyZGVuIHdpciBkaWUgU3BhcnNpdHkgc2Vua2VuIGR1cmNoIGdlemllbHRlcyBlbnRmZXJuZW4gdm9uIEZpbG1lbiB1bmQgVXNlciBkaWUgd2VuaWcgYmV3ZXJ0ZXQgd3VyZGVuIHJlc3Bla3RpdmUgYmV3ZXJ0ZXQgaGFiZW4uCgojIyMgRGF0ZW5zYXR6IDIKQmVpbSBlcnN0ZW4gRGF0ZW5zYXR6IHdlcmRlbiB3aXIgZGllIFNwYXJzaXR5IGVyaMO2aGVuIGR1cmNoIGdlemllbHRlcyBlbnRmZXJuZW4gdm9uIEZpbG1lbiB1bmQgVXNlciBkaWUgdmllbCBiZXdlcnRldCB3dXJkZW4gcmVzcGVrdGl2ZSBiZXdlcnRldCBoYWJlbi4KCiMjIyBEYXRlbnNhdHogMwpCZWltIERhdGVuc2F0eiBkcmVpIHdlcmRlbiBlaW5mYWNoIHJhbmRvbSBVc2VyIHNvd2llIEZpbG1lIGVudGZlcm50IHVtIGRpZSBTcGFyc2l0eSBtw7ZnbGljaHN0IG5haGUgYW4gZGVuIE9yaWdpbmFsIERhdGVuIHp1IGhhbHRlbiB1bmQgc29taXQgd2lyZCBzaWNoIGRpZXNlciB6d2lzY2hlbiBEYXRlbnNhdHogMSB1bmQgRGF0ZW5zYXR6IDIgcGxhdHppZXJlbi4KYGBge3J9CnNldC5zZWVkKDEpCnNwbGl0MTwtIHNhbXBsZShjKHJlcCgwLCAwLjY1ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSwgcmVwKDEsIDAuMzUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpKSkKdHJhaW5fMSA8LSBNb3ZpZUxlbnNlX25vcm1bc3BsaXQxID09IDAsXQp0ZXN0XzEgPC0gTW92aWVMZW5zZV9ub3JtW3NwbGl0MSA9PSAxLF0KCnNldC5zZWVkKDIpCnNwbGl0MjwtIHNhbXBsZShjKHJlcCgwLCAwLjY1ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSwgcmVwKDEsIDAuMzUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpKSkKdHJhaW5fMiA8LSBNb3ZpZUxlbnNlX25vcm1bc3BsaXQyID09IDAsXQp0ZXN0XzIgPC0gTW92aWVMZW5zZV9ub3JtW3NwbGl0MiA9PSAxLF0KCnNldC5zZWVkKDMpCnNwbGl0MzwtIHNhbXBsZShjKHJlcCgwLCAwLjI3ICogbnJvdyhNb3ZpZUxlbnNlX25vcm0pKSwgcmVwKDEsIDAuMzUgKiBucm93KE1vdmllTGVuc2Vfbm9ybSkpKSkKdHJhaW5fMyA8LSBNb3ZpZUxlbnNlX25vcm1bc3BsaXQzPT0wLF0KdGVzdF8zIDwtIE1vdmllTGVuc2Vfbm9ybVtzcGxpdDMgPT0gMSxdCmBgYAoKMyBtYWwgdGVzdCB0cmFpbiBzcGxpdCwgZGEgd2lyIGRyZWkgUGVyc29uZW4gaW4gZGVyIEdydXBwZSBzaW5kCmBgYHtyfQpwcmludChzdW0oaXMubmEoYXModHJhaW5fMSwgIm1hdHJpeCIpKSA9PSBUUlVFKS8oZGltKGFzKHRyYWluXzEsICJtYXRyaXgiKSlbMV0qZGltKGFzKHRyYWluXzEsICJtYXRyaXgiKSlbMl0pKQoKcHJpbnQoc3VtKGlzLm5hKGFzKHRyYWluXzIsICJtYXRyaXgiKSkgPT0gVFJVRSkvKGRpbShhcyh0cmFpbl8yLCAibWF0cml4IikpWzFdKmRpbShhcyh0cmFpbl8yLCAibWF0cml4IikpWzJdKSkKCnByaW50KHN1bShpcy5uYShhcyh0cmFpbl8zLCAibWF0cml4IikpID09IFRSVUUpLyhkaW0oYXModHJhaW5fMywgIm1hdHJpeCIpKVsxXSpkaW0oYXModHJhaW5fMywgIm1hdHJpeCIpKVsyXSkpCmBgYApHcsO2c3NlIGRlcyB0cmFpbl8xIHNwbGl0IHZlcmtsZWluZXJuIGF1ZiA0MDAgS3VuZGVuIHVuZCA3MDAgRmlsbWUsIGRhYmVpIHNvbGx0ZSBkaWUgc3BhcnNpdHkgYmVpbSB0cmFpbl8xIGVyaMO2aHQgd2VyZGVuIGR1cmNoIGzDtnNjaGVuIHZvbiBLdW5kZW4gZGllIHZpZWxlIEJld2VydHVuZ2VuIGFiZ2VnZWJlbiBoYWJlbiB1bmQgRmlsbWVuIGRpZSB2aWVsIEJld2VydHVuZ2VuIGhhYmVuCmBgYHtyfQpwZXJjZW50aWxlX3RyYWluXzFfS3VuZGVuID0gKGRpbSh0cmFpbl8xKVsxXS00MDApLyhkaW0odHJhaW5fMSlbMV0vMTAwKS8xMDAgIyMgYmlzIHp1IHdlbGNoZW0gcGVyY2VudGlsIG3DvHNzZW4gQmVudXR6ZXIgbWl0IHdlbmlnZXIgQmV3ZXJ0dW5nZW4gZ2Vsw7ZzY2h0IHdlcmRlbgpwcmludChxdWFudGlsZShyb3dDb3VudHModHJhaW5fMSksIHBlcmNlbnRpbGVfdHJhaW5fMV9LdW5kZW4pKSAjIFdlcnQgaW4gQmV3ZXJ0dW5nZW4KCnRyYWluXzEgPC0gdHJhaW5fMVtyb3dDb3VudHModHJhaW5fMSkgPiA0MF0gIyBFbnRmZXJuZSBLdW5kZW4gbWl0IHp1IHdlbmlnIGFiZ2VnZWJlbmVuIEJld2VydHVuZ2VuIHVtIFNwYXJzaXR5IHp1IHNlbmtlbgoKcGVyY2VudGlsZV90cmFpbl8xX0ZpbG1lID0gKGRpbSh0cmFpbl8xKVsyXS03MDApLyhkaW0odHJhaW5fMSlbMl0vMTAwKS8xMDAgIyMgYmlzIHp1IHdlbGNoZW0gcGVyY2VudGlsIG3DvHNzZW4gRmlsbWUgbWl0IHdlbmlnZXIgQmV3ZXJ0dW5nZW4gZ2Vsw7ZzY2h0IHdlcmRlbgoKcHJpbnQocXVhbnRpbGUoY29sQ291bnRzKHRyYWluXzEpLCBwZXJjZW50aWxlX3RyYWluXzFfRmlsbWUpKSAjIFdlcnQgaW4gQmV3ZXJ0dW5nZW4KCnRyYWluXzFfbSA8LSBhcyh0cmFpbl8xLCAibWF0cml4IikKCnRyYWluXzFfbSA8LSB0cmFpbl8xX21bLCgoY29sU3VtcyghaXMubmEodHJhaW5fMV9tKSkpID4gMjIpXSAjIEVudGZlcm5lIEZpbG1lIG1pdCB6dSB3ZW5pZyBCZXdlcnR1bmdlbiB1bSBTcGFyc2l0eSB6dSBzZW5rZW4KCiMgRW50ZmVybmUgcmFuZG9tIEZpbG1lIHVtIGF1ZiA3MDAgenUgZ2VsYW5nZW4Kd2hpbGUgKDQwMCA8IGRpbSh0cmFpbl8xX20pWzFdKXsKdHJhaW5fMV9tIDwtIHRyYWluXzFfbVstYyhhcy5udW1lcmljKHNhbXBsZShyb3duYW1lcyh0cmFpbl8xX20pLCAoZGltKHRyYWluXzFfbSlbMV0tNDAwKSkpKSxdCn0KIyBFbnRmZXJuZSByYW5kb20gS3VuZGVuIHVtIGF1ZiA0MDAgenUgZ2VsYW5nZW4Kd2hpbGUgKDcwMCA8IGRpbSh0cmFpbl8xX20pWzJdKXsKdHJhaW5fMV9tIDwtIHRyYWluXzFfbVssY29sbmFtZXModHJhaW5fMV9tKSE9Yygoc2FtcGxlKGNvbG5hbWVzKHRyYWluXzFfbSksIChkaW0odHJhaW5fMV9tKVsyXS03MDApKSkpXQp9CmBgYAoKYGBge3J9CnBlcmNlbnRpbGVfdHJhaW5fMl9LdW5kZW4gPSAoMTAwLShkaW0odHJhaW5fMilbMV0tNDAwKS8oZGltKHRyYWluXzIpWzFdLzEwMCkpLzEwMCAjIyBiaXMgenUgd2VsY2hlbSBwZXJjZW50aWwgbcO8c3NlbiBCZW51dHplciBtaXQgd2VuaWdlciBCZXdlcnR1bmdlbiBnZWzDtnNjaHQgd2VyZGVuCnByaW50KHF1YW50aWxlKHJvd0NvdW50cyh0cmFpbl8yKSwgcGVyY2VudGlsZV90cmFpbl8yX0t1bmRlbikpICMgV2VydCBpbiBCZXdlcnR1bmdlbgoKdHJhaW5fMiA8LSB0cmFpbl8yW3Jvd0NvdW50cyh0cmFpbl8yKSA8IDExMF0gIyBSZWR1emllcmUgS3VuZGVuIG1pdCB6dSB2aWVsIEJld2VydHVuZ2VuIHVtIFNwYXJzaXR5IHp1IGVyaMOkaGVuCgpwZXJjZW50aWxlX3RyYWluXzJfRmlsbWUgPSAoMTAwLShkaW0odHJhaW5fMilbMl0tNzAwKS8oZGltKHRyYWluXzIpWzJdLzEwMCkpLzEwMCAjIyAgcGVyY2VudGlsIGJpcyB6dSB3ZWxjaGVtIEZpbG1lIG1pdCB3ZW5pZ2VyIEJld2VydHVuZ2VuIGdlbMO2c2NodCB3ZXJkZW4gbcO8c3NlbgoKcHJpbnQocXVhbnRpbGUoY29sQ291bnRzKHRyYWluXzIpLCBwZXJjZW50aWxlX3RyYWluXzJfRmlsbWUpKSAjIFdlcnQgaW4gQmV3ZXJ0dW5nZW4KCnRyYWluXzJfbSA8LSBhcyh0cmFpbl8yLCAibWF0cml4IikKCnRyYWluXzJfbSA8LSB0cmFpbl8yX21bLCgoY29sU3VtcyghaXMubmEodHJhaW5fMl9tKSkpIDwgMyldICMgUmVkdXppZXJlIEZpbG1lIG1pdCB6dSB2aWVsZW4gQmV3ZXJ0dW5nZW4gdW0gU3BhcnNpdHkgenUgZXJow7ZoZW4KCiMgRW50ZmVybmUgcmFuZG9tIEZpbG1lIHVtIGF1ZiA3MDAgenUgZ2VsYW5nZW4Kd2hpbGUgKDQwMCA8IGRpbSh0cmFpbl8yX20pWzFdKXsKdHJhaW5fMl9tIDwtIHRyYWluXzJfbVstYyhhcy5udW1lcmljKHNhbXBsZShyb3duYW1lcyh0cmFpbl8yX20pLCAoZGltKHRyYWluXzJfbSlbMV0tNDAwKSkpKSxdCn0KIyBFbnRmZXJuZSByYW5kb20gS3VuZGVuIHVtIGF1ZiA0MDAgenUgZ2VsYW5nZW4Kd2hpbGUgKDcwMCA8IGRpbSh0cmFpbl8yX20pWzJdKXsKdHJhaW5fMl9tIDwtIHRyYWluXzJfbVssY29sbmFtZXModHJhaW5fMl9tKSE9Yygoc2FtcGxlKGNvbG5hbWVzKHRyYWluXzJfbSksIChkaW0odHJhaW5fMl9tKVsyXS03MDApKSkpXQp9CmBgYApgYGB7cn0KY29sX2Ryb3AgPC0gc2FtcGxlKDE6bGVuZ3RoKGNvbG5hbWVzKHRyYWluXzMpKSwgbGVuZ3RoKGNvbG5hbWVzKHRyYWluXzMpKS05NjQpCgp0cmFpbl8zX20gPC0gYXModHJhaW5fMywgIm1hdHJpeCIpCgp0cmFpbl8zX20gPC0gdHJhaW5fM19tWywgY29sX2Ryb3BdCgojIEVudGZlcm5lIHJhbmRvbSBGaWxtZSB1bSBhdWYgNzAwIHp1IGdlbGFuZ2VuCndoaWxlICg0MDAgPCBkaW0odHJhaW5fM19tKVsxXSl7CnRyYWluXzNfbSA8LSB0cmFpbl8zX21bLWMoYXMubnVtZXJpYyhzYW1wbGUocm93bmFtZXModHJhaW5fM19tKSwgKGRpbSh0cmFpbl8zX20pWzFdLTQwMCkpKSksXQp9CiMgRW50ZmVybmUgcmFuZG9tIEt1bmRlbiB1bSBhdWYgNDAwIHp1IGdlbGFuZ2VuCndoaWxlICg3MDAgPCBkaW0odHJhaW5fM19tKVsyXSl7CnRyYWluXzNfbSA8LSB0cmFpbl8zX21bLGNvbG5hbWVzKHRyYWluXzNfbSkhPWMoKHNhbXBsZShjb2xuYW1lcyh0cmFpbl8zX20pLCAoZGltKHRyYWluXzNfbSlbMl0tNzAwKSkpKV0KfQpgYGAKCiMjIFZlcmdsZWljaCBkZXMgVHJhaW5pbmdzZXQgMSB2b3IgdW5kIG5hY2ggZGVyIERhdGVucmVkdWt0aW9uCmBgYHtyfQojIEFtb3VudCBvZiBDb3N0dW1lcnMgYmVmb3JlCmNhdCgiQW1vdW50IG9mIEN1c3RvbWVycyBiZWZvcmU6ICIsIGRpbShhcyhNb3ZpZUxlbnNlX25vcm0sICJtYXRyaXgiKSlbMV0sICJcbiIpCgojIEFtb3VudCBvZiBDb3N0dW1lcnMgYWZ0ZXIKY2F0KCJBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyOiAiLCBkaW0odHJhaW5fMV9tKVsxXSwgIlxuIikKCiMgQW1vbnV0IG9mIE1vdmllcyBiZWZvcmUKY2F0KCJBbW9udXQgb2YgTW92aWVzIGJlZm9yZTogIixkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpWzJdLCAiXG4iKQoKIyBBbW91bnQgb2YgTW92aWVzIGFmdGVyCmNhdCgiQW1vdW50IG9mIE1vdmllcyBhZnRlcjoiLGRpbSh0cmFpbl8xX20pWzJdLCAiXG4iKQoKIyBTcGFyc2l0eSBiZWZvcmUKY2F0KCJTcGFyc2l0eSBiZWZvcmU6ICIsIHN1bShpcy5uYShhcyhNb3ZpZUxlbnNlX25vcm0sICJtYXRyaXgiKSkpLyhkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpWzFdKmRpbShhcyhNb3ZpZUxlbnNlX25vcm0sICJtYXRyaXgiKSlbMl0pLCAiXG4iKQoKIyBTcGFyc2l0eSBhZnRlcgpjYXQoIlNwYXJzaXR5IGFmdGVyOiAiLCBzdW0oaXMubmEodHJhaW5fMV9tKSkvKGRpbSh0cmFpbl8xX20pWzFdKmRpbSh0cmFpbl8xX20pWzJdKSwgIlxuIikKCiMgbWVhbiBjdXN0b21lciByYXRpbmcgYmVmb3JlCmNhdCgiTWVhbiBjdXN0b21lciByYXRpbmcgYmVmb3JlOiAiLHN1bShyb3dNZWFucyhNb3ZpZUxlbnNlX25vcm0pKS9kaW0oYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpWzFdLCAiXG4iKQoKIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlcgpjYXQoIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGFmdGVyOiAiLHN1bShyb3dNZWFucyh0cmFpbl8xX20sIG5hLnJtPVRSVUUpKS9kaW0odHJhaW5fMV9tKVsxXSwgIlxuIikKYGBgCgojIyBWZXJnbGVpY2ggZGVzIFRyYWluaW5nc2V0IDIgdm9yIHVuZCBuYWNoIGRlciBEYXRlbnJlZHVrdGlvbgpgYGB7cn0KIyBBbW91bnQgb2YgQ29zdHVtZXJzIGJlZm9yZQpjYXQoIkFtb3VudCBvZiBDdXN0b21lcnMgYmVmb3JlOiAiLCBkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpWzFdLCAiXG4iKQoKIyBBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyCmNhdCgiQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcjogIiwgZGltKHRyYWluXzJfbSlbMV0sICJcbiIpCgojIEFtb251dCBvZiBNb3ZpZXMgYmVmb3JlCmNhdCgiQW1vbnV0IG9mIE1vdmllcyBiZWZvcmU6ICIsZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsyXSwgIlxuIikKCiMgQW1vdW50IG9mIE1vdmllcyBhZnRlcgpjYXQoIkFtb3VudCBvZiBNb3ZpZXMgYWZ0ZXI6IixkaW0odHJhaW5fMl9tKVsyXSwgIlxuIikKCiMgU3BhcnNpdHkgYmVmb3JlCmNhdCgiU3BhcnNpdHkgYmVmb3JlOiAiLCBzdW0oaXMubmEoYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpKS8oZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsxXSpkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpWzJdKSwgIlxuIikKCiMgU3BhcnNpdHkgYWZ0ZXIKY2F0KCJTcGFyc2l0eSBhZnRlcjogIiwgc3VtKGlzLm5hKHRyYWluXzJfbSkpLyhkaW0odHJhaW5fMl9tKVsxXSpkaW0odHJhaW5fMl9tKVsyXSksICJcbiIpCgojIG1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZQpjYXQoIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGJlZm9yZTogIixzdW0ocm93TWVhbnMoTW92aWVMZW5zZV9ub3JtKSkvZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsxXSwgIlxuIikKCiMgbWVhbiBjdXN0b21lciByYXRpbmcgYWZ0ZXIKY2F0KCJNZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlcjogIixzdW0ocm93TWVhbnModHJhaW5fMl9tLCBuYS5ybT1UUlVFKSkvZGltKHRyYWluXzJfbSlbMV0sICJcbiIpCmBgYAoKIyMgVmVyZ2xlaWNoIGRlcyBUcmFpbmluZ3NldCAzIHZvciB1bmQgbmFjaCBkZXIgRGF0ZW5yZWR1a3Rpb24KYGBge3J9CiMgQW1vdW50IG9mIENvc3R1bWVycyBiZWZvcmUKY2F0KCJBbW91bnQgb2YgQ29zdHVtZXJzIGJlZm9yZTogIixkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpWzFdLCAiXG4iKQoKIyBBbW91bnQgb2YgQ29zdHVtZXJzIGFmdGVyCmNhdCgiQW1vdW50IG9mIENvc3R1bWVycyBhZnRlcjogIixkaW0odHJhaW5fM19tKVsxXSwgIlxuIikKCiMgQW1vbnV0IG9mIE1vdmllcyBiZWZvcmUKY2F0KCJNQW1vdW50IG9mIE1vdmllcyBiZWZvcmU6ICIsZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsyXSwgIlxuIikKCiMgQW1vdW50IG9mIE1vdmllcyBhZnRlcgpjYXQoIkFtb3VudCBvZiBNb3ZpZXMgYWZ0ZXI6ICIsZGltKHRyYWluXzNfbSlbMl0sICJcbiIpCgojIFNwYXJzaXR5IGJlZm9yZQpjYXQoIlNwYXJzaXR5IGJlZm9yZTogIixzdW0oaXMubmEoYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpKS8oZGltKGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpKVsxXSpkaW0oYXMoTW92aWVMZW5zZV9ub3JtLCAibWF0cml4IikpWzJdKSkKCiMgU3BhcnNpdHkgYWZ0ZXIKY2F0KCJTcGFyc2l0eSBhZnRlcjogIixzdW0oaXMubmEodHJhaW5fM19tKSkvKGRpbSh0cmFpbl8zX20pWzFdKmRpbSh0cmFpbl8zX20pWzJdKSwgIlxuIikKCiMgbWVhbiBjdXN0b21lciByYXRpbmcgYmVmb3JlCmNhdCgiTWVhbiBjdXN0b21lciByYXRpbmcgYmVmb3JlOiAiLChzdW0ocm93TWVhbnMoTW92aWVMZW5zZV9ub3JtLCBuYS5ybT1UUlVFKSkvZGltKE1vdmllTGVuc2Vfbm9ybSlbMV0pLCAiXG4iKQoKIyBtZWFuIGN1c3RvbWVyIHJhdGluZyBhZnRlcgpjYXQoIk1lYW4gY3VzdG9tZXIgcmF0aW5nIGFmdGVyOiAiLChzdW0ocm93TWVhbnModHJhaW5fM19tLCBuYS5ybT1UUlVFKSkvZGltKHRyYWluXzNfbSlbMV0pLCAiXG4iKQpgYGAKCiMjIFdpZSBzdGFyayDDvGJlcnNjaG5laWRlbiBzaWNoIGRpZSAzIERhdGVuc8OkdHplPwpgYGB7cn0KIyBjaGVjayBmb3IgZGF0YWZyYW1lcyB0cmFpbl8xIGFuZCB0cmFpbl8yCiN0ZXN0IDwtIGludGVyc2VjdCh0cmFpbl8xX21bOiwxMF0sIHRyYWluXzJfbSkKCiMgY2hlY2sgZm9yIGRhdGFmcmFtZXMgdHJhaW5fMSBhbmQgdHJhaW5fMwojaW50ZXJzZWN0KGFzKE1vdmllTGVuc2Vfbm9ybSwgIm1hdHJpeCIpLCBNb3ZpZUxlbnNlTWF0cml4KQoKIyBjaGVjayBmb3IgZGF0YWZyYW1lcyB0cmFpbl8yIGFuZCB0cmFpbl8zCgphcyh0cmFpbl8xX20sICJkYXRhLmZyYW1lIikKYGBgCmBgYHtyfQpkZjEgPC0gbWF0cml4KHRlYW09YygnQScsICdCJywgJ0InLCAnQicpLAogICAgICAgICAgICAgICAgICBwb2ludHM9YygxMiwgMjAsIDI1LCAxOSksIAogICAgICAgICAgICAgICAgICBuYW1lPWMoIkEiLCAiQUIiLCAiQUMiLCAiQSIpLAogICAgICAgICAgICAgICAgICBtb2R1bGU9YygiRURBIiwgIkRBVyIsICJSU1kiLCAiSU5LIikpCiAgICAgICAgICAgICAgCmRmMiA8LSBtYXRyaXgodGVhbT1jKCdBJywgJ0EnLCAnQicsICdCJyksCiAgICAgICAgICAgICAgICAgIHBvaW50cz1jKDEyLCAyMCwgMjUsIDE5KSwKICAgICAgICAgICAgICAgICAgbmFtZT1jKCJBIiwgIkFCIiwgIkFDIiwgIkEiKSwKICAgICAgICAgICAgICAgICAgbW9kdWxlPWMoIkVEQSIsICJEQVciLCAiUlNZIiwgIklOSyIpKQogICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgCmludGVyc2VjdCh0cmFpbl8xX20sIHRyYWluXzJfbSkKCmBgYAojIyBUcmFpbiB0ZXN0IHNwbGl0IGbDvHIgSUJDRiBSZWNvbW1lbmRlcgpgYGB7cn0Kc2V0LnNlZWQoMTApCnNwbGl0MTwtIHNhbXBsZShjKHJlcCgwLCAwLjgwICogbnJvdyh0cmFpbl8xX20pKSwgcmVwKDEsIDAuMjAgKiBucm93KHRyYWluXzFfbSkpKSkKdHJhaW5fMV9pYmNmIDwtIGFzKHRyYWluXzFfbVtzcGxpdDEgPT0gMCxdLCAicmVhbFJhdGluZ01hdHJpeCIpCnRlc3RfMV9pYmNmIDwtIGFzKHRyYWluXzFfbVtzcGxpdDEgPT0gMSxdLCAicmVhbFJhdGluZ01hdHJpeCIpCmBgYAoKIyMgVHJhaW4gSUJDRiB3aXRoIHRyYWluIGRhdGEKYGBge3J9CiMgdHJhaW4gcmVjb21tZW5kZXJsYWIgSUJDRiB3aXRoIHRyYWluXzFfaWJjZiBkYXRhIGFuZCBrPTMwLCBjb3Mgc2ltaWxhcml0eQpyZWNvbW1lbmRlcl9pYmNmIDwtIFJlY29tbWVuZGVyKHRyYWluXzFfaWJjZiwgbWV0aG9kID0gIklCQ0YiLCBwYXJhbWV0ZXIgPSBsaXN0KGs9MzAsIG1ldGhvZD0iY29zaW5lIikpCnByaW50KHJfaWJjZikKcF8xIDwtIHByZWRpY3Qocl9pYmNmLCB0ZXN0XzFfaWJjZiwgdHlwZT0idG9wTkxpc3QiKQpwcmludChhcyhwXzEsICJtYXRyaXgiKSkKI3BfMiA8LSBwcmVkaWN0KHJfaWJjZiwgdGVzdF8xX2liY2YsIHR5cGU9IiIpCmBgYApgYGB7cn0KY29zaW5lX2liY2YgPC0gYXMuZGF0YS5mcmFtZShhcyhzaW1pbGFyaXR5KHJfaWJjZiwgbWV0aG9kPSdjb3NpbmUnLCB3aGljaD0naXRlbXMnKSwgIm1hdHJpeCIpKQpjb3NpbmVfaWJjZgojaGlzdChzb3J0KGNvbFN1bXMoY29zaW5lX2liY2YsIG5hLnJtPVRSVUUpLCBkZWNyZWFzaW5nID0gVFJVRSkpCiN0cmFpbl8xX2liY2YKYGBgCgoK</div>
 
 
 
